@@ -2226,7 +2226,7 @@
 		</Location>
 		<Size>
 			<CX>182</CX>
-			<CY>310</CY>
+			<CY>270</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -2239,7 +2239,8 @@
 		<Style_Border>true</Style_Border>
 		<Style_Sizable>true</Style_Sizable>
 		<MinHSize>182</MinHSize>
-		<MinVSize>310</MinVSize>
+		<MinVSize>270</MinVSize>
+		<MaxVSize>270</MaxVSize>
 <!--Group Buttons Begin-->
 		<Pieces>GW_InviteButton</Pieces>
 		<Pieces>GW_DisbandButton</Pieces>
