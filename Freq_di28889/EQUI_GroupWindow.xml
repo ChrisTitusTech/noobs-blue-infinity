@@ -2240,7 +2240,6 @@
 		<Style_Sizable>true</Style_Sizable>
 		<MinHSize>182</MinHSize>
 		<MinVSize>270</MinVSize>
-		<MaxVSize>270</MaxVSize>
 <!--Group Buttons Begin-->
 		<Pieces>GW_InviteButton</Pieces>
 		<Pieces>GW_DisbandButton</Pieces>
