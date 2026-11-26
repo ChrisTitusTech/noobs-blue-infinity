@@ -698,6 +698,13 @@
       <Disabled>A_MinimizeBtnDisabled</Disabled>
       <PressedFlyby>A_MinimizeBtnPressedFlyby</PressedFlyby>
     </MinimizeBox>
+	<MaximizeBox>
+			<Normal>A_MaximizeBtnNormal</Normal>
+			<Pressed>A_MaximizeBtnPressed</Pressed>
+			<Flyby>A_MaximizeBtnFlyby</Flyby>
+			<Disabled>A_MaximizeBtnDisabled</Disabled>
+			<PressedFlyby>A_MaximizeBtnPressedFlyby</PressedFlyby>
+	</MaximizeBox>
     <TileBox>
       <Normal>A_TileBtnNormal</Normal>
       <Pressed>A_TileBtnPressed</Pressed>
@@ -865,123 +872,123 @@
   <WindowDrawTemplate item="WDT_InnerWhite">
 		<Background>white.tga</Background>
 	</WindowDrawTemplate>
-  <WindowDrawTemplate item="WDT_AchievementOpen">
-    <Background>Achievement_unlock_color.tga</Background>
-    <VSBTemplate>
-      <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
-      </UpButton>
-      <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
-      </DownButton>
-      <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
-        <OverlapLeft>0</OverlapLeft>
-        <OverlapTop>0</OverlapTop>
-        <OverlapRight>0</OverlapRight>
-        <OverlapBottom>0</OverlapBottom>
-      </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.tga</MiddleTextureInfo>
-      <MiddleTint>
-        <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
-      </MiddleTint>
-    </VSBTemplate>
-    <HSBTemplate>
-      <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
-      </UpButton>
-      <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
-      </DownButton>
-      <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
-        <OverlapLeft>0</OverlapLeft>
-        <OverlapTop>0</OverlapTop>
-        <OverlapRight>0</OverlapRight>
-        <OverlapBottom>0</OverlapBottom>
-      </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.tga</MiddleTextureInfo>
-      <MiddleTint>
-        <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
-      </MiddleTint>
-    </HSBTemplate>
-    <CloseBox>
-      <Normal>A_CloseBtnNormal</Normal>
-      <!--<Normal>A_UnlockBtn</Normal>-->
-      <Pressed>A_CloseBtnPressed</Pressed>
-      <Flyby>A_CloseBtnFlyby</Flyby>
-      <Disabled>A_CloseBtnDisabled</Disabled>
-      <PressedFlyby>A_CloseBtnPressedFlyby</PressedFlyby>
-    </CloseBox>
-    <QMarkBox>
-      <Normal>A_QMarkBtnNormal</Normal>
-      <Pressed>A_QMarkBtnPressed</Pressed>
-      <Flyby>A_QMarkBtnFlyby</Flyby>
-      <Disabled>A_QMarkBtnDisabled</Disabled>
-      <PressedFlyby>A_QMarkBtnPressedFlyby</PressedFlyby>
-    </QMarkBox>
-    <MinimizeBox>
-      <Normal>A_MinimizeBtnNormal</Normal>
-      <!--<Normal>A_LockBtn</Normal>-->
-      <Pressed>A_MinimizeBtnPressed</Pressed>
-      <Flyby>A_MinimizeBtnFlyby</Flyby>
-      <Disabled>A_MinimizeBtnDisabled</Disabled>
-      <PressedFlyby>A_MinimizeBtnPressedFlyby</PressedFlyby>
-    </MinimizeBox>
-    <MaximizeBox>
-      <Normal>A_MaximizeBtnNormal</Normal>
-      <Pressed>A_MaximizeBtnPressed</Pressed>
-      <Flyby>A_MaximizeBtnFlyby</Flyby>
-      <Disabled>A_MaximizeBtnDisabled</Disabled>
-      <PressedFlyby>A_MaximizeBtnPressedFlyby</PressedFlyby>
-    </MaximizeBox>
-    <TileBox>
-      <Normal>A_TileBtnNormal</Normal>
-      <Pressed>A_TileBtnPressed</Pressed>
-      <Flyby>A_TileBtnFlyby</Flyby>
-      <Disabled>A_TileBtnDisabled</Disabled>
-      <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
-    </TileBox>
-    <Border>
-      <TopLeft>A_AchievementOpenFiligreeFrameTopLeft</TopLeft>
-      <Top>A_AchievementOpenFiligreeFrameTop</Top>
-      <TopRight>A_AchievementOpenFiligreeFrameTopRight</TopRight>
-      <RightTop>A_AchievementOpenFiligreeFrameRightTop</RightTop>
-      <Right>A_AchievementOpenFiligreeFrameRight</Right>
-      <RightBottom>A_AchievementOpenFiligreeFrameRightBottom</RightBottom>
-      <BottomRight>A_AchievementOpenFiligreeFrameBottomRight</BottomRight>
-      <Bottom>A_AchievementOpenFiligreeFrameBottom</Bottom>
-      <BottomLeft>A_AchievementOpenFiligreeFrameBottomLeft</BottomLeft>
-      <LeftTop>A_AchievementOpenFiligreeFrameLeftTop</LeftTop>
-      <Left>A_AchievementOpenFiligreeFrameLeft</Left>
-      <LeftBottom>A_AchievementOpenFiligreeFrameLeftBottom</LeftBottom>
-      <!--
+	<WindowDrawTemplate item="WDT_AchievementOpen">
+		<Background>Achievement_unlock_color.tga</Background>
+		<VSBTemplate>
+			<UpButton>
+				<Normal>A_VSBUpNormal</Normal>
+				<Pressed>A_VSBUpPressed</Pressed>
+				<Flyby>A_VSBUpFlyby</Flyby>
+				<Disabled>A_VSBUpDisabled</Disabled>
+				<PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+			</UpButton>
+			<DownButton>
+				<Normal>A_VSBDownNormal</Normal>
+				<Pressed>A_VSBDownPressed</Pressed>
+				<Flyby>A_VSBDownFlyby</Flyby>
+				<Disabled>A_VSBDownDisabled</Disabled>
+				<PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+			</DownButton>
+			<Thumb>
+				<Top>A_VSBThumbTop</Top>
+				<Bottom>A_VSBThumbBottom</Bottom>
+				<Middle>A_VSBThumbMiddle</Middle>
+				<OverlapLeft>0</OverlapLeft>
+				<OverlapTop>0</OverlapTop>
+				<OverlapRight>0</OverlapRight>
+				<OverlapBottom>0</OverlapBottom>
+			</Thumb>
+			<MiddleTextureInfo>scrollbar_gutter.tga</MiddleTextureInfo>
+			<MiddleTint>
+				<Alpha>255</Alpha>
+				<R>128</R>
+				<G>128</G>
+				<B>128</B>
+			</MiddleTint>
+		</VSBTemplate>
+		<HSBTemplate>
+			<UpButton>
+				<Normal>A_HSBLeftNormal</Normal>
+				<Pressed>A_HSBLeftPressed</Pressed>
+				<Flyby>A_HSBLeftFlyby</Flyby>
+				<Disabled>A_HSBLeftDisabled</Disabled>
+				<PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+			</UpButton>
+			<DownButton>
+				<Normal>A_HSBRightNormal</Normal>
+				<Pressed>A_HSBRightPressed</Pressed>
+				<Flyby>A_HSBRightFlyby</Flyby>
+				<Disabled>A_HSBRightDisabled</Disabled>
+				<PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+			</DownButton>
+			<Thumb>
+				<Right>A_HSBThumbRight</Right>
+				<Left>A_HSBThumbLeft</Left>
+				<Middle>A_HSBThumbMiddle</Middle>
+				<OverlapLeft>0</OverlapLeft>
+				<OverlapTop>0</OverlapTop>
+				<OverlapRight>0</OverlapRight>
+				<OverlapBottom>0</OverlapBottom>
+			</Thumb>
+			<MiddleTextureInfo>scrollbar_Hgutter.tga</MiddleTextureInfo>
+			<MiddleTint>
+				<Alpha>255</Alpha>
+				<R>128</R>
+				<G>128</G>
+				<B>128</B>
+			</MiddleTint>
+		</HSBTemplate>
+		<CloseBox>
+			<Normal>A_CloseBtnNormal</Normal>
+			<!--<Normal>A_UnlockBtn</Normal>-->
+			<Pressed>A_CloseBtnPressed</Pressed>
+			<Flyby>A_CloseBtnFlyby</Flyby>
+			<Disabled>A_CloseBtnDisabled</Disabled>
+			<PressedFlyby>A_CloseBtnPressedFlyby</PressedFlyby>
+		</CloseBox>
+		<QMarkBox>
+			<Normal>A_QMarkBtnNormal</Normal>
+			<Pressed>A_QMarkBtnPressed</Pressed>
+			<Flyby>A_QMarkBtnFlyby</Flyby>
+			<Disabled>A_QMarkBtnDisabled</Disabled>
+			<PressedFlyby>A_QMarkBtnPressedFlyby</PressedFlyby>
+		</QMarkBox>
+		<MinimizeBox>
+			<Normal>A_MinimizeBtnNormal</Normal>
+			<!--<Normal>A_LockBtn</Normal>-->
+			<Pressed>A_MinimizeBtnPressed</Pressed>
+			<Flyby>A_MinimizeBtnFlyby</Flyby>
+			<Disabled>A_MinimizeBtnDisabled</Disabled>
+			<PressedFlyby>A_MinimizeBtnPressedFlyby</PressedFlyby>
+		</MinimizeBox>
+		<MaximizeBox>
+			<Normal>A_MaximizeBtnNormal</Normal>
+			<Pressed>A_MaximizeBtnPressed</Pressed>
+			<Flyby>A_MaximizeBtnFlyby</Flyby>
+			<Disabled>A_MaximizeBtnDisabled</Disabled>
+			<PressedFlyby>A_MaximizeBtnPressedFlyby</PressedFlyby>
+		</MaximizeBox>
+		<TileBox>
+			<Normal>A_TileBtnNormal</Normal>
+			<Pressed>A_TileBtnPressed</Pressed>
+			<Flyby>A_TileBtnFlyby</Flyby>
+			<Disabled>A_TileBtnDisabled</Disabled>
+			<PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
+		</TileBox>
+		<Border>
+			<TopLeft>A_AchievementOpenFiligreeFrameTopLeft</TopLeft>
+			<Top>A_AchievementOpenFiligreeFrameTop</Top>
+			<TopRight>A_AchievementOpenFiligreeFrameTopRight</TopRight>
+			<RightTop>A_AchievementOpenFiligreeFrameRightTop</RightTop>
+			<Right>A_AchievementOpenFiligreeFrameRight</Right>
+			<RightBottom>A_AchievementOpenFiligreeFrameRightBottom</RightBottom>
+			<BottomRight>A_AchievementOpenFiligreeFrameBottomRight</BottomRight>
+			<Bottom>A_AchievementOpenFiligreeFrameBottom</Bottom>
+			<BottomLeft>A_AchievementOpenFiligreeFrameBottomLeft</BottomLeft>
+			<LeftTop>A_AchievementOpenFiligreeFrameLeftTop</LeftTop>
+			<Left>A_AchievementOpenFiligreeFrameLeft</Left>
+			<LeftBottom>A_AchievementOpenFiligreeFrameLeftBottom</LeftBottom>
+<!--
         <RightTop>A_SmallBlank</RightTop>
         <Right>A_SmallBlank</Right>
         <RightBottom>A_SmallBlank</RightBottom>
@@ -1005,6 +1012,146 @@
       <OverlapBottom>0</OverlapBottom>
     </Titlebar>
   </WindowDrawTemplate>
+  <WindowDrawTemplate item="WDT_AchievementAccountOpen">
+		<Background>Achievement_account_unlock_color.tga</Background>
+		<VSBTemplate>
+			<UpButton>
+				<Normal>A_VSBUpNormal</Normal>
+				<Pressed>A_VSBUpPressed</Pressed>
+				<Flyby>A_VSBUpFlyby</Flyby>
+				<Disabled>A_VSBUpDisabled</Disabled>
+				<PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+			</UpButton>
+			<DownButton>
+				<Normal>A_VSBDownNormal</Normal>
+				<Pressed>A_VSBDownPressed</Pressed>
+				<Flyby>A_VSBDownFlyby</Flyby>
+				<Disabled>A_VSBDownDisabled</Disabled>
+				<PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+			</DownButton>
+			<Thumb>
+				<Top>A_VSBThumbTop</Top>
+				<Bottom>A_VSBThumbBottom</Bottom>
+				<Middle>A_VSBThumbMiddle</Middle>
+				<OverlapLeft>0</OverlapLeft>
+				<OverlapTop>0</OverlapTop>
+				<OverlapRight>0</OverlapRight>
+				<OverlapBottom>0</OverlapBottom>
+			</Thumb>
+			<MiddleTextureInfo>scrollbar_gutter.tga</MiddleTextureInfo>
+			<MiddleTint>
+				<Alpha>255</Alpha>
+				<R>128</R>
+				<G>128</G>
+				<B>128</B>
+			</MiddleTint>
+		</VSBTemplate>
+		<HSBTemplate>
+			<UpButton>
+				<Normal>A_HSBLeftNormal</Normal>
+				<Pressed>A_HSBLeftPressed</Pressed>
+				<Flyby>A_HSBLeftFlyby</Flyby>
+				<Disabled>A_HSBLeftDisabled</Disabled>
+				<PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+			</UpButton>
+			<DownButton>
+				<Normal>A_HSBRightNormal</Normal>
+				<Pressed>A_HSBRightPressed</Pressed>
+				<Flyby>A_HSBRightFlyby</Flyby>
+				<Disabled>A_HSBRightDisabled</Disabled>
+				<PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+			</DownButton>
+			<Thumb>
+				<Right>A_HSBThumbRight</Right>
+				<Left>A_HSBThumbLeft</Left>
+				<Middle>A_HSBThumbMiddle</Middle>
+				<OverlapLeft>0</OverlapLeft>
+				<OverlapTop>0</OverlapTop>
+				<OverlapRight>0</OverlapRight>
+				<OverlapBottom>0</OverlapBottom>
+			</Thumb>
+			<MiddleTextureInfo>scrollbar_Hgutter.tga</MiddleTextureInfo>
+			<MiddleTint>
+				<Alpha>255</Alpha>
+				<R>128</R>
+				<G>128</G>
+				<B>128</B>
+			</MiddleTint>
+		</HSBTemplate>
+		<CloseBox>
+			<Normal>A_CloseBtnNormal</Normal>
+			<!--<Normal>A_UnlockBtn</Normal>-->
+			<Pressed>A_CloseBtnPressed</Pressed>
+			<Flyby>A_CloseBtnFlyby</Flyby>
+			<Disabled>A_CloseBtnDisabled</Disabled>
+			<PressedFlyby>A_CloseBtnPressedFlyby</PressedFlyby>
+		</CloseBox>
+		<QMarkBox>
+			<Normal>A_QMarkBtnNormal</Normal>
+			<Pressed>A_QMarkBtnPressed</Pressed>
+			<Flyby>A_QMarkBtnFlyby</Flyby>
+			<Disabled>A_QMarkBtnDisabled</Disabled>
+			<PressedFlyby>A_QMarkBtnPressedFlyby</PressedFlyby>
+		</QMarkBox>
+		<MinimizeBox>
+			<Normal>A_MinimizeBtnNormal</Normal>
+			<!--<Normal>A_LockBtn</Normal>-->
+			<Pressed>A_MinimizeBtnPressed</Pressed>
+			<Flyby>A_MinimizeBtnFlyby</Flyby>
+			<Disabled>A_MinimizeBtnDisabled</Disabled>
+			<PressedFlyby>A_MinimizeBtnPressedFlyby</PressedFlyby>
+		</MinimizeBox>
+		<MaximizeBox>
+			<Normal>A_MaximizeBtnNormal</Normal>
+			<Pressed>A_MaximizeBtnPressed</Pressed>
+			<Flyby>A_MaximizeBtnFlyby</Flyby>
+			<Disabled>A_MaximizeBtnDisabled</Disabled>
+			<PressedFlyby>A_MaximizeBtnPressedFlyby</PressedFlyby>
+		</MaximizeBox>
+		<TileBox>
+			<Normal>A_TileBtnNormal</Normal>
+			<Pressed>A_TileBtnPressed</Pressed>
+			<Flyby>A_TileBtnFlyby</Flyby>
+			<Disabled>A_TileBtnDisabled</Disabled>
+			<PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
+		</TileBox>
+		<Border>
+			<TopLeft>A_AchievementOpenAcctFiligreeFrameTopLeft</TopLeft>
+			<Top>A_AchievementOpenAcctFiligreeFrameTop</Top>
+			<TopRight>A_AchievementOpenAcctFiligreeFrameTopRight</TopRight>
+			<RightTop>A_AchievementOpenAcctFiligreeFrameRightTop</RightTop>
+			<Right>A_AchievementOpenAcctFiligreeFrameRight</Right>
+			<RightBottom>A_AchievementOpenAcctFiligreeFrameRightBottom</RightBottom>
+			<BottomRight>A_AchievementOpenAcctFiligreeFrameBottomRight</BottomRight>
+			<Bottom>A_AchievementOpenAcctFiligreeFrameBottom</Bottom>
+			<BottomLeft>A_AchievementOpenAcctFiligreeFrameBottomLeft</BottomLeft>
+			<LeftTop>A_AchievementOpenAcctFiligreeFrameLeftTop</LeftTop>
+			<Left>A_AchievementOpenAcctFiligreeFrameLeft</Left>
+			<LeftBottom>A_AchievementOpenAcctFiligreeFrameLeftBottom</LeftBottom>
+<!--
+			<RightTop>A_SmallBlank</RightTop>
+			<Right>A_SmallBlank</Right>
+			<RightBottom>A_SmallBlank</RightBottom>
+			<BottomRight>A_SmallBlank</BottomRight>
+			<Bottom>A_SmallBlank</Bottom>
+			<BottomLeft>A_SmallBlank</BottomLeft>
+			<Left>A_SmallBlank</Left>
+-->
+			<OverlapLeft>0</OverlapLeft>
+			<OverlapTop>0</OverlapTop>
+			<OverlapRight>0</OverlapRight>
+			<OverlapBottom>0</OverlapBottom>
+		</Border>
+		<Titlebar>
+			<Right>A_Achievement_WindowTitleOpenAcctRight</Right>
+			<Left>A_Achievement_WindowTitleOpenAcctLeft</Left>
+			<Middle>A_Achievement_WindowTitleOpenAcctMiddle</Middle>
+			<OverlapLeft>0</OverlapLeft>
+			<OverlapTop>0</OverlapTop>
+			<OverlapRight>0</OverlapRight>
+			<OverlapBottom>0</OverlapBottom>
+		</Titlebar>
+	</WindowDrawTemplate>
   <WindowDrawTemplate item="WDT_AchievementCompleted">
     <Background>Achievement_achieved_color.tga</Background>
     <VSBTemplate>
@@ -2163,8 +2310,136 @@
       <OverlapBottom>0</OverlapBottom>
     </Titlebar>
   </WindowDrawTemplate>
-  
-  
+  <WindowDrawTemplate item="WDT_CustomD">
+    <Background>cwnd_bg_clear_rock.tga</Background>
+    <VSBTemplate>
+      <UpButton>
+        <Normal>A_VSBUpNormal</Normal>
+        <Pressed>A_VSBUpPressed</Pressed>
+        <Flyby>A_VSBUpFlyby</Flyby>
+        <Disabled>A_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_VSBDownNormal</Normal>
+        <Pressed>A_VSBDownPressed</Pressed>
+        <Flyby>A_VSBDownFlyby</Flyby>
+        <Disabled>A_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Top>A_VSBThumbTop</Top>
+        <Bottom>A_VSBThumbBottom</Bottom>
+        <Middle>A_VSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_gutter.tga</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </VSBTemplate>
+    <HSBTemplate>
+      <UpButton>
+        <Normal>A_HSBLeftNormal</Normal>
+        <Pressed>A_HSBLeftPressed</Pressed>
+        <Flyby>A_HSBLeftFlyby</Flyby>
+        <Disabled>A_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_HSBRightNormal</Normal>
+        <Pressed>A_HSBRightPressed</Pressed>
+        <Flyby>A_HSBRightFlyby</Flyby>
+        <Disabled>A_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Right>A_HSBThumbRight</Right>
+        <Left>A_HSBThumbLeft</Left>
+        <Middle>A_HSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_Hgutter.tga</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </HSBTemplate>
+    <CloseBox>
+      <Normal>A_CloseBtnNormal</Normal>
+      <Pressed>A_CloseBtnPressed</Pressed>
+      <Flyby>A_CloseBtnFlyby</Flyby>
+      <Disabled>A_CloseBtnDisabled</Disabled>
+      <PressedFlyby>A_CloseBtnPressedFlyby</PressedFlyby>
+    </CloseBox>
+    <QMarkBox>
+      <Normal>A_QMarkBtnNormal</Normal>
+      <Pressed>A_QMarkBtnPressed</Pressed>
+      <Flyby>A_QMarkBtnFlyby</Flyby>
+      <Disabled>A_QMarkBtnDisabled</Disabled>
+      <PressedFlyby>A_QMarkBtnPressedFlyby</PressedFlyby>
+    </QMarkBox>
+    <MinimizeBox>
+      <Normal>A_MinimizeBtnNormal</Normal>
+      <Pressed>A_MinimizeBtnPressed</Pressed>
+      <Flyby>A_MinimizeBtnFlyby</Flyby>
+      <Disabled>A_MinimizeBtnDisabled</Disabled>
+      <PressedFlyby>A_MinimizeBtnPressedFlyby</PressedFlyby>
+    </MinimizeBox>
+    <TileBox>
+      <Normal>A_TileBtnNormal</Normal>
+      <Pressed>A_TileBtnPressed</Pressed>
+      <Flyby>A_TileBtnFlyby</Flyby>
+      <Disabled>A_TileBtnDisabled</Disabled>
+      <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
+    </TileBox>
+    <Border>
+      <TopLeft>A_Clear_Border</TopLeft>
+      <Top>A_Clear_Border</Top>
+      <TopRight>A_Clear_Border</TopRight>
+      <Right>A_Clear_Border</Right>
+      <BottomRight>A_Clear_Border</BottomRight>
+      <Bottom>A_Clear_Border</Bottom>
+      <BottomLeft>A_Clear_Border</BottomLeft>
+      <Left>A_Clear_Border</Left>
+      <RightTop>A_Clear_Border</RightTop>
+      <RightBottom>A_Clear_Border</RightBottom>
+      <LeftTop>A_Clear_Border</LeftTop>
+      <LeftBottom>A_Clear_Border</LeftBottom>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Border>
+    <Titlebar>
+      <Right>A_WindowTitleC</Right>
+      <Left>A_WindowTitleC</Left>
+      <Middle>A_WindowTitleC</Middle>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Titlebar>
+  </WindowDrawTemplate>
+  <ButtonDrawTemplate item="BDT_Custom">
+			<Normal>A_SquareBtnNormal</Normal>
+			<Pressed>A_SquareBtnPressed</Pressed>
+			<Flyby>A_SquareBtnFlyby</Flyby>
+			<Disabled>A_SquareBtnDisabled</Disabled>
+			<PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+  </ButtonDrawTemplate>
+
   <!-- Filigree Border -->
   <WindowDrawTemplate item="WDT_Filigree">
     <Background>wnd_bg_light_rock.tga</Background>
@@ -3532,7 +3807,7 @@
 		<Flyby>A_HSBRightFlyby</Flyby>
 		<Disabled>A_HSBRightDisabled</Disabled>
 		<PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
-	</ButtonDrawTemplate>	
+	</ButtonDrawTemplate>
 	<ButtonDrawTemplate item="BDT_SCBtn">
 		<Normal>A_SCBtnNormal</Normal>
 		<Pressed>A_SCBtnPressed</Pressed>
@@ -3544,7 +3819,7 @@
 		<Pressed>A_UpconvertCommonPressed</Pressed>
 		<Flyby>A_UpconvertCommonSelected</Flyby>
 		<Disabled>A_UpconvertCommonDisabled</Disabled>
-	</ButtonDrawTemplate> 
+	</ButtonDrawTemplate>
 	<ButtonDrawTemplate item="BDT_SCFSBtn">
 		<Normal>A_SCBtnFlashSaleNormal</Normal>
 		<Pressed>A_SCBtnFlashSalePressed</Pressed>
@@ -3579,6 +3854,11 @@
 		<Normal>A_RecessedBox</Normal>
 		<NormalDecal>A_DragItem</NormalDecal>
 	</ButtonDrawTemplate>
+	<ButtonDrawTemplate item="BDT_SquareItem">
+		<Normal>A_SquareBtnNormal</Normal>
+		<Flyby>A_SquareBtnFlyby</Flyby>
+		<NormalDecal>A_DragItem</NormalDecal>
+	</ButtonDrawTemplate>
 	<ButtonDrawTemplate item="BDT_BlueBuff">
 		<Normal>A_RecessedBox</Normal>
 		<NormalDecal>A_DragItem</NormalDecal>
@@ -3586,6 +3866,18 @@
 	<ButtonDrawTemplate item="BDT_RedBuff">
 		<Normal>A_RecessedBox</Normal>
 		<NormalDecal>A_DragItem</NormalDecal>
+	</ButtonDrawTemplate>
+	<ButtonDrawTemplate item="BDT_PlayerBuff">
+		<Normal>A_RecessedBox</Normal>
+		<NormalDecal>A_DragItem</NormalDecal>
+	</ButtonDrawTemplate>
+	<ButtonDrawTemplate item="BDT_TargetBuff">
+		<Normal>A_RecessedBox</Normal>
+		<NormalDecal>A_DragItem</NormalDecal>
+	</ButtonDrawTemplate>
+		<ButtonDrawTemplate item="BDT_PetRedBuff">
+		<Normal>PetRedIconBackground</Normal>
+		<NormalDecal>BuffIcons</NormalDecal>
 	</ButtonDrawTemplate>
 	<ButtonDrawTemplate item="BDT_LootWndIcon">
 		<Normal>A_RecessedBox</Normal>
@@ -3598,14 +3890,22 @@
 		<PressedFlyby>A_QuestionPressed</PressedFlyby>
 	</ButtonDrawTemplate>
 	<ButtonDrawTemplate item="BDT_FindItem">
-		<Normal>A_BtnNormal</Normal>
-		<Pressed>A_BtnPressed</Pressed>
-		<Flyby>A_BtnFlyby</Flyby>
-		<PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+		<Normal>A_ItopBtnNormal</Normal>
+		<Pressed>A_ItopBtnPressed</Pressed>
+		<Flyby>A_ItopBtnFlyby</Flyby>
+		<Disabled>A_ItopBtnDisabled</Disabled>
+		<PressedFlyby>A_ItopBtnPressedFlyby</PressedFlyby>
 		<NormalDecal>A_LFGBtnNormal</NormalDecal>
 		<PressedDecal>A_LFGBtnPressed</PressedDecal>
 		<FlybyDecal>A_LFGBtnFlyby</FlybyDecal>
 		<PressedFlybyDecal>A_LFGBtnPressedFlyby</PressedFlybyDecal>
+	</ButtonDrawTemplate>
+	<ButtonDrawTemplate item="BDT_ItopBtn">
+		<Normal>A_ItopBtnNormal</Normal>
+		<Pressed>A_ItopBtnPressed</Pressed>
+		<Flyby>A_ItopBtnFlyby</Flyby>
+		<Disabled>A_ItopBtnDisabled</Disabled>
+		<PressedFlyby>A_ItopBtnPressedFlyby</PressedFlyby>
 	</ButtonDrawTemplate>
 	<ButtonDrawTemplate item="BDT_InvigorateAgent">
 		<Normal>A_BtnNormal</Normal>
@@ -3635,5 +3935,27 @@
 		<NormalDecal>A_ExportBtnNormal</NormalDecal>
 		<FlybyDecal>A_ExportBtnFlyby</FlybyDecal>
 		<PressedDecal>A_ExportBtnFlyby</PressedDecal>
-	</ButtonDrawTemplate>									 
+	</ButtonDrawTemplate>
+<FrameTemplate item="FT_DefPageBorderHighlight">
+        <TopLeft>A_TabFrameTopLeft</TopLeft>
+        <Top>A_TabFrameTop</Top>
+        <TopRight>A_TabFrameTopRight</TopRight>
+        <RightTop>A_HighlightRight</RightTop>
+        <Right>A_HighlightRight</Right>
+        <RightBottom>A_HighlightRight</RightBottom>
+        <BottomRight>A_HighlightBottomRight</BottomRight>
+        <Bottom>A_HighlightBottom</Bottom>
+        <BottomLeft>A_HighlightBottomLeft</BottomLeft>
+        <LeftTop>A_HighlightLeft</LeftTop>
+        <Left>A_HighlightLeft</Left>
+        <LeftBottom>A_HighlightLeft</LeftBottom>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+    </FrameTemplate>
+	<ButtonDrawTemplate item="BDT_PersonalLoot">
+		<Normal>A_BtnPersonalLoot</Normal>
+		<NormalDecal>A_BtnPersonalLoot</NormalDecal>
+	</ButtonDrawTemplate>
 </XML>

@@ -7,7 +7,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>570</X>
-			<Y>350</Y>
+			<Y>330</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -18,6 +18,11 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<!--<RadioGroup/>-->
 		<Text>Buy All</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<BackgroundTextureTint>
 			<R>255</R>
 			<G>215</G>
@@ -31,7 +36,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>570</X>
-			<Y>386</Y>
+			<Y>366</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -42,15 +47,26 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<!--<RadioGroup/>-->
 		<Text>Train</Text>
-		<Template>BDT_Square</Template>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+      <Normal>A_SquareBtnNormal</Normal>
+      <Pressed>A_SquareBtnPressed</Pressed>
+      <Flyby>A_SquareBtnFlyby</Flyby>
+      <Disabled>A_SquareBtnDisabled</Disabled>
+      <PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
 	</Button>
 	<Button item="AAW_HotButton">
 		<ScreenID>HotButton</ScreenID>
 		<!--<Font>3</Font>-->
 		<RelativePosition>true</RelativePosition>
-		<Location>								  
+		<Location>
 			<X>570</X>
-			<Y>422</Y>
+			<Y>402</Y>
 		</Location>
 		<Size>
 			<CX>50</CX>
@@ -61,7 +77,18 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<!--<RadioGroup/>-->
 		<Text>Hotkey</Text>
-		<Template>BDT_Square</Template>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+      <Normal>A_SquareBtnNormal</Normal>
+      <Pressed>A_SquareBtnPressed</Pressed>
+      <Flyby>A_SquareBtnFlyby</Flyby>
+      <Disabled>A_SquareBtnDisabled</Disabled>
+      <PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
 	</Button>
 	<Label item="AAW_LoadSaveLabel">
 		<ScreenID>AAW_LoadSaveLabel</ScreenID>
@@ -75,6 +102,11 @@
 			<CY>14</CY>
 		</Size>
 		<Text>Monster Abilities</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -96,7 +128,18 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<!--<RadioGroup/>-->
 		<Text>Load</Text>
-		<Template>BDT_Square</Template>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+      <Normal>A_SquareBtnNormal</Normal>
+      <Pressed>A_SquareBtnPressed</Pressed>
+      <Flyby>A_SquareBtnFlyby</Flyby>
+      <Disabled>A_SquareBtnDisabled</Disabled>
+      <PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
 	</Button>
 	<Button item="AAW_SaveButton">
 		<ScreenID>AAW_SaveButton</ScreenID>
@@ -115,7 +158,18 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<!--<RadioGroup/>-->
 		<Text>Save</Text>
-		<Template>BDT_Square</Template>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+      <Normal>A_SquareBtnNormal</Normal>
+      <Pressed>A_SquareBtnPressed</Pressed>
+      <Flyby>A_SquareBtnFlyby</Flyby>
+      <Disabled>A_SquareBtnDisabled</Disabled>
+      <PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
 	</Button>
 	<Button item="AAW_DoneButton">
 		<ScreenID>DoneButton</ScreenID>
@@ -134,15 +188,127 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<!--<RadioGroup/>-->
 		<Text>Done</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+      <Normal>A_SquareBtnNormal</Normal>
+      <Pressed>A_SquareBtnPressed</Pressed>
+      <Flyby>A_SquareBtnFlyby</Flyby>
+      <Disabled>A_SquareBtnDisabled</Disabled>
+      <PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+	</Button>
+	<Button item="AAW_AutoGrantAAsButton">
+		<ScreenID>AAW_AutoGrantAAsButton</ScreenID>
+		<Location>
+			<X>535</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>150</CX>
+			<CY>16</CY>
+		</Size>
+		<Style_Checkbox>true</Style_Checkbox>
+		<Text>Auto-Grant Enable</Text>
+		<TextColor>
+			<R>255</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+		<UseCustomPressedColor>true</UseCustomPressedColor>
+		<PressedColor>
+			<R>0</R>
+			<G>255</G>
+			<B>0</B>
+		</PressedColor>
+		<TooltipReference>Checking this box will automatically grant you all of the AA abilities that you meet the requirements for the next time you enter the game from character select or when your character level changes.</TooltipReference>
+		<Template>BDT_CheckboxWithText</Template>
+		<DecalSize>
+			<CX>16</CX>
+			<CY>16</CY>
+		</DecalSize>
+		<TextOffsetX>20</TextOffsetX>
+	</Button>
+	<Label item="AAW_LastAutoGrantLabel">
+		<ScreenID>AAW_LastAutoGrantLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>535</X>
+			<Y>20</Y>
+		</Location>
+		<Size>
+			<CX>115</CX>
+			<CY>20</CY>
+		</Size>
+		<Text>Last Auto-Grant</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+	</Label>
+	<Label item="AAW_LastAutoGrantTime">
+		<ScreenID>AAW_LastAutoGrantTime</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>535</X>
+			<Y>35</Y>
+		</Location>
+		<Size>
+			<CX>115</CX>
+			<CY>20</CY>
+		</Size>
+		<Text>N/A</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<TooltipReference>Displays the last time that Auto-Grant ran for your character. A value of "N/A" indicates that Auto-Grant will run the next time you enter the game from character select.</TooltipReference>
+	</Label>
+	<Button item="AAW_RunAutoGrant">
+		<ScreenID>AAW_RunAutoGrant</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>535</X>
+			<Y>50</Y>
+		</Location>
+		<Size>
+			<CX>115</CX>
+			<CY>24</CY>
+		</Size>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>Clicking this button will immediately attempt to grant you all of the AA abilities that you meet the requirements for.</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Run Auto-Grant</Text>
 		<Template>BDT_Normal</Template>
 	</Button>
+	<Label item="AAW_PercentLabel">
+		<ScreenID>PercentLabel</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>533</X>
+			<Y>75</Y>
+		</Location>
+		<Size>
+			<CX>120</CX>
+			<CY>20</CY>
+		</Size>
+		<Text>Exp to AA</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>false</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
 	<Button item="AAW_LessExpButton">
 		<ScreenID>LessExpButton</ScreenID>
 		<!--<Font>3</Font>-->
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>543</X>
-			<Y>45</Y>
+			<Y>90</Y>
 		</Location>
 		<Size>
 			<CX>20</CX>
@@ -158,15 +324,42 @@
 			<G>255</G>
 			<B>0</B>
 		</TextColor>
-		<Template>BDT_Normal</Template>
+		<ButtonDrawTemplate>
+			<Normal>A_SquareBtnNormal</Normal>
+			<Pressed>A_SquareBtnPressed</Pressed>
+			<Flyby>A_SquareBtnFlyby</Flyby>
+			<Disabled>A_SquareBtnDisabled</Disabled>
+			<PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
 	</Button>
+	<Label item="AAW_PercentCount">
+		<ScreenID>ExpCount</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>569</X>
+			<Y>90</Y>
+		</Location>
+		<Size>
+			<CX>60</CX>
+			<CY>20</CY>
+		</Size>
+		<Text>100%</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
 	<Button item="AAW_MoreExpButton">
 		<ScreenID>MoreExpButton</ScreenID>
 		<!--<Font>3</Font>-->
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>625</X>
-			<Y>45</Y>
+			<Y>90</Y>
 		</Location>
 		<Size>
 			<CX>20</CX>
@@ -182,49 +375,21 @@
 			<G>255</G>
 			<B>0</B>
 		</TextColor>
-		<Template>BDT_Normal</Template>
+		<ButtonDrawTemplate>
+			<Normal>A_SquareBtnNormal</Normal>
+			<Pressed>A_SquareBtnPressed</Pressed>
+			<Flyby>A_SquareBtnFlyby</Flyby>
+			<Disabled>A_SquareBtnDisabled</Disabled>
+			<PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
 	</Button>
-	<Label item="AAW_PercentLabel">
-		<ScreenID>PercentLabel</ScreenID>
-		<!--<Font>3</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>533</X>
-			<Y>30</Y>
-		</Location>
-		<Size>
-			<CX>120</CX>
-			<CY>20</CY>
-		</Size>
-		<Text>Exp to AA</Text>
-		<NoWrap>false</NoWrap>
-		<AlignCenter>true</AlignCenter>
-		<AlignRight>false</AlignRight>
-	</Label>
-	<Label item="AAW_PercentCount">
-		<ScreenID>ExpCount</ScreenID>
-		<!--<Font>3</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>569</X>
-			<Y>45</Y>
-		</Location>
-		<Size>
-			<CX>60</CX>
-			<CY>20</CY>
-		</Size>
-		<Text>100%</Text>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>true</AlignCenter>
-		<AlignRight>false</AlignRight>
-	</Label>
 	<Label item="AAW_AltAdvPct">
 		<ScreenID>AltAdvPct</ScreenID>
-        <EQType>27</EQType>
+		<EQType>27</EQType>
 		<Font>2</Font>
 		<Location>
 			<X>591</X>
-			<Y>74</Y>
+			<Y>110</Y>
 		</Location>
 		<Size>
 			<CX>40</CX>
@@ -234,13 +399,13 @@
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>true</AlignRight>
 		<AlignLeft>false</AlignLeft>
-    </Label>
+	</Label>
 	<Label item="AAW_AltAdvPctLabel">
 		<ScreenID>AltAdvPctLabel</ScreenID>
 		<Font>2</Font>
 		<Location>
 			<X>631</X>
-			<Y>74</Y>
+			<Y>110</Y>
 		</Location>
 		<Size>
 			<CX>10</CX>
@@ -248,14 +413,14 @@
 		</Size>
 		<Text>%</Text>
 		<NoWrap>true</NoWrap>
-    </Label>
+	</Label>
 	<Gauge item="AAW_ExpGauge">
 		<ScreenID>ExpGauge</ScreenID>
 		<!--<Font>3</Font>-->
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>541</X>
-			<Y>74</Y>
+			<Y>110</Y>
 		</Location>
 		<Size>
 			<CX>108</CX>
@@ -263,6 +428,11 @@
 		</Size>
 		<GaugeOffsetY>20</GaugeOffsetY>
 		<Text>AA Exp:</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<TextOffsetY>0</TextOffsetY>
 		<TextOffsetX>10</TextOffsetX>
 		<Style_VScroll>false</Style_VScroll>
@@ -289,22 +459,93 @@
 			<EndCapRight>A_GaugeEndCapRight</EndCapRight>
 		</GaugeDrawTemplate>
 	</Gauge>
+	<Label item="AAW_CurrentLabel">
+		<ScreenID>CurrentLabel</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>530</X>
+			<Y>145</Y>
+		</Location>
+		<Size>
+			<CX>90</CX>
+			<CY>20</CY>
+		</Size>
+		<Text>AA Points:</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="AAW_CurrentCount">
+		<ScreenID>CurrentCount</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>610</X>
+			<Y>145</Y>
+		</Location>
+		<Size>
+			<CX>50</CX>
+			<CY>20</CY>
+		</Size>
+		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
 	<Label item="AAW_AssignedLabel">
 		<ScreenID>AssignedLabel</ScreenID>
 		<!--<Font>3</Font>-->
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>530</X>
-			<Y>155</Y>
+			<Y>160</Y>
 		</Location>
 		<Size>
 			<CX>90</CX>
 			<CY>20</CY>
 		</Size>
 		<Text>Assigned:</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<NoWrap>false</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignLeft>true</AlignLeft>
+	</Label>
+	<Label item="AAW_AssignedCount">
+		<ScreenID>AssignedCount</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>560</X>
+			<Y>160</Y>
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>20</CY>
+		</Size>
+		<Text>100</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
 	</Label>
 	<Label item="AAW_TotalLabel">
 		<ScreenID>TotalLabel</ScreenID>
@@ -319,60 +560,14 @@
 			<CY>20</CY>
 		</Size>
 		<Text>Total Spent:</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<NoWrap>false</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignLeft>true</AlignLeft>
-	</Label>
-	<Label item="AAW_CurrentLabel">
-		<ScreenID>CurrentLabel</ScreenID>
-		<!--<Font>3</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>530</X>
-			<Y>125</Y>
-		</Location>
-		<Size>
-			<CX>90</CX>
-			<CY>20</CY>
-		</Size>
-		<Text>AA Points:</Text>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignLeft>true</AlignLeft>
-	</Label>
-	<Label item="AAW_MonsterLabel">
-		<ScreenID>MonsterLabel</ScreenID>
-		<!--<Font>3</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>530</X>
-			<Y>125</Y>
-		</Location>
-		<Size>
-			<CX>90</CX>
-			<CY>20</CY>
-		</Size>
-		<Text>Monster Points:</Text>
-		<NoWrap>false</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignLeft>true</AlignLeft>
-	</Label>
-	<Label item="AAW_AssignedCount">
-		<ScreenID>AssignedCount</ScreenID>
-		<!--<Font>3</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>560</X>
-			<Y>155</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>20</CY>
-		</Size>
-		<Text>100</Text>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
 	</Label>
 	<Label item="AAW_TotalCount">
 		<ScreenID>TotalCount</ScreenID>
@@ -387,36 +582,46 @@
 			<CY>20</CY>
 		</Size>
 		<Text>100</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>true</AlignRight>
 	</Label>
-	<Label item="AAW_CurrentCount">
-		<ScreenID>CurrentCount</ScreenID>
+	<Label item="AAW_MonsterLabel">
+		<ScreenID>MonsterLabel</ScreenID>
 		<!--<Font>3</Font>-->
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>610</X>
+			<X>530</X>
 			<Y>125</Y>
 		</Location>
 		<Size>
-			<CX>50</CX>
+			<CX>90</CX>
 			<CY>20</CY>
 		</Size>
-		<Text>0</Text>
-		<NoWrap>true</NoWrap>
+		<Text>Monster Points:</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>false</NoWrap>
 		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
+		<AlignLeft>true</AlignLeft>
 	</Label>
 	<STMLbox item="AAW_Description">
 		<ScreenID>Description</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<RelativePosition>true</RelativePosition>
 		<Style_VScroll>true</Style_VScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<Location>
 			<X>-1</X>
-			<Y>-2</Y>
+			<Y>4</Y>
 		</Location>
 		<Size>
 			<CX>518</CX>
@@ -427,7 +632,7 @@
 	</STMLbox>
 	<STMLbox item="AAW_DescriptionNext">
 		<ScreenID>AAW_DescriptionNext</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<RelativePosition>true</RelativePosition>
 		<Style_VScroll>true</Style_VScroll>
 		<Style_Transparent>false</Style_Transparent>
@@ -448,7 +653,7 @@
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<TabText>Current Rank</TabText>
 		<TabTextActiveColor>
 			<R>255</R>
@@ -459,7 +664,7 @@
 		<Pieces>AAW_Description</Pieces>
 		<Location>
 			<X>0</X>
-			<Y>22</Y>
+			<Y>20</Y>
 		</Location>
 		<Size>
 			<CX>518</CX>
@@ -472,7 +677,7 @@
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<TabText>Next Rank</TabText>
 		<TabTextActiveColor>
 			<R>255</R>
@@ -508,13 +713,14 @@
 	</TabBox>
 	<Listbox item="AAW_GeneralList">
 		<ScreenID>List1</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Border>true</Style_Border>
+		<Style_Transparent>true</Style_Transparent>
 		<Style_VScroll>true</Style_VScroll>
 		<Columns>
 			<Width>210</Width>
@@ -545,8 +751,13 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference />
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<TabText>General</TabText>
+		<TabTextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -565,7 +776,7 @@
 	</Page>
 	<Listbox item="AAW_ArchList">
 		<ScreenID>List2</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
@@ -602,8 +813,13 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference />
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<TabText>Archetype</TabText>
+		<TabTextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -622,7 +838,7 @@
 	</Page>
 	<Listbox item="AAW_ClassList">
 		<ScreenID>List3</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
@@ -659,8 +875,13 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference />
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<TabText>Class</TabText>
+		<TabTextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -679,7 +900,7 @@
 	</Page>
 	<Listbox item="AAW_SpecialList">
 		<ScreenID>List4</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
@@ -716,8 +937,13 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference />
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<TabText>Special</TabText>
+		<TabTextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -736,7 +962,7 @@
 	</Page>
 	<Listbox item="AAW_FocusList">
 		<ScreenID>List5</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
@@ -773,8 +999,13 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference />
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<TabText>Focus</TabText>
+		<TabTextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -793,7 +1024,7 @@
 	</Page>
 	<Listbox item="AAW_MercAAList">
 		<ScreenID>List6</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
@@ -826,8 +1057,13 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference />
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<DrawTemplate>WDT_CustomD</DrawTemplate>
 		<TabText>Merc</TabText>
+		<TabTextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -869,8 +1105,8 @@
 		<ScreenID>Timer</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>425</X>
-			<Y>347</Y>
+			<X>383</X>
+			<Y>352</Y>
 		</Location>
 		<Size>
 			<CX>100</CX>
@@ -890,8 +1126,8 @@
 		<ScreenID>Count</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>425</X>
-			<Y>362</Y>
+			<X>423</X>
+			<Y>342</Y>
 		</Location>
 		<Size>
 			<CX>100</CX>
@@ -924,7 +1160,18 @@
 		<Style_Checkbox>true</Style_Checkbox>
 		<!--<RadioGroup/>-->
 		<Text>Can Purchase</Text>
-		<Template>BDT_Normal</Template>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+      <Normal>A_SquareBtnNormal</Normal>
+      <Pressed>A_SquareBtnPressed</Pressed>
+      <Flyby>A_SquareBtnFlyby</Flyby>
+      <Disabled>A_SquareBtnDisabled</Disabled>
+      <PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
 	</Button>
 	<Combobox item="AAW_PassiveFilter">
 		<ScreenID>PassiveFilter</ScreenID>
@@ -944,13 +1191,12 @@
 	<Combobox item="AAW_ExpansionFilter">
 		<ScreenID>ExpansionFilter</ScreenID>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
-		<AutoStretchList>true</AutoStretchList>
 		<Location>
 			<X>195</X>
 			<Y>462</Y>
 		</Location>
 		<Size>
-			<CX>125</CX>
+			<CX>142</CX>
 			<CY>24</CY>
 		</Size>
 		<ListHeight>60</ListHeight>
@@ -960,13 +1206,12 @@
 	<Combobox item="AAW_CatigoryFilter">
 		<ScreenID>CatigoryFilter</ScreenID>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
-		<AutoStretchList>true</AutoStretchList>
 		<Location>
-			<X>325</X>
+			<X>340</X>
 			<Y>462</Y>
 		</Location>
 		<Size>
-			<CX>95</CX>
+			<CX>120</CX>
 			<CY>24</CY>
 		</Size>
 		<ListHeight>60</ListHeight>
@@ -1005,7 +1250,18 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<!--<RadioGroup/>-->
 		<Text>Reset</Text>
-		<Template>BDT_Normal</Template>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+      <Normal>A_SquareBtnNormal</Normal>
+      <Pressed>A_SquareBtnPressed</Pressed>
+      <Flyby>A_SquareBtnFlyby</Flyby>
+      <Disabled>A_SquareBtnDisabled</Disabled>
+      <PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
 	</Button>
 	<Gauge item="AAW_MercAAExpGauge">
 		<ScreenID>MercAAExpGauge</ScreenID>
@@ -1019,6 +1275,13 @@
 			<CY>30</CY>
 		</Size>
 		<GaugeOffsetY>20</GaugeOffsetY>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<TextOffsetY>0</TextOffsetY>
+		<TextOffsetX>8</TextOffsetX>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
@@ -1104,6 +1367,11 @@
 			<CY>20</CY>
 		</Size>
 		<Text>Total Spent:</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<NoWrap>false</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignLeft>true</AlignLeft>
@@ -1120,10 +1388,15 @@
 			<CY>20</CY>
 		</Size>
 		<Text>AA Points:</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignLeft>true</AlignLeft>
-	</Label>	
+	</Label>
 	<Label item="AAW_MercAAAssignedCount">
 		<ScreenID>MercAAAssignedCount</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -1136,6 +1409,11 @@
 			<CY>20</CY>
 		</Size>
 		<Text>100</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<EQType>337</EQType>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -1153,42 +1431,17 @@
 			<CY>20</CY>
 		</Size>
 		<Text>0</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<EQType>336</EQType>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>true</AlignRight>
 	</Label>
-	<Button item="AAW_AutoGrantAAsButton">
-		<ScreenID>AAW_AutoGrantAAsButton</ScreenID>
-		<Location>
-			<X>535</X>
-			<Y>10</Y>
-		</Location>
-		<Size>
-			<CX>150</CX>
-			<CY>16</CY>
-		</Size>
-		<Style_Checkbox>true</Style_Checkbox>
-		<Text>Auto-Grant Enable</Text>
-		<TextColor>
-			<R>255</R>
-			<G>0</G>
-			<B>0</B>
-		</TextColor>
-		<UseCustomPressedColor>true</UseCustomPressedColor>
-		<PressedColor>
-			<R>0</R>
-			<G>255</G>
-			<B>0</B>
-		</PressedColor>
-		<TooltipReference>Checking this box will automatically grant you all of the AA abilities that you meet the requirements for the next time you enter the game from character select or when your character level changes.</TooltipReference>
-		<Template>BDT_CheckboxWithText</Template>
-		<DecalSize>
-			<CX>16</CX>
-			<CY>16</CY>
-		</DecalSize>
-		<TextOffsetX>20</TextOffsetX>
-	</Button>
+
 	<Screen item="AAWindow">
 		<!--<ScreenID/>-->
 		<RelativePosition>false</RelativePosition>
@@ -1198,14 +1451,14 @@
 		</Location>
 		<Size>
 			<CX>680</CX>
-			<CY>516</CY>
+			<CY>520</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<!--<TooltipReference/>-->
 		<Text>Alternate Advancement Window</Text>
-		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<DrawTemplate>WDT_Def</DrawTemplate>
 		<Style_Titlebar>true</Style_Titlebar>
 		<Style_Qmarkbox>true</Style_Qmarkbox>
 		<Style_Closebox>true</Style_Closebox>
@@ -1214,6 +1467,10 @@
 		<Style_Sizable>false</Style_Sizable>
 		<Pieces>AAW_Subwindows</Pieces>
 		<Pieces>AAW_DescriptionWindows</Pieces>
+		<Pieces>AAW_AutoGrantAAsButton</Pieces>
+		<Pieces>AAW_LastAutoGrantLabel</Pieces>
+		<Pieces>AAW_LastAutoGrantTime</Pieces>
+		<Pieces>AAW_RunAutoGrant</Pieces>
 		<Pieces>AAW_AssignedLabel</Pieces>
 		<Pieces>AAW_AssignedCount</Pieces>
 		<Pieces>AAW_TotalLabel</Pieces>
@@ -1221,9 +1478,9 @@
 		<Pieces>AAW_CurrentLabel</Pieces>
 		<Pieces>AAW_MonsterLabel</Pieces>
 		<Pieces>AAW_CurrentCount</Pieces>
-		<Pieces>AAW_ExpGauge</Pieces>
 		<Pieces>AAW_AltAdvPct</Pieces>
 		<Pieces>AAW_AltAdvPctLabel</Pieces>
+		<Pieces>AAW_ExpGauge</Pieces>
 		<Pieces>AAW_MercAAExpLabel</Pieces>
 		<Pieces>AAW_MercAAExpGauge</Pieces>
 		<Pieces>AAW_MercAAExpPct</Pieces>
@@ -1251,6 +1508,6 @@
 		<Pieces>AAW_CatigoryFilter</Pieces>
 		<Pieces>AAW_MercTypeFilter</Pieces>
 		<Pieces>AAW_ResetFilter</Pieces>
-		<Pieces>AAW_AutoGrantAAsButton</Pieces>
+
 	</Screen>
 </XML>

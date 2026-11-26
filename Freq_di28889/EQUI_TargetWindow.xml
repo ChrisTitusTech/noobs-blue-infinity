@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
-  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-  <TextureInfo item="TargetBox.tga">
-    <Size>
-      <CX>128</CX>
-      <CY>32</CY>
-    </Size>
-  </TextureInfo>
-  <Ui2DAnimation item="A_TargetBoxTop">
-    <Cycle>false</Cycle>
-    <Frames>
-      <Texture>TargetBox.tga</Texture>
-      <Location>
-        <X>1</X>
-        <Y>1</Y>
-      </Location>
-      <Size>
-        <CX>114</CX>
-        <CY>2</CY>
-      </Size>
-    </Frames>
-  </Ui2DAnimation>
-  <Ui2DAnimation item="A_TargetBoxBottom">
-    <Cycle>false</Cycle>
-    <Frames>
-      <Texture>TargetBox.tga</Texture>
-      <Location>
-        <X>1</X>
-        <Y>26</Y>
-      </Location>
-      <Size>
-        <CX>114</CX>
-        <CY>2</CY>
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<TextureInfo item="TargetBox.tga">
+		<Size>
+			<CX>128</CX>
+			<CY>32</CY>
+		</Size>
+	</TextureInfo>
+	<Ui2DAnimation item="A_TargetBoxTop">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>TargetBox.tga</Texture>
+			<Location>
+				<X>1</X>
+				<Y>1</Y>
+			</Location>
+			<Size>
+				<CX>114</CX>
+				<CY>2</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+	<Ui2DAnimation item="A_TargetBoxBottom">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>TargetBox.tga</Texture>
+			<Location>
+				<X>1</X>
+				<Y>26</Y>
+			</Location>
+			<Size>
+				<CX>114</CX>
+				<CY>2</CY>
       </Size>
     </Frames>
   </Ui2DAnimation>
@@ -96,8 +96,8 @@
     <Animation>A_TargetBoxBottom</Animation>
     <AutoDraw>false</AutoDraw>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>21</TopAnchorOffset>
-    <BottomAnchorOffset>23</BottomAnchorOffset>
+    <TopAnchorOffset>30</TopAnchorOffset>
+    <BottomAnchorOffset>32</BottomAnchorOffset>
     <LeftAnchorOffset>0</LeftAnchorOffset>
     <RightAnchorOffset>0</RightAnchorOffset>
     <TopAnchorToTop>true</TopAnchorToTop>
@@ -111,7 +111,7 @@
     <AutoDraw>false</AutoDraw>
     <AutoStretch>true</AutoStretch>
     <TopAnchorOffset>3</TopAnchorOffset>
-    <BottomAnchorOffset>23</BottomAnchorOffset>
+    <BottomAnchorOffset>30</BottomAnchorOffset>
     <LeftAnchorOffset>0</LeftAnchorOffset>
     <RightAnchorOffset>2</RightAnchorOffset>
     <TopAnchorToTop>true</TopAnchorToTop>
@@ -125,7 +125,7 @@
     <AutoDraw>false</AutoDraw>
     <AutoStretch>true</AutoStretch>
     <TopAnchorOffset>3</TopAnchorOffset>
-    <BottomAnchorOffset>23</BottomAnchorOffset>
+    <BottomAnchorOffset>30</BottomAnchorOffset>
     <LeftAnchorOffset>2</LeftAnchorOffset>
     <RightAnchorOffset>0</RightAnchorOffset>
     <TopAnchorToTop>true</TopAnchorToTop>
@@ -139,9 +139,9 @@
     <AutoDraw>false</AutoDraw>
     <AutoStretch>true</AutoStretch>
     <LeftAnchorOffset>0</LeftAnchorOffset>
-    <TopAnchorOffset>-2</TopAnchorOffset>
+    <TopAnchorOffset>-1</TopAnchorOffset>
     <RightAnchorOffset>0</RightAnchorOffset>
-    <BottomAnchorOffset>23</BottomAnchorOffset>
+    <BottomAnchorOffset>32</BottomAnchorOffset>
     <BottomAnchorToTop>true</BottomAnchorToTop>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </StaticAnimation>
@@ -168,8 +168,8 @@
     <ScreenID>T_Label</ScreenID>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>32</X>
-      <Y>12</Y>
+      <X>26</X>
+      <Y>13</Y>
     </Location>
     <Size>
       <CX>7</CX>
@@ -187,8 +187,8 @@
     </TextColor>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>40</X>
-      <Y>-4</Y>
+      <X>34</X>
+      <Y>-3</Y>
     </Location>
     <Size>
       <CX>163</CX>
@@ -200,7 +200,7 @@
     <Style_VScroll>false</Style_VScroll>
     <Style_HScroll>false</Style_HScroll>
     <Style_Transparent>false</Style_Transparent>
-    <TooltipReference />
+    <TooltipReference/>
     <FillTint>
       <R>255</R>
       <G>0</G>
@@ -227,7 +227,7 @@
     <RelativePosition>true</RelativePosition>
     <Location>
       <X>195</X>
-      <Y>8</Y>
+      <Y>11</Y>
     </Location>
     <Size>
       <CX>22</CX>
@@ -249,7 +249,7 @@
     <RelativePosition>true</RelativePosition>
     <Location>
       <X>215</X>
-      <Y>8</Y>
+      <Y>11</Y>
     </Location>
     <Size>
       <CX>16</CX>
@@ -271,7 +271,7 @@
     <!--<Font>3</Font> -->
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>40</X>
+      <X>34</X>
       <Y>21</Y>
     </Location>
     <Size>
@@ -300,154 +300,6 @@
       <LinesFill>A_GaugeLinesFill</LinesFill>
     </GaugeDrawTemplate>
   </Gauge>
-  <Label item="MQ_TargetLevel">
-    <ScreenID>MQ_TargetLevel</ScreenID>
-    <Style_Tooltip>false</Style_Tooltip>
-    <EQType>9999</EQType>
-    <Font>5</Font>
-    <TooltipReference>${Target.Level}</TooltipReference>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>5</X>
-      <Y>3</Y>
-    </Location>
-    <Size>
-      <CX>28</CX>
-      <CY>22</CY>
-    </Size>
-    <Text>70</Text>
-    <TextColor>
-      <R>255</R>
-      <G>255</G>
-      <B>255</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>true</AlignCenter>
-    <AlignRight>false</AlignRight>
-    <AlignLeft>false</AlignLeft>
-  </Label>
-  <Label item="A_TLVL_Label">
-    <ScreenID>TLVL_Label</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>5</X>
-      <Y>25</Y>
-    </Location>
-    <Size>
-      <CX>19</CX>
-      <CY>13</CY>
-    </Size>
-    <Text>LVL</Text>
-    <TextColor>
-      <R>255</R>
-      <G>255</G>
-      <B>0</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>False</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <Label item="MQ_TargetClass">
-    <ScreenID>MQ_TargetClass</ScreenID>
-    <Style_Tooltip>false</Style_Tooltip>
-    <EQType>9999</EQType>
-    <Font>2</Font>
-    <TooltipReference>${Target.Class.ShortName}</TooltipReference>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>29</X>
-      <Y>23</Y>
-    </Location>
-    <Size>
-      <CX>99</CX>
-      <CY>15</CY>
-    </Size>
-    <Text>Warrior</Text>
-    <TextColor>
-      <R>255</R>
-      <G>255</G>
-      <B>255</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-    <AlignLeft>true</AlignLeft>
-  </Label>
-  <Label item="MQ_TargetY">
-    <ScreenID>MQ_TargetY</ScreenID>
-    <Style_Tooltip>false</Style_Tooltip>
-    <EQType>9999</EQType>
-    <Font>2</Font>
-    <TooltipReference>${If[${Target.ID},Y: ${Int[${Target.Y}]},]}</TooltipReference>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>124</X>
-      <Y>23</Y>
-    </Location>
-    <Size>
-      <CX>49</CX>
-      <CY>15</CY>
-    </Size>
-    <Text>Y:-99999</Text>
-    <TextColor>
-      <R>255</R>
-      <G>255</G>
-      <B>255</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignLeft>true</AlignLeft>
-  </Label>
-  <Label item="MQ_TargetX">
-    <ScreenID>MQ_TargetX</ScreenID>
-    <Style_Tooltip>false</Style_Tooltip>
-    <EQType>9999</EQType>
-    <Font>2</Font>
-    <TooltipReference>${If[${Target.ID},X: ${Int[${Target.X}]},]}</TooltipReference>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>124</X>
-      <Y>32</Y>
-    </Location>
-    <Size>
-      <CX>44</CX>
-      <CY>15</CY>
-    </Size>
-    <Text>X:-99999</Text>
-    <TextColor>
-      <R>255</R>
-      <G>255</G>
-      <B>255</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignLeft>true</AlignLeft>
-  </Label>
-  <Label item="MQ_TargetDirection">
-    <ScreenID>MQ_TargetDirection</ScreenID>
-    <Style_Tooltip>false</Style_Tooltip>
-    <EQType>9999</EQType>
-    <Font>2</Font>
-    <TooltipReference>${Target.HeadingTo}</TooltipReference>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>93</X>
-      <Y>23</Y>
-    </Location>
-    <Size>
-      <CX>30</CX>
-      <CY>15</CY>
-    </Size>
-    <Text>SSW</Text>
-    <TextColor>
-      <R>255</R>
-      <G>255</G>
-      <B>255</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>true</AlignCenter>
-    <AlignRight>false</AlignRight>
-    <AlignLeft>false</AlignLeft>
-  </Label>
   <!-- Target of target requested -->
   <Ui2DAnimation item="HoTTLabel">
     <Cycle>true</Cycle>
@@ -473,7 +325,7 @@
     <RelativePosition>true</RelativePosition>
     <Location>
       <X>2</X>
-      <Y>69</Y>
+      <Y>45</Y>
     </Location>
     <Size>
       <CX>31</CX>
@@ -482,7 +334,7 @@
     <Animation>HoTTLabel</Animation>
   </StaticAnimation>
   <Gauge item="A_HoTT_HP">
-    <ScreenID>TargetOfTarget_HP</ScreenID>
+    <ScreenID>HoTT_HP</ScreenID>
     <Font>1</Font>
     <TextColor>
       <R>240</R>
@@ -492,7 +344,7 @@
     <RelativePosition>true</RelativePosition>
     <Location>
       <X>34</X>
-      <Y>53</Y>
+      <Y>29</Y>
     </Location>
     <Size>
       <CX>163</CX>
@@ -504,7 +356,7 @@
     <Style_VScroll>false</Style_VScroll>
     <Style_HScroll>false</Style_HScroll>
     <Style_Transparent>false</Style_Transparent>
-    <TooltipReference />
+    <TooltipReference/>
     <FillTint>
       <R>255</R>
       <G>0</G>
@@ -525,13 +377,13 @@
     <Text>SomeNastyMob</Text>
   </Gauge>
   <Label item="A_HoTT_HPLabel">
-    <ScreenID>TargetOfTarget_HPLabel</ScreenID>
+    <ScreenID>HoTT_HPLabel</ScreenID>
     <EQType>120</EQType>
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
       <X>195</X>
-      <Y>65</Y>
+      <Y>43</Y>
     </Location>
     <Size>
       <CX>22</CX>
@@ -549,11 +401,11 @@
     <AlignLeft>false</AlignLeft>
   </Label>
   <Label item="A_HoTT_HPPercLabel">
-    <ScreenID>TargetOfTarget_HPPercLabel</ScreenID>
+    <ScreenID>HoTT_HPPercLabel</ScreenID>
     <RelativePosition>true</RelativePosition>
     <Location>
       <X>215</X>
-      <Y>65</Y>
+      <Y>43</Y>
     </Location>
     <Size>
       <CX>16</CX>
@@ -570,1966 +422,49 @@
     <AlignRight>false</AlignRight>
     <Font>1</Font>
   </Label>
+  <Button item="Target_Buff_Template">
+		<ScreenID>TargetBuffSlot</ScreenID>
+		<Size>
+			<CX>24</CX>
+			<CY>24</CY>
+		</Size>
+		<Template>BDT_TargetBuff</Template>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<DecalOffset>
+			<X>2</X>
+			<Y>2</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>20</CX>
+			<CY>20</CY>
+		</DecalSize>
+	</Button>
+	<TileLayoutBox item="Target_Buttons">
+		<ScreenID>TargetBuffsButtons</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Transparent>true</Style_Transparent>
+		<Spacing>0</Spacing>
+		<SecondarySpacing>0</SecondarySpacing>
+		<HorizontalFirst>true</HorizontalFirst>
+		<AnchorToTop>true</AnchorToTop>
+		<AnchorToLeft>true</AnchorToLeft>
+		<FirstPieceTemplate>true</FirstPieceTemplate>
+		<Pieces>Target_Buff_Template</Pieces>
+	</TileLayoutBox>
   <!-- Target of target requested -->
-  <Button item="Target_Buff0_Button">
-    <ScreenID>Buff0</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff1_Button">
-    <ScreenID>Buff1</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff2_Button">
-    <ScreenID>Buff2</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff3_Button">
-    <ScreenID>Buff3</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff4_Button">
-    <ScreenID>Buff4</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff5_Button">
-    <ScreenID>Buff5</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff6_Button">
-    <ScreenID>Buff6</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff7_Button">
-    <ScreenID>Buff7</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff8_Button">
-    <ScreenID>Buff8</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff9_Button">
-    <ScreenID>Buff9</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff10_Button">
-    <ScreenID>Buff10</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff11_Button">
-    <ScreenID>Buff11</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff12_Button">
-    <ScreenID>Buff12</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff13_Button">
-    <ScreenID>Buff13</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff14_Button">
-    <ScreenID>Buff14</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff15_Button">
-    <ScreenID>Buff15</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff16_Button">
-    <ScreenID>Buff16</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff17_Button">
-    <ScreenID>Buff17</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff18_Button">
-    <ScreenID>Buff18</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff19_Button">
-    <ScreenID>Buff19</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff20_Button">
-    <ScreenID>Buff20</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff21_Button">
-    <ScreenID>Buff21</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff22_Button">
-    <ScreenID>Buff22</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff23_Button">
-    <ScreenID>Buff23</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff24_Button">
-    <ScreenID>Buff24</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff25_Button">
-    <ScreenID>Buff25</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff26_Button">
-    <ScreenID>Buff26</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff27_Button">
-    <ScreenID>Buff27</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff28_Button">
-    <ScreenID>Buff28</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff29_Button">
-    <ScreenID>Buff29</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff30_Button">
-    <ScreenID>Buff30</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff31_Button">
-    <ScreenID>Buff31</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff32_Button">
-    <ScreenID>Buff32</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff33_Button">
-    <ScreenID>Buff33</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff34_Button">
-    <ScreenID>Buff34</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff35_Button">
-    <ScreenID>Buff35</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff36_Button">
-    <ScreenID>Buff36</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff37_Button">
-    <ScreenID>Buff37</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff38_Button">
-    <ScreenID>Buff38</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff39_Button">
-    <ScreenID>Buff39</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff40_Button">
-    <ScreenID>Buff40</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff41_Button">
-    <ScreenID>Buff41</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff42_Button">
-    <ScreenID>Buff42</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff43_Button">
-    <ScreenID>Buff43</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff44_Button">
-    <ScreenID>Buff44</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff45_Button">
-    <ScreenID>Buff45</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff46_Button">
-    <ScreenID>Buff46</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff47_Button">
-    <ScreenID>Buff47</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff48_Button">
-    <ScreenID>Buff48</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff49_Button">
-    <ScreenID>Buff49</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff50_Button">
-    <ScreenID>Buff50</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff51_Button">
-    <ScreenID>Buff51</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff52_Button">
-    <ScreenID>Buff52</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff53_Button">
-    <ScreenID>Buff53</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff54_Button">
-    <ScreenID>Buff54</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff55_Button">
-    <ScreenID>Buff55</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff56_Button">
-    <ScreenID>Buff56</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff57_Button">
-    <ScreenID>Buff57</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff58_Button">
-    <ScreenID>Buff58</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff59_Button">
-    <ScreenID>Buff59</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff60_Button">
-    <ScreenID>Buff60</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff61_Button">
-    <ScreenID>Buff61</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff62_Button">
-    <ScreenID>Buff62</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff63_Button">
-    <ScreenID>Buff63</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff64_Button">
-    <ScreenID>Buff64</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff65_Button">
-    <ScreenID>Buff65</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff66_Button">
-    <ScreenID>Buff66</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff67_Button">
-    <ScreenID>Buff67</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff68_Button">
-    <ScreenID>Buff68</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff69_Button">
-    <ScreenID>Buff69</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff70_Button">
-    <ScreenID>Buff70</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff71_Button">
-    <ScreenID>Buff71</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff72_Button">
-    <ScreenID>Buff72</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff73_Button">
-    <ScreenID>Buff73</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff74_Button">
-    <ScreenID>Buff74</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff75_Button">
-    <ScreenID>Buff75</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff76_Button">
-    <ScreenID>Buff76</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff77_Button">
-    <ScreenID>Buff77</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff78_Button">
-    <ScreenID>Buff78</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff79_Button">
-    <ScreenID>Buff79</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff80_Button">
-    <ScreenID>Buff80</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff81_Button">
-    <ScreenID>Buff81</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff82_Button">
-    <ScreenID>Buff82</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff83_Button">
-    <ScreenID>Buff83</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="Target_Buff84_Button">
-    <ScreenID>Buff84</ScreenID>
-    <Size>
-      <CX>19</CX>
-      <CY>19</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-	 </DecalSize>
-  </Button>
-    <Button item="Target_Buff85_Button">
-    <ScreenID>Buff85</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff86_Button">
-    <ScreenID>Buff86</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff87_Button">
-    <ScreenID>Buff87</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff88_Button">
-    <ScreenID>Buff88</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff89_Button">
-    <ScreenID>Buff89</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff90_Button">
-    <ScreenID>Buff90</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-	 <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff91_Button">
-    <ScreenID>Buff91</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff92_Button">
-    <ScreenID>Buff92</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff93_Button">
-    <ScreenID>Buff93</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-	<CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff94_Button">
-    <ScreenID>Buff94</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff95_Button">
-    <ScreenID>Buff95</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>20</CX>
-      <CY>20</CY>
-    </DecalSize>
-  </Button>
-    <Button item="Target_Buff96_Button">
-    <ScreenID>Buff96</ScreenID>
-    <Size>
-      <CX>24</CX>
-      <CY>24</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <Style_Checkbox>false</Style_Checkbox>
-    <DecalOffset>
-      <X>2</X>
-      <Y>2</Y>
-    </DecalOffset>
-    <DecalSize>			 
-      <CX>20</CX>			 
-      <CY>20</CY>			
-    </DecalSize>
-  </Button>
-  <TileLayoutBox item="Target_Buttons">
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <RightAnchorToLeft>false</RightAnchorToLeft>
-    <Style_Transparent>true</Style_Transparent>
-    <Spacing>0</Spacing>
-    <SecondarySpacing>0</SecondarySpacing>
-    <HorizontalFirst>true</HorizontalFirst>
-    <AnchorToTop>true</AnchorToTop>
-    <AnchorToLeft>true</AnchorToLeft>
-    <FirstPieceTemplate>true</FirstPieceTemplate>
-    <Pieces>Target_Buff0_Button</Pieces>
-    <Pieces>Target_Buff1_Button</Pieces>
-    <Pieces>Target_Buff2_Button</Pieces>
-    <Pieces>Target_Buff3_Button</Pieces>
-    <Pieces>Target_Buff4_Button</Pieces>
-    <Pieces>Target_Buff5_Button</Pieces>
-    <Pieces>Target_Buff6_Button</Pieces>
-    <Pieces>Target_Buff7_Button</Pieces>
-    <Pieces>Target_Buff8_Button</Pieces>
-    <Pieces>Target_Buff9_Button</Pieces>
-    <Pieces>Target_Buff10_Button</Pieces>
-    <Pieces>Target_Buff11_Button</Pieces>
-    <Pieces>Target_Buff12_Button</Pieces>
-    <Pieces>Target_Buff13_Button</Pieces>
-    <Pieces>Target_Buff14_Button</Pieces>
-    <Pieces>Target_Buff15_Button</Pieces>
-    <Pieces>Target_Buff16_Button</Pieces>
-    <Pieces>Target_Buff17_Button</Pieces>
-    <Pieces>Target_Buff18_Button</Pieces>
-    <Pieces>Target_Buff19_Button</Pieces>
-    <Pieces>Target_Buff20_Button</Pieces>
-    <Pieces>Target_Buff21_Button</Pieces>
-    <Pieces>Target_Buff22_Button</Pieces>
-    <Pieces>Target_Buff23_Button</Pieces>
-    <Pieces>Target_Buff24_Button</Pieces>
-    <Pieces>Target_Buff25_Button</Pieces>
-    <Pieces>Target_Buff26_Button</Pieces>
-    <Pieces>Target_Buff27_Button</Pieces>
-    <Pieces>Target_Buff28_Button</Pieces>
-    <Pieces>Target_Buff29_Button</Pieces>
-    <Pieces>Target_Buff30_Button</Pieces>
-    <Pieces>Target_Buff31_Button</Pieces>
-    <Pieces>Target_Buff32_Button</Pieces>
-    <Pieces>Target_Buff33_Button</Pieces>
-    <Pieces>Target_Buff34_Button</Pieces>
-    <Pieces>Target_Buff35_Button</Pieces>
-    <Pieces>Target_Buff36_Button</Pieces>
-    <Pieces>Target_Buff37_Button</Pieces>
-    <Pieces>Target_Buff38_Button</Pieces>
-    <Pieces>Target_Buff39_Button</Pieces>
-    <Pieces>Target_Buff40_Button</Pieces>
-    <Pieces>Target_Buff41_Button</Pieces>
-    <Pieces>Target_Buff42_Button</Pieces>
-    <Pieces>Target_Buff43_Button</Pieces>
-    <Pieces>Target_Buff44_Button</Pieces>
-    <Pieces>Target_Buff45_Button</Pieces>
-    <Pieces>Target_Buff46_Button</Pieces>
-    <Pieces>Target_Buff47_Button</Pieces>
-    <Pieces>Target_Buff48_Button</Pieces>
-    <Pieces>Target_Buff49_Button</Pieces>
-    <Pieces>Target_Buff50_Button</Pieces>
-    <Pieces>Target_Buff51_Button</Pieces>
-    <Pieces>Target_Buff52_Button</Pieces>
-    <Pieces>Target_Buff53_Button</Pieces>
-    <Pieces>Target_Buff54_Button</Pieces>
-    <Pieces>Target_Buff55_Button</Pieces>
-    <Pieces>Target_Buff56_Button</Pieces>
-    <Pieces>Target_Buff57_Button</Pieces>
-    <Pieces>Target_Buff58_Button</Pieces>
-    <Pieces>Target_Buff59_Button</Pieces>
-    <Pieces>Target_Buff60_Button</Pieces>
-    <Pieces>Target_Buff61_Button</Pieces>
-    <Pieces>Target_Buff62_Button</Pieces>
-    <Pieces>Target_Buff63_Button</Pieces>
-    <Pieces>Target_Buff64_Button</Pieces>
-    <Pieces>Target_Buff65_Button</Pieces>
-    <Pieces>Target_Buff66_Button</Pieces>
-    <Pieces>Target_Buff67_Button</Pieces>
-    <Pieces>Target_Buff68_Button</Pieces>
-    <Pieces>Target_Buff69_Button</Pieces>
-    <Pieces>Target_Buff70_Button</Pieces>
-    <Pieces>Target_Buff71_Button</Pieces>
-    <Pieces>Target_Buff72_Button</Pieces>
-    <Pieces>Target_Buff73_Button</Pieces>
-    <Pieces>Target_Buff74_Button</Pieces>
-    <Pieces>Target_Buff75_Button</Pieces>
-    <Pieces>Target_Buff76_Button</Pieces>
-    <Pieces>Target_Buff77_Button</Pieces>
-    <Pieces>Target_Buff78_Button</Pieces>
-    <Pieces>Target_Buff79_Button</Pieces>
-    <Pieces>Target_Buff80_Button</Pieces>
-    <Pieces>Target_Buff81_Button</Pieces>
-    <Pieces>Target_Buff82_Button</Pieces>
-    <Pieces>Target_Buff83_Button</Pieces>
-    <Pieces>Target_Buff84_Button</Pieces>
-	<Pieces>Target_Buff85_Button</Pieces>
-	<Pieces>Target_Buff86_Button</Pieces>
-	<Pieces>Target_Buff87_Button</Pieces>
-	<Pieces>Target_Buff88_Button</Pieces>
-	<Pieces>Target_Buff89_Button</Pieces>
-	<Pieces>Target_Buff90_Button</Pieces>
-	<Pieces>Target_Buff91_Button</Pieces>
-	<Pieces>Target_Buff92_Button</Pieces>
-	<Pieces>Target_Buff93_Button</Pieces>
-	<Pieces>Target_Buff94_Button</Pieces>
-	<Pieces>Target_Buff95_Button</Pieces>
-	<Pieces>Target_Buff96_Button</Pieces>
-  </TileLayoutBox>
+
   <Screen item="Target_BuffWindow">
     <ScreenID>BuffWindow</ScreenID>
     <RelativePosition>true</RelativePosition>
     <AutoStretch>true</AutoStretch>
     <LeftAnchorOffset>-1</LeftAnchorOffset>
-    <TopAnchorOffset>79</TopAnchorOffset>
+    <TopAnchorOffset>68</TopAnchorOffset>
     <RightAnchorOffset>-1</RightAnchorOffset>
     <BottomAnchorOffset>-1</BottomAnchorOffset>
     <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -2546,6 +481,7 @@
     <Style_Sizable>false</Style_Sizable>
     <Pieces>TileLayoutBox:Target_Buttons</Pieces>
   </Screen>
+
   <Label item="Target_AggroPctPlayerLabel">
 		<ScreenID>Target_AggroPctPlayerLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -2600,9 +536,10 @@
 		<BottomAnchorOffset>67</BottomAnchorOffset>
 		<LeftAnchorOffset>35</LeftAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-	</Label>					  
+	</Label>
+
   <Screen item="TargetWindow">
-    <ScreenID />
+    <ScreenID/>
     <RelativePosition>false</RelativePosition>
     <Location>
       <X>516</X>
@@ -2610,40 +547,35 @@
     </Location>
     <Size>
       <CX>242</CX>
-      <CY>150</CY>
+      <CY>110</CY>
     </Size>
-    <Text />
+    <Text/>
     <Style_VScroll>false</Style_VScroll>
-	<Style_HScroll>false</Style_HScroll>
-	<Style_Transparent>false</Style_Transparent>
-	<TooltipReference>Your Current Target</TooltipReference>
-	<DrawTemplate>WDT_CustomB</DrawTemplate>
-	<Style_Titlebar>true</Style_Titlebar>
-	<Style_Closebox>false</Style_Closebox>
-	<Style_Minimizebox>false</Style_Minimizebox>
-	<Style_Border>true</Style_Border>
-	<Style_Sizable>true</Style_Sizable>
-	<Escapable>false</Escapable>
-	<Pieces>Target_HP</Pieces>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <TooltipReference>Your Current Target</TooltipReference>
+    <DrawTemplate>WDT_CustomB</DrawTemplate>
+    <Style_Titlebar>true</Style_Titlebar>
+    <Style_Closebox>false</Style_Closebox>
+    <Style_Minimizebox>false</Style_Minimizebox>
+    <Style_Border>true</Style_Border>
+    <Style_Sizable>true</Style_Sizable>
+    <Pieces>Target_HP</Pieces>
     <Pieces>Target_HPLabel</Pieces>
     <Pieces>Target_HPPercLabel</Pieces>
     <Pieces>Infiniti_CastingGauge</Pieces>
     <Pieces>T_Label</Pieces>
-    <Pieces>MQ_TargetLevel</Pieces>
-    <Pieces>A_TLVL_Label</Pieces>
-    <Pieces>MQ_TargetClass</Pieces>
-    <Pieces>MQ_TargetX</Pieces>
-    <Pieces>MQ_TargetY</Pieces>
-    <Pieces>MQ_TargetDirection</Pieces>
     <!-- Target of target requested -->
     <Pieces>A_HoTTLabel</Pieces>
     <Pieces>A_HoTT_HP</Pieces>
     <Pieces>A_HoTT_HPLabel</Pieces>
     <Pieces>A_HoTT_HPPercLabel</Pieces>
     <!-- Target of target requested -->
-    <Pieces>Target_AggroPctPlayerLabel</Pieces>
+
+	<Pieces>Target_AggroPctPlayerLabel</Pieces>
 	<Pieces>Target_AggroNameSecondaryLabel</Pieces>
 	<Pieces>Target_AggroPctSecondaryLabel</Pieces>
+
     <Pieces>A_TargetBoxStaticAnimTop</Pieces>
     <Pieces>A_TargetBoxStaticAnimBottom</Pieces>
     <Pieces>A_TargetBoxStaticAnimLeft</Pieces>

@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
   <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <Button item="SDBW_Player_Buff_Template">
+		<ScreenID>Player_Buff_Template</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Size>
+			<CX>177</CX>
+			<CY>15</CY>
+		</Size>
+		<Template>BDT_PlayerBuff</Template>
+		<DecalOffset>
+			<X>140</X>
+			<Y>2</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>15</CX>
+			<CY>15</CY>
+		</DecalSize>
+	</Button>
+	<TileLayoutBox item="SDBW_Buttons">
+		<ScreenID>Buff_Buttons</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Transparent>true</Style_Transparent>
+		<Spacing>0</Spacing>
+		<SecondarySpacing>0</SecondarySpacing>
+		<HorizontalFirst>false</HorizontalFirst>
+		<AnchorToTop>true</AnchorToTop>
+		<AnchorToLeft>false</AnchorToLeft>
+		<FirstPieceTemplate>true</FirstPieceTemplate>
+		<Pieces>SDBW_Player_Buff_Template</Pieces>
+	</TileLayoutBox>
   <Label item="SDBW_Buff0_Place">
     <ScreenID>SDBW_Buff0Place</ScreenID>
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>1</Y>
+      <X>160</X>
+      <Y>0</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>1</Text>
     <TextColor>
@@ -28,12 +60,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>17</Y>
+      <X>160</X>
+      <Y>15</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>2</Text>
     <TextColor>
@@ -50,12 +82,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>34</Y>
+      <X>160</X>
+      <Y>30</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>3</Text>
     <TextColor>
@@ -72,12 +104,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>51</Y>
+      <X>160</X>
+      <Y>45</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>4</Text>
     <TextColor>
@@ -94,12 +126,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>68</Y>
+      <X>160</X>
+      <Y>60</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>5</Text>
     <TextColor>
@@ -116,12 +148,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>85</Y>
+      <X>160</X>
+      <Y>75</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>6</Text>
     <TextColor>
@@ -138,12 +170,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>102</Y>
+      <X>160</X>
+      <Y>90</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>7</Text>
     <TextColor>
@@ -160,12 +192,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>119</Y>
+      <X>160</X>
+      <Y>105</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>8</Text>
     <TextColor>
@@ -182,12 +214,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>136</Y>
+      <X>160</X>
+      <Y>120</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>9</Text>
     <TextColor>
@@ -204,12 +236,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>153</Y>
+      <X>160</X>
+      <Y>135</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>10</Text>
     <TextColor>
@@ -226,12 +258,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>170</Y>
+      <X>160</X>
+      <Y>150</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>11</Text>
     <TextColor>
@@ -248,12 +280,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>187</Y>
+      <X>160</X>
+      <Y>165</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>12</Text>
     <TextColor>
@@ -270,12 +302,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>204</Y>
+      <X>160</X>
+      <Y>180</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>13</Text>
     <TextColor>
@@ -292,12 +324,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>221</Y>
+      <X>160</X>
+      <Y>195</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>14</Text>
     <TextColor>
@@ -314,12 +346,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>238</Y>
+      <X>160</X>
+      <Y>210</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>15</Text>
     <TextColor>
@@ -336,12 +368,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>255</Y>
+      <X>160</X>
+      <Y>225</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>16</Text>
     <TextColor>
@@ -358,12 +390,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>272</Y>
+      <X>160</X>
+      <Y>240</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>17</Text>
     <TextColor>
@@ -380,12 +412,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>289</Y>
+      <X>160</X>
+      <Y>255</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>18</Text>
     <TextColor>
@@ -402,12 +434,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>306</Y>
+      <X>160</X>
+      <Y>270</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>19</Text>
     <TextColor>
@@ -424,12 +456,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>323</Y>
+      <X>160</X>
+      <Y>285</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>20</Text>
     <TextColor>
@@ -446,12 +478,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>340</Y>
+      <X>160</X>
+      <Y>300</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>21</Text>
     <TextColor>
@@ -468,12 +500,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>357</Y>
+      <X>160</X>
+      <Y>315</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>22</Text>
     <TextColor>
@@ -490,12 +522,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>374</Y>
+      <X>160</X>
+      <Y>330</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>23</Text>
     <TextColor>
@@ -512,12 +544,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>391</Y>
+      <X>160</X>
+      <Y>345</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>24</Text>
     <TextColor>
@@ -534,12 +566,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>408</Y>
+      <X>160</X>
+      <Y>360</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>25</Text>
     <TextColor>
@@ -556,12 +588,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>425</Y>
+      <X>160</X>
+      <Y>375</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>26</Text>
     <TextColor>
@@ -578,12 +610,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>442</Y>
+      <X>160</X>
+      <Y>390</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>27</Text>
     <TextColor>
@@ -600,12 +632,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>459</Y>
+      <X>160</X>
+      <Y>405</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>28</Text>
     <TextColor>
@@ -622,12 +654,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>476</Y>
+      <X>160</X>
+      <Y>420</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>29</Text>
     <TextColor>
@@ -644,12 +676,12 @@
     <Font>1</Font>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>150</X>
-      <Y>493</Y>
+      <X>160</X>
+      <Y>435</Y>
     </Location>
     <Size>
       <CX>16</CX>
-      <CY>16</CY>
+      <CY>15</CY>
     </Size>
     <Text>30</Text>
     <TextColor>
@@ -661,936 +693,6 @@
     <AlignCenter>false</AlignCenter>
     <AlignRight>true</AlignRight>
   </Label>
-  <Button item="SDBW_Buff0_Button">
-    <ScreenID>Buff0</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>0</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff1_Button">
-    <ScreenID>Buff1</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>17</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff2_Button">
-    <ScreenID>Buff2</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>34</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff3_Button">
-    <ScreenID>Buff3</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>51</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff4_Button">
-    <ScreenID>Buff4</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>68</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff5_Button">
-    <ScreenID>Buff5</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>85</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff6_Button">
-    <ScreenID>Buff6</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>102</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff7_Button">
-    <ScreenID>Buff7</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>119</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff8_Button">
-    <ScreenID>Buff8</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>136</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff9_Button">
-    <ScreenID>Buff9</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>153</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff10_Button">
-    <ScreenID>Buff10</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>170</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff11_Button">
-    <ScreenID>Buff11</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>187</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff12_Button">
-    <ScreenID>Buff12</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>204</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff13_Button">
-    <ScreenID>Buff13</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>221</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff14_Button">
-    <ScreenID>Buff14</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>238</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff15_Button">
-    <ScreenID>Buff15</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>255</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff16_Button">
-    <ScreenID>Buff16</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>272</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff17_Button">
-    <ScreenID>Buff17</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>289</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff18_Button">
-    <ScreenID>Buff18</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>306</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff19_Button">
-    <ScreenID>Buff19</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>323</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff20_Button">
-    <ScreenID>Buff20</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>340</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff21_Button">
-    <ScreenID>Buff21</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>357</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff22_Button">
-    <ScreenID>Buff22</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>374</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff23_Button">
-    <ScreenID>Buff23</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>391</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff24_Button">
-    <ScreenID>Buff24</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>408</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff25_Button">
-    <ScreenID>Buff25</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>425</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff26_Button">
-    <ScreenID>Buff26</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>442</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff27_Button">
-    <ScreenID>Buff27</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>459</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff28_Button">
-    <ScreenID>Buff28</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>476</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
-  <Button item="SDBW_Buff29_Button">
-    <ScreenID>Buff29</ScreenID>
-    <Font>1</Font>
-    <RelativePosition>true</RelativePosition>
-    <Location>
-      <X>0</X>
-      <Y>493</Y>
-    </Location>
-    <Size>
-      <CX>170</CX>
-      <CY>17</CY>
-    </Size>
-    <Style_VScroll>false</Style_VScroll>
-    <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>false</Style_Transparent>
-    <!--<TooltipReference/>   -->
-    <Style_Checkbox>false</Style_Checkbox>
-    <!--<RadioGroup/>   -->
-    <ButtonDrawTemplate>
-      <Normal>BlueIconBackground</Normal>
-      <NormalDecal>BuffIcons</NormalDecal>
-    </ButtonDrawTemplate>
-    <DecalOffset>
-      <X>135</X>
-      <Y>0</Y>
-    </DecalOffset>
-    <DecalSize>
-      <CX>15</CX>
-      <CY>15</CY>
-    </DecalSize>
-  </Button>
   <Label item="SDBW_Buff0">
     <ScreenID>SDBW_Buff0Label</ScreenID>
     <EQType>600</EQType>
@@ -1598,12 +700,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>0</Y>
+      <X>20</X>
+      <Y>2</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell1</Text>
     <TextColor>
@@ -1622,12 +724,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
+      <X>20</X>
       <Y>17</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell2</Text>
     <TextColor>
@@ -1646,12 +748,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>34</Y>
+      <X>20</X>
+      <Y>32</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell3</Text>
     <TextColor>
@@ -1670,12 +772,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>51</Y>
+      <X>20</X>
+      <Y>47</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell4</Text>
     <TextColor>
@@ -1694,12 +796,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>68</Y>
+      <X>20</X>
+      <Y>62</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell5</Text>
     <TextColor>
@@ -1718,12 +820,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>85</Y>
+      <X>20</X>
+      <Y>77</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell6</Text>
     <TextColor>
@@ -1742,12 +844,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>102</Y>
+      <X>20</X>
+      <Y>92</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell7</Text>
     <TextColor>
@@ -1766,12 +868,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>119</Y>
+      <X>20</X>
+      <Y>107</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell8</Text>
     <TextColor>
@@ -1790,12 +892,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>136</Y>
+      <X>20</X>
+      <Y>122</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell9</Text>
     <TextColor>
@@ -1814,12 +916,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>153</Y>
+      <X>20</X>
+      <Y>137</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell10</Text>
     <TextColor>
@@ -1838,12 +940,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>170</Y>
+      <X>20</X>
+      <Y>152</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell11</Text>
     <TextColor>
@@ -1862,12 +964,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>187</Y>
+      <X>20</X>
+      <Y>167</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell12</Text>
     <TextColor>
@@ -1886,12 +988,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>204</Y>
+      <X>20</X>
+      <Y>182</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell13</Text>
     <TextColor>
@@ -1910,12 +1012,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>221</Y>
+      <X>20</X>
+      <Y>197</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell14</Text>
     <TextColor>
@@ -1934,12 +1036,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>238</Y>
+      <X>20</X>
+      <Y>212</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell15</Text>
     <TextColor>
@@ -1958,12 +1060,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>255</Y>
+      <X>20</X>
+      <Y>227</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell16</Text>
     <TextColor>
@@ -1982,12 +1084,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>272</Y>
+      <X>20</X>
+      <Y>242</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell17</Text>
     <TextColor>
@@ -2006,12 +1108,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>289</Y>
+      <X>20</X>
+      <Y>257</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell18</Text>
     <TextColor>
@@ -2030,12 +1132,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>306</Y>
+      <X>20</X>
+      <Y>272</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell19</Text>
     <TextColor>
@@ -2054,12 +1156,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>323</Y>
+      <X>20</X>
+      <Y>287</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell20</Text>
     <TextColor>
@@ -2078,12 +1180,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>340</Y>
+      <X>20</X>
+      <Y>302</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell21</Text>
     <TextColor>
@@ -2102,12 +1204,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>357</Y>
+      <X>20</X>
+      <Y>317</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell22</Text>
     <TextColor>
@@ -2126,12 +1228,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>374</Y>
+      <X>20</X>
+      <Y>332</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell23</Text>
     <TextColor>
@@ -2150,12 +1252,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>391</Y>
+      <X>20</X>
+      <Y>347</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell24</Text>
     <TextColor>
@@ -2174,12 +1276,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>408</Y>
+      <X>20</X>
+      <Y>362</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell25</Text>
     <TextColor>
@@ -2198,12 +1300,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>425</Y>
+      <X>20</X>
+      <Y>377</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell26</Text>
     <TextColor>
@@ -2222,12 +1324,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>442</Y>
+      <X>20</X>
+      <Y>392</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell27</Text>
     <TextColor>
@@ -2246,12 +1348,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>459</Y>
+      <X>20</X>
+      <Y>407</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell28</Text>
     <TextColor>
@@ -2270,12 +1372,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>476</Y>
+      <X>20</X>
+      <Y>422</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell29</Text>
     <TextColor>
@@ -2294,12 +1396,12 @@
     <Style_Tooltip>false</Style_Tooltip>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>3</X>
-      <Y>493</Y>
+      <X>20</X>
+      <Y>437</Y>
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>17</CY>
+      <CY>15</CY>
     </Size>
     <Text>Spell30</Text>
     <TextColor>
@@ -2321,7 +1423,7 @@
     </Location>
     <Size>
       <CX>170</CX>
-      <CY>518</CY>
+      <CY>454</CY>
     </Size>
     <Style_VScroll>false</Style_VScroll>
     <Style_HScroll>false</Style_HScroll>
@@ -2332,6 +1434,7 @@
     <Style_Minimizebox>false</Style_Minimizebox>
     <Style_Border>true</Style_Border>
     <Style_Sizable>true</Style_Sizable>
+	<Pieces>TileLayoutBox:SDBW_Buttons</Pieces>
     <Pieces>SDBW_Buff0_Place</Pieces>
     <Pieces>SDBW_Buff1_Place</Pieces>
     <Pieces>SDBW_Buff2_Place</Pieces>
@@ -2362,36 +1465,6 @@
 	<Pieces>SDBW_Buff27_Place</Pieces>
 	<Pieces>SDBW_Buff28_Place</Pieces>
 	<Pieces>SDBW_Buff29_Place</Pieces>
-    <Pieces>SDBW_Buff0_Button</Pieces>
-    <Pieces>SDBW_Buff1_Button</Pieces>
-    <Pieces>SDBW_Buff2_Button</Pieces>
-    <Pieces>SDBW_Buff3_Button</Pieces>
-    <Pieces>SDBW_Buff4_Button</Pieces>
-    <Pieces>SDBW_Buff5_Button</Pieces>
-    <Pieces>SDBW_Buff6_Button</Pieces>
-    <Pieces>SDBW_Buff7_Button</Pieces>
-    <Pieces>SDBW_Buff8_Button</Pieces>
-    <Pieces>SDBW_Buff9_Button</Pieces>
-    <Pieces>SDBW_Buff10_Button</Pieces>
-    <Pieces>SDBW_Buff11_Button</Pieces>
-    <Pieces>SDBW_Buff12_Button</Pieces>
-    <Pieces>SDBW_Buff13_Button</Pieces>
-    <Pieces>SDBW_Buff14_Button</Pieces>
-    <Pieces>SDBW_Buff15_Button</Pieces>
-    <Pieces>SDBW_Buff16_Button</Pieces>
-    <Pieces>SDBW_Buff17_Button</Pieces>
-    <Pieces>SDBW_Buff18_Button</Pieces>
-    <Pieces>SDBW_Buff19_Button</Pieces>
-	<Pieces>SDBW_Buff20_Button</Pieces>
-	<Pieces>SDBW_Buff21_Button</Pieces>
-	<Pieces>SDBW_Buff22_Button</Pieces>
-	<Pieces>SDBW_Buff23_Button</Pieces>
-	<Pieces>SDBW_Buff24_Button</Pieces>
-	<Pieces>SDBW_Buff25_Button</Pieces>
-	<Pieces>SDBW_Buff26_Button</Pieces>
-	<Pieces>SDBW_Buff27_Button</Pieces>
-	<Pieces>SDBW_Buff28_Button</Pieces>
-	<Pieces>SDBW_Buff29_Button</Pieces>
     <Pieces>SDBW_Buff0</Pieces>
     <Pieces>SDBW_Buff1</Pieces>
     <Pieces>SDBW_Buff2</Pieces>

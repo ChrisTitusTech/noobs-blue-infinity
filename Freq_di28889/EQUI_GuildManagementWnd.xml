@@ -14,11 +14,6 @@
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Text>Guildname of the Guildname</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -39,11 +34,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Dump your guild info to a file.</TooltipReference>
 		<Text>Dump</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Listbox item="GT_MemberList">
@@ -59,11 +49,6 @@
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Style_Border>true</Style_Border>
 		<Style_VScroll>true</Style_VScroll>
 		<Columns>
@@ -123,11 +108,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Make the selected Player the new Guild Leader (Guild Leader only).</TooltipReference>
 		<Text>Make Leader</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_PromoteButton">
@@ -146,11 +126,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Promote the selected player.</TooltipReference>
 		<Text>Promote</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_DemoteButton">
@@ -169,11 +144,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Demote the selected player.</TooltipReference>
 		<Text>Demote</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_RemoveButton">
@@ -192,11 +162,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Remove the player from the guild.</TooltipReference>
 		<Text>Remove</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_InviteButton">
@@ -215,23 +180,19 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Invite player(s) based on invite drop down selection choice.</TooltipReference>
 		<Text>Invite</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Combobox item="GT_InviteCombobox">
 		<ScreenID>InviteCombobox</ScreenID>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<AutoStretchList>true</AutoStretchList>
 		<TooltipReference>Select the functionality for the 'INVITE' button.</TooltipReference>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<LeftAnchorOffset>445</LeftAnchorOffset>
-		<TopAnchorOffset>32</TopAnchorOffset>
-		<RightAnchorOffset>565</RightAnchorOffset>
-		<BottomAnchorOffset>5</BottomAnchorOffset>
+		<LeftAnchorOffset>450</LeftAnchorOffset>
+		<TopAnchorOffset>28</TopAnchorOffset>
+		<RightAnchorOffset>560</RightAnchorOffset>
+		<BottomAnchorOffset>4</BottomAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -240,12 +201,7 @@
 			<CX>110</CX>
 			<CY>25</CY>
 		</Size>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<ListHeight>80</ListHeight>
+		<ListHeight>119</ListHeight>
 		<Button>BDT_Combo</Button>
 		<Style_Border>true</Style_Border>
 		<Choices>Invite to Guild</Choices>
@@ -271,11 +227,6 @@
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>true</Style_Checkbox>
 		<Text />
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Checkbox</Template>
 	</Button>
 	<Label item="GT_AltFlagLabel">
@@ -291,11 +242,6 @@
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Text>Alt</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -305,11 +251,6 @@
 		<RelativePosition>false</RelativePosition>
 		<DrawTemplate>WDT_Def</DrawTemplate>
 		<TabText>Roster</TabText>
-		<TabTextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -347,11 +288,6 @@
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Style_Border>true</Style_Border>
 		<Style_VScroll>true</Style_VScroll>
 		<Columns>
@@ -380,11 +316,6 @@
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Text>Public Note:</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -404,11 +335,6 @@
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 	</Editbox>
 	<Button item="GT_UpdatePublicButton">
 		<ScreenID>UpdatePublicButton</ScreenID>
@@ -426,11 +352,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Change the public note to the text input.</TooltipReference>
 		<Text>Update</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Label item="GT_PersonalLabel">
@@ -446,11 +367,6 @@
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Text>Personal Note:</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -470,11 +386,6 @@
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 	</Editbox>
 	<Button item="GT_UpdatePersonalButton">
 		<ScreenID>UpdatePersonalButton</ScreenID>
@@ -492,11 +403,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Change the personal note to the text input.</TooltipReference>
 		<Text>Update</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Page item="GT_NotePage">
@@ -504,11 +410,6 @@
 		<RelativePosition>false</RelativePosition>
 		<DrawTemplate>WDT_Def</DrawTemplate>
 		<TabText>Notes</TabText>
-		<TabTextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -544,11 +445,6 @@
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Style_Border>true</Style_Border>
 		<Style_VScroll>true</Style_VScroll>
 		<Columns>
@@ -562,7 +458,7 @@
 		<Columns>
 			<Width>140</Width>
 			<Heading>Trophy Tribute Status</Heading>
-		</Columns>	
+		</Columns>
 		<Columns>
 			<Width>85</Width>
 			<Heading>Donations</Heading>
@@ -588,11 +484,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<Text>Tribute Opt Out</Text>
 		<TooltipReference>Press this button to opt out of Guild Tribute benefits.</TooltipReference>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_TrophyTributeOptOutButton">
@@ -611,11 +502,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<Text>Trophy Tribute Opt Out</Text>
 		<TooltipReference>Press this button to opt out of Guild Trophy Tribute benefits.</TooltipReference>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Label item="GT_TributePoolLabel">
@@ -631,11 +517,6 @@
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Text>Tribute Points:</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>true</AlignRight>
@@ -653,11 +534,6 @@
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<EQType>122</EQType>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>true</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -667,11 +543,6 @@
 		<RelativePosition>false</RelativePosition>
 		<DrawTemplate>WDT_Def</DrawTemplate>
 		<TabText>Tribute</TabText>
-		<TabTextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -705,11 +576,6 @@
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Text>MOTD:</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -727,11 +593,6 @@
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Text />
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -752,11 +613,6 @@
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Style_Multiline>true</Style_Multiline>
 	</Editbox>
 	<Button item="GT_UpdateMOTDButton">
@@ -775,11 +631,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Update the MOTD for your guild.</TooltipReference>
 		<Text>Update</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<STMLbox item="GT_MOTDViewer">
@@ -792,7 +643,7 @@
 		<LeftAnchorOffset>98</LeftAnchorOffset>
 		<TopAnchorOffset>4</TopAnchorOffset>
 		<RightAnchorOffset>4</RightAnchorOffset>
-		<BottomAnchorOffset>50</BottomAnchorOffset>
+		<BottomAnchorOffset>150</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -804,19 +655,14 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>4</LeftAnchorOffset>
-		<TopAnchorOffset>58</TopAnchorOffset>
+		<TopAnchorOffset>158</TopAnchorOffset>
 		<RightAnchorOffset>90</RightAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
+		<BottomAnchorOffset>174</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Text>Guild Channel:</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -830,18 +676,13 @@
 		<Style_Border>true</Style_Border>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>98</LeftAnchorOffset>
-		<TopAnchorOffset>54</TopAnchorOffset>
+		<TopAnchorOffset>154</TopAnchorOffset>
 		<RightAnchorOffset>108</RightAnchorOffset>
-		<BottomAnchorOffset>78</BottomAnchorOffset>
+		<BottomAnchorOffset>178</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Style_Multiline>false</Style_Multiline>
 	</Editbox>
 	<Button item="GT_UpdateChannel">
@@ -849,9 +690,9 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>106</LeftAnchorOffset>
-		<TopAnchorOffset>54</TopAnchorOffset>
+		<TopAnchorOffset>154</TopAnchorOffset>
 		<RightAnchorOffset>56</RightAnchorOffset>
-		<BottomAnchorOffset>78</BottomAnchorOffset>
+		<BottomAnchorOffset>178</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -860,11 +701,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Update the Chat Channel for your guild (Leader only).</TooltipReference>
 		<Text>Update</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_JoinChannel">
@@ -872,9 +708,9 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>54</LeftAnchorOffset>
-		<TopAnchorOffset>54</TopAnchorOffset>
+		<TopAnchorOffset>154</TopAnchorOffset>
 		<RightAnchorOffset>4</RightAnchorOffset>
-		<BottomAnchorOffset>78</BottomAnchorOffset>
+		<BottomAnchorOffset>178</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -883,11 +719,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Join the guild's chat channel.</TooltipReference>
 		<Text>Join</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Label item="GT_URLLabel">
@@ -895,19 +726,14 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>4</LeftAnchorOffset>
-		<TopAnchorOffset>84</TopAnchorOffset>
+		<TopAnchorOffset>184</TopAnchorOffset>
 		<RightAnchorOffset>90</RightAnchorOffset>
-		<BottomAnchorOffset>102</BottomAnchorOffset>
+		<BottomAnchorOffset>202</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Text>Guild URL:</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -921,18 +747,13 @@
 		<Style_Border>true</Style_Border>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>98</LeftAnchorOffset>
-		<TopAnchorOffset>80</TopAnchorOffset>
+		<TopAnchorOffset>180</TopAnchorOffset>
 		<RightAnchorOffset>108</RightAnchorOffset>
-		<BottomAnchorOffset>104</BottomAnchorOffset>
+		<BottomAnchorOffset>204</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Style_Multiline>false</Style_Multiline>
 	</Editbox>
 	<Button item="GT_UpdateURL">
@@ -940,9 +761,9 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>106</LeftAnchorOffset>
-		<TopAnchorOffset>80</TopAnchorOffset>
+		<TopAnchorOffset>180</TopAnchorOffset>
 		<RightAnchorOffset>56</RightAnchorOffset>
-		<BottomAnchorOffset>104</BottomAnchorOffset>
+		<BottomAnchorOffset>204</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -951,11 +772,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Update the web URL for your guild (Leader only).</TooltipReference>
 		<Text>Update</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_GotoURL">
@@ -963,9 +779,9 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>54</LeftAnchorOffset>
-		<TopAnchorOffset>80</TopAnchorOffset>
+		<TopAnchorOffset>180</TopAnchorOffset>
 		<RightAnchorOffset>4</RightAnchorOffset>
-		<BottomAnchorOffset>104</BottomAnchorOffset>
+		<BottomAnchorOffset>204</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -974,11 +790,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Open a browser to the guild's web site URL.</TooltipReference>
 		<Text>View</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Page item="GT_ProfilePage">
@@ -986,11 +797,6 @@
 		<RelativePosition>false</RelativePosition>
 		<DrawTemplate>WDT_Def</DrawTemplate>
 		<TabText>Information</TabText>
-		<TabTextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -1034,11 +840,6 @@
 		<RightAnchorToRight>false</RightAnchorToRight>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Style_Border>true</Style_Border>
 		<Style_VScroll>true</Style_VScroll>
 		<Columns>
@@ -1067,11 +868,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Refresh banner list box</TooltipReference>
 		<Text>Refresh List</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Combobox item="GT_BannerFilter">
@@ -1100,11 +896,6 @@
 		<Choices>Arcane</Choices>
 		<Choices>Shadow</Choices>
 		<Choices>Nature</Choices>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 	</Combobox>
 	<STMLbox item="GT_BannerDescription">
 		<ScreenID>BannerDescription</ScreenID>
@@ -1142,11 +933,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Place the selected banner in the world at current location.</TooltipReference>
 		<Text>Plant Banner</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_SaveBannerSettings">
@@ -1166,11 +952,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Save the Guild Banner settings.</TooltipReference>
 		<Text>Save</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_CancelEditBanner">
@@ -1190,11 +971,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Place the selected banner in the world at current location.</TooltipReference>
 		<Text>Cancel edit</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_Layer1TexturePrev">
@@ -1214,11 +990,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Place the selected banner in the world at current location.</TooltipReference>
 		<Text>-</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_Layer1ColorBtn">
@@ -1239,11 +1010,6 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>false</Style_Checkbox>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Normal</Template>
 		<DecalOffset>
 			<X>2</X>
@@ -1271,11 +1037,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Place the selected banner in the world at current location.</TooltipReference>
 		<Text>+</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_Layer2TexturePrev">
@@ -1295,11 +1056,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Place the selected banner in the world at current location.</TooltipReference>
 		<Text>-</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_Layer2TextureNext">
@@ -1319,11 +1075,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Place the selected banner in the world at current location.</TooltipReference>
 		<Text>+</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_Layer2ColorBtn">
@@ -1344,11 +1095,6 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>false</Style_Checkbox>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Normal</Template>
 		<DecalOffset>
 			<X>2</X>
@@ -1363,11 +1109,6 @@
 		<ScreenID>Layer1Label</ScreenID>
 		<Font>3</Font>
 		<Text>Background</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>15</LeftAnchorOffset>
 		<TopAnchorOffset>260</TopAnchorOffset>
@@ -1385,11 +1126,6 @@
 		<ScreenID>Layer2Label</ScreenID>
 		<Font>3</Font>
 		<Text>Foreground</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>118</LeftAnchorOffset>
 		<TopAnchorOffset>260</TopAnchorOffset>
@@ -1407,11 +1143,6 @@
 		<ScreenID>TimeRemainingLabel</ScreenID>
 		<Font>3</Font>
 		<Text>Time Remaining:</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Size>
 			<CX>100</CX>
 			<CY>15</CY>
@@ -1426,11 +1157,6 @@
 		<ScreenID>TimeRemainingValueLabel</ScreenID>
 		<Font>3</Font>
 		<Text>00:00:00</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Size>
 			<CX>50</CX>
 			<CY>15</CY>
@@ -1458,11 +1184,6 @@
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>true</Style_Checkbox>
 		<Text />
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Checkbox</Template>
 	</Button>
 	<Label item="GT_ShowAllPossibleBannersLabel">
@@ -1480,11 +1201,6 @@
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<Text>Show All Possible</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -1506,11 +1222,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Remove the active banner from the world.</TooltipReference>
 		<Text>Remove Banner</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<Button item="GT_EditBannerButton">
@@ -1530,11 +1241,6 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Edit the Guild Banner settings.</TooltipReference>
 		<Text>Edit Settings</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
 	<!-- Specify the default textures here. -->
@@ -1608,11 +1314,6 @@
 		<RelativePosition>false</RelativePosition>
 		<DrawTemplate>WDT_Def</DrawTemplate>
 		<TabText>Banner</TabText>
-		<TabTextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TabTextColor>
 		<TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -1658,11 +1359,6 @@
 		</Size>
 		<Text>View</Text>
 		<Font>2</Font>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 	</Label>
 	<Button item="GT_ViewMembers_Btn">
 		<ScreenID>GT_ViewMembers_Btn</ScreenID>
@@ -1673,11 +1369,6 @@
 		</Size>
 		<Style_Checkbox>true</Style_Checkbox>
 		<RadioGroup>PermissionDisplay</RadioGroup>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Radio</Template>
 	</Button>
 	<Label item="GT_ViewMembers_Label">
@@ -1688,11 +1379,6 @@
 		</Size>
 		<Text>Members</Text>
 		<Font>2</Font>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 	</Label>
 	<Button item="GT_ViewRanks_Btn">
 		<ScreenID>GT_ViewRanks_Btn</ScreenID>
@@ -1703,11 +1389,6 @@
 		</Size>
 		<Style_Checkbox>true</Style_Checkbox>
 		<RadioGroup>PermissionDisplay</RadioGroup>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>	
 		<Template>BDT_Radio</Template>
 	</Button>
 	<Label item="GT_ViewRanks_Label">
@@ -1719,11 +1400,6 @@
 		</Size>
 		<Text>Ranks</Text>
 		<Font>2</Font>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 	</Label>
 	<HorizontalLayoutBox item="GT_View_Layout">
 		<ScreenID>GT_View_Layout</ScreenID>
@@ -1734,7 +1410,7 @@
 		</Location>
 		<Size>
 			<CX>200</CX>
-			<CY>24</CY>
+			<CY>18</CY>
 		</Size>
 		<Spacing>2</Spacing>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
@@ -1747,24 +1423,71 @@
 		<Pieces>GT_ViewRanks_Btn</Pieces>
 		<Pieces>GT_ViewRanks_Label</Pieces>
 	</HorizontalLayoutBox>
+	<Label item="GT_Access_Options_Label">
+		<ScreenID>GT_Access_Options_Label</ScreenID>
+		<Size>
+			<CX>90</CX>
+			<CY>24</CY>
+		</Size>
+		<Text>Access Options</Text>
+		<Font>2</Font>
+	</Label>
+	<Button item="GT_AutoEviction_Btn">
+		<ScreenID>GT_AutoEviction_Btn</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Size>
+			<CX>16</CX>
+			<CY>16</CY>
+		</Size>
+		<Style_Checkbox>true</Style_Checkbox>
+		<Template>BDT_Checkbox</Template>
+		<TooltipReference>Check this to automatically evict plots from your guild neighborhoods that are owned by non-guild members, after a grace period (Leader only).</TooltipReference>
+	</Button>
+	<Label item="GT_AutoEviction_Label">
+		<ScreenID />
+		<RelativePosition>true</RelativePosition>
+		<Size>
+			<CX>80</CX>
+			<CY>24</CY>
+		</Size>
+		<Text>Auto Eviction</Text>
+		<NoWrap>true</NoWrap>
+		<Font>2</Font>
+	</Label>
+	<HorizontalLayoutBox item="GT_Access_Options_Layout">
+		<ScreenID>GT_Access_Options_Layout</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>10</Y>
+		</Location>
+		<Size>
+			<CX>200</CX>
+			<CY>18</CY>
+		</Size>
+		<Spacing>4</Spacing>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<Style_Transparent>true</Style_Transparent>
+		<Style_Dividers>false</Style_Dividers>
+		<ResizeLast>false</ResizeLast>
+		<Pieces>GT_Access_Options_Label</Pieces>
+		<Pieces>GT_AutoEviction_Btn</Pieces>
+		<Pieces>GT_AutoEviction_Label</Pieces>
+	</HorizontalLayoutBox>
 	<Combobox item="GT_Ranks_Combobox">
 		<ScreenID>GT_Ranks_Combobox</ScreenID>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<AutoStretchList>true</AutoStretchList>
 		<Location>
 			<X>0</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>110</CX>
-			<CY>24</CY>
+			<CY>16</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<ListHeight>80</ListHeight>
+		<ListHeight>119</ListHeight>
 		<Button>BDT_Combo</Button>
 		<Style_Border>true</Style_Border>
 		<Choices>Leader</Choices>
@@ -1792,11 +1515,6 @@
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>true</Style_Checkbox>
 		<Text />
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Checkbox</Template>
 	</Button>
 	<Listbox item="GT_Permissions_List">
@@ -1806,11 +1524,6 @@
 		<TopAnchorOffset>35</TopAnchorOffset>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Style_Border>true</Style_Border>
 		<Style_AutoHScroll>true</Style_AutoHScroll>
 		<Style_HScroll>true</Style_HScroll>
@@ -1843,7 +1556,7 @@
 		<Columns>
 			<Width>20</Width>
 			<Header>Header_AccessRank3</Header>
-		</Columns>	
+		</Columns>
 		<Columns>
 			<Width>20</Width>
 			<Header>Header_AccessRank2</Header>
@@ -1860,12 +1573,6 @@
 		<TopAnchorOffset>35</TopAnchorOffset>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Spacing>10</Spacing>
 		<Style_Border>true</Style_Border>
 		<Style_AutoVScroll>true</Style_AutoVScroll>
 		<Style_VScroll>true</Style_VScroll>
@@ -1895,11 +1602,6 @@
 		<TopAnchorOffset>35</TopAnchorOffset>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Style_Border>true</Style_Border>
 		<Style_AutoVScroll>true</Style_AutoVScroll>
 		<Style_VScroll>true</Style_VScroll>
@@ -1943,6 +1645,7 @@
 		<MinHSize>275</MinHSize>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
 		<Style_Border>false</Style_Border>
+		<Pieces>HorizontalLayoutBox:GT_Access_Options_Layout</Pieces>
 		<Pieces>Listbox:GT_Permissions_List</Pieces>
 	</Screen>
 	<HorizontalLayoutBox item="GT_Access_Main_Layout">
@@ -1969,11 +1672,6 @@
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<DrawTemplate>WDT_Def</DrawTemplate>
 		<TabText>Access</TabText>
-		<TabTextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TabTextColor>
     <TabTextActiveColor>
 			<R>255</R>
 			<G>255</G>
@@ -2008,9 +1706,9 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>10</LeftAnchorOffset>
-		<TopAnchorOffset>24</TopAnchorOffset>
+		<TopAnchorOffset>23</TopAnchorOffset>
 		<RightAnchorOffset>26</RightAnchorOffset>
-		<BottomAnchorOffset>8</BottomAnchorOffset>
+		<BottomAnchorOffset>7</BottomAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -2018,11 +1716,6 @@
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>true</Style_Checkbox>
 		<Text />
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Checkbox</Template>
 	</Button>
 	<Label item="GT_ShowOfflineLabel">
@@ -2030,19 +1723,14 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>30</LeftAnchorOffset>
-		<TopAnchorOffset>24</TopAnchorOffset>
+		<TopAnchorOffset>23</TopAnchorOffset>
 		<RightAnchorOffset>128</RightAnchorOffset>
-		<BottomAnchorOffset>4</BottomAnchorOffset>
+		<BottomAnchorOffset>5</BottomAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Text>Show Offline</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -2052,9 +1740,9 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>128</LeftAnchorOffset>
-		<TopAnchorOffset>24</TopAnchorOffset>
+		<TopAnchorOffset>23</TopAnchorOffset>
 		<RightAnchorOffset>144</RightAnchorOffset>
-		<BottomAnchorOffset>8</BottomAnchorOffset>
+		<BottomAnchorOffset>7</BottomAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -2062,11 +1750,6 @@
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>true</Style_Checkbox>
 		<Text />
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Checkbox</Template>
 	</Button>
 	<Label item="GT_HideAltLabel">
@@ -2074,19 +1757,14 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>148</LeftAnchorOffset>
-		<TopAnchorOffset>24</TopAnchorOffset>
+		<TopAnchorOffset>23</TopAnchorOffset>
 		<RightAnchorOffset>276</RightAnchorOffset>
-		<BottomAnchorOffset>4</BottomAnchorOffset>
+		<BottomAnchorOffset>5</BottomAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Text>Hide Alts</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -2097,8 +1775,8 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>30</TopAnchorOffset>
 		<BottomAnchorOffset>1</BottomAnchorOffset>
-		<LeftAnchorOffset>405</LeftAnchorOffset>
-		<RightAnchorOffset>370</RightAnchorOffset>
+		<LeftAnchorOffset>380</LeftAnchorOffset>
+		<RightAnchorOffset>345</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -2110,15 +1788,15 @@
 		<ScreenID>GT_PerPage_Combobox</ScreenID>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>30</TopAnchorOffset>
-		<BottomAnchorOffset>0</BottomAnchorOffset>
-		<LeftAnchorOffset>370</LeftAnchorOffset>
-		<RightAnchorOffset>310</RightAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
+		<BottomAnchorOffset>5</BottomAnchorOffset>
+		<LeftAnchorOffset>345</LeftAnchorOffset>
+		<RightAnchorOffset>295</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<ListHeight>80</ListHeight>
+		<ListHeight>91</ListHeight>
 		<Button>BDT_Combo</Button>
 		<Style_Border>true</Style_Border>
 		<Choices>20</Choices>
@@ -2134,8 +1812,8 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>23</TopAnchorOffset>
 		<BottomAnchorOffset>5</BottomAnchorOffset>
-		<LeftAnchorOffset>305</LeftAnchorOffset>
-		<RightAnchorOffset>270</RightAnchorOffset>
+		<LeftAnchorOffset>290</LeftAnchorOffset>
+		<RightAnchorOffset>255</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -2149,8 +1827,8 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>21</TopAnchorOffset>
 		<BottomAnchorOffset>9</BottomAnchorOffset>
-		<LeftAnchorOffset>270</LeftAnchorOffset>
-		<RightAnchorOffset>248</RightAnchorOffset>
+		<LeftAnchorOffset>255</LeftAnchorOffset>
+		<RightAnchorOffset>233</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -2163,8 +1841,8 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>23</TopAnchorOffset>
 		<BottomAnchorOffset>5</BottomAnchorOffset>
-		<LeftAnchorOffset>246</LeftAnchorOffset>
-		<RightAnchorOffset>220</RightAnchorOffset>
+		<LeftAnchorOffset>231</LeftAnchorOffset>
+		<RightAnchorOffset>205</RightAnchorOffset>
 		<Style_Transparent>true</Style_Transparent>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
@@ -2179,8 +1857,8 @@
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>21</TopAnchorOffset>
 		<BottomAnchorOffset>9</BottomAnchorOffset>
-		<LeftAnchorOffset>220</LeftAnchorOffset>
-		<RightAnchorOffset>198</RightAnchorOffset>
+		<LeftAnchorOffset>205</LeftAnchorOffset>
+		<RightAnchorOffset>183</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -2191,20 +1869,15 @@
 		<ScreenID />
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<LeftAnchorOffset>190</LeftAnchorOffset>
+		<LeftAnchorOffset>177</LeftAnchorOffset>
 		<TopAnchorOffset>23</TopAnchorOffset>
-		<RightAnchorOffset>130</RightAnchorOffset>
-		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<RightAnchorOffset>115</RightAnchorOffset>
+		<BottomAnchorOffset>5</BottomAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Text>Members:</Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -2213,24 +1886,20 @@
 		<ScreenID>PlayerCount</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<LeftAnchorOffset>130</LeftAnchorOffset>
+		<LeftAnchorOffset>120</LeftAnchorOffset>
 		<TopAnchorOffset>23</TopAnchorOffset>
-		<RightAnchorOffset>40</RightAnchorOffset>
-		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<BottomAnchorOffset>5</BottomAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Text />
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
 	</Label>
+
 	<Screen item="GuildManagementWnd">
 		<ScreenID />
 		<RelativePosition>false</RelativePosition>
@@ -2242,6 +1911,8 @@
 			<CX>600</CX>
 			<CY>410</CY>
 		</Size>
+		<MinHSize>200</MinHSize>
+		<MinVSize>230</MinVSize>
 		<Text>Guild Management</Text>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -2249,6 +1920,7 @@
 		<TooltipReference>This is the Guild Management Window.</TooltipReference>
 		<DrawTemplate>WDT_Rounded</DrawTemplate>
 		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Qmarkbox>true</Style_Qmarkbox>
 		<Style_Closebox>true</Style_Closebox>
 		<Style_Minimizebox>true</Style_Minimizebox>
 		<Style_Border>true</Style_Border>
@@ -2256,8 +1928,6 @@
 		<Pieces>GT_GuildNameLabel</Pieces>
 		<Pieces>GT_DumpButton</Pieces>
 		<Pieces>GT_Subwindows</Pieces>
-		<Pieces>GT_PlayerCountLabelText</Pieces>
-		<Pieces>GT_PlayerCountLabel</Pieces>
 		<Pieces>GT_ShowOfflineButton</Pieces>
 		<Pieces>GT_ShowOfflineLabel</Pieces>
 		<Pieces>GT_HideAltButton</Pieces>
@@ -2270,5 +1940,7 @@
 		<Pieces>GT_PageLeft_Button</Pieces>
 		<Pieces>GT_PageIndex_Label</Pieces>
 		<Pieces>GT_PageRight_Button</Pieces>
+		<Pieces>GT_PlayerCountLabelText</Pieces>
+		<Pieces>GT_PlayerCountLabel</Pieces>
 	</Screen>
 </XML>

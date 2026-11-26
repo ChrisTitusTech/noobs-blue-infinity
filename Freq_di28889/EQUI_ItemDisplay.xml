@@ -1,47 +1,37 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
   <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-  
+
   <Label item = "IDW_CollectedLabel">
 	<ScreenID>IDW_CollectedLabel</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
 		<X>10</X>
-		<Y>95</Y>
+		<Y>105</Y>
 	</Location>
 	<Size>
 		<CX>100</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
-  
+
   <Label item = "IDW_ScribedLabel">
 	<ScreenID>IDW_ScribedLabel</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
 		<X>10</X>
-		<Y>95</Y>
+		<Y>105</Y>
 	</Location>
 	<Size>
 		<CX>100</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
-  
+
   <Button item="IDW_ModButton">
 		<ScreenID>IDW_ModButton</ScreenID>
 		<!--<Font>3</Font>-->
@@ -55,17 +45,31 @@
 			<CY>10</CY>
 		</Size>
 		<Text></Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Normal</Template>
 		<!--<SoundPressed/>-->
 		<!--<SoundUp/>-->
 		<!--<SoundFlyby/>-->
   </Button>
-  
+
+	<Combobox item="IDW_ItemCompareList">
+		<ScreenID>IDW_ItemCompareList</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<AutoStretchList>true</AutoStretchList>
+		<TooltipReference>Compare stats with equipped items</TooltipReference>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>15</X>
+			<Y>135</Y>
+		</Location>
+		<Size>
+			<CX>250</CX>
+			<CY>20</CY>
+		</Size>
+		<ListHeight>100</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Style_Border>true</Style_Border>
+	</Combobox>
+
   <Button item="IDW_FuseButton">
 		<ScreenID>IDW_FuseButton</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -80,7 +84,26 @@
 		<Text></Text>
 		<Template>BDT_Normal</Template>
   </Button>
-  
+
+  <Button item="IDW_PrintRealEstateItems">
+		<ScreenID>IDW_PrintRealEstateItems</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>10</X>
+			<Y>135</Y>
+		</Location>
+		<Size>
+			<CX>70</CX>
+			<CY>20</CY>
+		</Size>
+		<Text>Print Items</Text>
+		<Template>BDT_Normal</Template>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+  </Button>
+
   <Label item = "IDW_ModButtonLabel">
 	<ScreenID>IDW_ModButtonLabel</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -93,11 +116,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
 
@@ -115,7 +133,7 @@
 	<Text></Text>
 	<NoWrap>true</NoWrap>
   </Label>
-  
+
   <Button item="IDW_ConvertButton">
 		<ScreenID>IDW_ConvertButton</ScreenID>
 		<!--<Font>3</Font>-->
@@ -129,17 +147,12 @@
 			<CY>10</CY>
 		</Size>
 		<Text></Text>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
 		<Template>BDT_Normal</Template>
 		<!--<SoundPressed/>-->
 		<!--<SoundUp/>-->
 		<!--<SoundFlyby/>-->
   </Button>
-  
+
   <STMLbox item="IDW_ConvertButtonLabel">
 	<ScreenID>IDW_ConvertButtonLabel</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -152,15 +165,44 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </STMLbox>
-  
-  <Label item = "IDW_ItemInfo1">
+
+  <Button item="IDW_RewardButton">
+		<ScreenID>IDW_RewardButton</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>10</X>
+			<Y>135</Y>
+		</Location>
+		<Size>
+			<CX>10</CX>
+			<CY>10</CY>
+		</Size>
+		<Text></Text>
+		<Template>BDT_Normal</Template>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+  </Button>
+
+  <STMLbox item = "IDW_RewardButtonLabel">
+	<ScreenID>IDW_RewardButtonLabel</ScreenID>
+	<RelativePosition>true</RelativePosition>
+	<Location>
+		<X>10</X>
+		<Y>60</Y>
+	</Location>
+	<Size>
+		<CX>600</CX>
+		<CY>20</CY>
+	</Size>
+	<Text></Text>
+	<NoWrap>false</NoWrap>
+  </STMLbox>
+
+  <STMLbox item = "IDW_ItemInfo1">
 	<ScreenID>IDW_ItemInfo1</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -172,14 +214,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-   <Label item = "IDW_ItemInfo2">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+   <STMLbox item = "IDW_ItemInfo2">
 	<ScreenID>IDW_ItemInfo2</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -191,14 +229,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-  <Label item = "IDW_ItemInfo3">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+  <STMLbox item = "IDW_ItemInfo3">
 	<ScreenID>IDW_ItemInfo3</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -210,14 +244,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-  <Label item = "IDW_ItemInfo4">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+  <STMLbox item = "IDW_ItemInfo4">
 	<ScreenID>IDW_ItemInfo4</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -229,14 +259,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
- <Label item = "IDW_ItemInfo5">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+ <STMLbox item = "IDW_ItemInfo5">
 	<ScreenID>IDW_ItemInfo5</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -248,14 +274,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-  <Label item = "IDW_ItemInfo6">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+  <STMLbox item = "IDW_ItemInfo6">
 	<ScreenID>IDW_ItemInfo6</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -267,14 +289,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-  <Label item = "IDW_ItemInfo7">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+  <STMLbox item = "IDW_ItemInfo7">
 	<ScreenID>IDW_ItemInfo7</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -286,14 +304,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-  <Label item = "IDW_ItemInfo8">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+  <STMLbox item = "IDW_ItemInfo8">
 	<ScreenID>IDW_ItemInfo8</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -305,14 +319,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-  <Label item = "IDW_ItemInfo9">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+  <STMLbox item = "IDW_ItemInfo9">
 	<ScreenID>IDW_ItemInfo9</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -324,14 +334,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-  <Label item = "IDW_ItemInfo10">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+  <STMLbox item = "IDW_ItemInfo10">
 	<ScreenID>IDW_ItemInfo10</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -343,14 +349,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-  </Label>
-   <Label item = "IDW_ItemInfo11">
+	<Style_Transparent>true</Style_Transparent>
+  </STMLbox>
+   <STMLbox item = "IDW_ItemInfo11">
 	<ScreenID>IDW_ItemInfo11</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -362,14 +364,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-	 <Label item = "IDW_ItemInfo12">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+	 <STMLbox item = "IDW_ItemInfo12">
 	<ScreenID>IDW_ItemInfo12</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -381,14 +379,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-	</Label>
-  <Label item = "IDW_ItemInfo13">
+	<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+  <STMLbox item = "IDW_ItemInfo13">
 	<ScreenID>IDW_ItemInfo13</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
@@ -400,13 +394,9 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
-  </Label>
+	<Style_Transparent>true</Style_Transparent>
+  </STMLbox>
   <Label item = "IDW_Row1Col1Stat">
 	<ScreenID>IDW_Row1Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -419,11 +409,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row1Col1Value">
@@ -438,15 +423,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row2Col1Stat">
 	<ScreenID>IDW_Row2Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -459,11 +439,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row2Col1Value">
@@ -478,15 +453,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row3Col1Stat">
 	<ScreenID>IDW_Row3Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -499,11 +469,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row3Col1Value">
@@ -518,15 +483,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row4Col1Stat">
 	<ScreenID>IDW_Row4Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -539,11 +499,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row4Col1Value">
@@ -558,15 +513,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row5Col1Stat">
 	<ScreenID>IDW_Row5Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -579,11 +529,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row5Col1Value">
@@ -598,15 +543,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row6Col1Stat">
 	<ScreenID>IDW_Row6Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -619,11 +559,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row6Col1Value">
@@ -638,15 +573,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row7Col1Stat">
 	<ScreenID>IDW_Row7Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -659,11 +589,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row7Col1Value">
@@ -678,15 +603,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row8Col1Stat">
 	<ScreenID>IDW_Row8Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -699,11 +619,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row8Col1Value">
@@ -718,15 +633,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row9Col1Stat">
 	<ScreenID>IDW_Row9Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -739,11 +649,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row9Col1Value">
@@ -758,15 +663,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row10Col1Stat">
 	<ScreenID>IDW_Row10Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -779,11 +679,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row10Col1Value">
@@ -798,15 +693,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row11Col1Stat">
 	<ScreenID>IDW_Row11Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -819,11 +709,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row11Col1Value">
@@ -838,15 +723,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row12Col1Stat">
 	<ScreenID>IDW_Row12Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -859,11 +739,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row12Col1Value">
@@ -878,15 +753,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row13Col1Stat">
 	<ScreenID>IDW_Row13Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -899,11 +769,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row13Col1Value">
@@ -918,15 +783,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row14Col1Stat">
 	<ScreenID>IDW_Row14Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -939,11 +799,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row14Col1Value">
@@ -958,15 +813,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row15Col1Stat">
 	<ScreenID>IDW_Row15Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -979,11 +829,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row15Col1Value">
@@ -998,15 +843,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row16Col1Stat">
 	<ScreenID>IDW_Row16Col1Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1019,11 +859,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row16Col1Value">
@@ -1038,11 +873,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1058,11 +888,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row17Col1Value">
@@ -1077,11 +902,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1097,11 +917,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row18Col1Value">
@@ -1116,11 +931,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1136,11 +946,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row19Col1Value">
@@ -1155,11 +960,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1175,11 +975,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row20Col1Value">
@@ -1194,11 +989,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1214,11 +1004,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row21Col1Value">
@@ -1233,11 +1018,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1253,11 +1033,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row22Col1Value">
@@ -1272,11 +1047,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1292,11 +1062,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row23Col1Value">
@@ -1311,11 +1076,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1331,11 +1091,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row24Col1Value">
@@ -1350,11 +1105,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1370,11 +1120,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row25Col1Value">
@@ -1389,11 +1134,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -1409,11 +1149,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row26Col1Value">
@@ -1428,21 +1163,16 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
 
   <Label item = "IDW_Row1Col2Stat">
 	<ScreenID>IDW_Row1Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
 	<Location>
-		<X>150</X>
+		<X>140</X>
 		<Y>60</Y>
 	</Location>
 	<Size>
@@ -1450,11 +1180,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row1Col2Value">
@@ -1469,15 +1194,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row2Col2Stat">
 	<ScreenID>IDW_Row2Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1490,11 +1210,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row2Col2Value">
@@ -1509,15 +1224,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row3Col2Stat">
 	<ScreenID>IDW_Row3Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1530,11 +1240,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row3Col2Value">
@@ -1549,15 +1254,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row4Col2Stat">
 	<ScreenID>IDW_Row4Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1570,11 +1270,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row4Col2Value">
@@ -1589,15 +1284,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row5Col2Stat">
 	<ScreenID>IDW_Row5Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1610,11 +1300,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row5Col2Value">
@@ -1629,15 +1314,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row6Col2Stat">
 	<ScreenID>IDW_Row6Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1650,11 +1330,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row6Col2Value">
@@ -1669,15 +1344,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row7Col2Stat">
 	<ScreenID>IDW_Row7Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1690,11 +1360,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row7Col2Value">
@@ -1709,15 +1374,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row8Col2Stat">
 	<ScreenID>IDW_Row8Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1730,11 +1390,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row8Col2Value">
@@ -1749,15 +1404,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row9Col2Stat">
 	<ScreenID>IDW_Row9Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1770,11 +1420,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row9Col2Value">
@@ -1789,15 +1434,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row10Col2Stat">
 	<ScreenID>IDW_Row10Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1810,11 +1450,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row10Col2Value">
@@ -1829,15 +1464,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row11Col2Stat">
 	<ScreenID>IDW_Row11Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1850,11 +1480,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row11Col2Value">
@@ -1869,15 +1494,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row12Col2Stat">
 	<ScreenID>IDW_Row12Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1890,11 +1510,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row12Col2Value">
@@ -1909,15 +1524,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row13Col2Stat">
 	<ScreenID>IDW_Row13Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1930,11 +1540,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row13Col2Value">
@@ -1949,15 +1554,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row14Col2Stat">
 	<ScreenID>IDW_Row14Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -1970,11 +1570,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row14Col2Value">
@@ -1989,15 +1584,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row15Col2Stat">
 	<ScreenID>IDW_Row15Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2010,11 +1600,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row15Col2Value">
@@ -2029,15 +1614,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row16Col2Stat">
 	<ScreenID>IDW_Row16Col2Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2050,11 +1630,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row16Col2Value">
@@ -2069,11 +1644,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2089,11 +1659,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row17Col2Value">
@@ -2108,11 +1673,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2128,11 +1688,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row18Col2Value">
@@ -2147,11 +1702,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2167,11 +1717,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row19Col2Value">
@@ -2186,11 +1731,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2206,11 +1746,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row20Col2Value">
@@ -2225,11 +1760,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2245,11 +1775,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row21Col2Value">
@@ -2264,11 +1789,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2284,11 +1804,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row22Col2Value">
@@ -2303,11 +1818,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2323,11 +1833,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row23Col2Value">
@@ -2342,11 +1847,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2362,11 +1862,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row24Col2Value">
@@ -2381,11 +1876,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2401,11 +1891,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row25Col2Value">
@@ -2420,11 +1905,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -2440,11 +1920,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row26Col2Value">
@@ -2459,15 +1934,10 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row1Col3Stat">
 	<ScreenID>IDW_Row1Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2480,11 +1950,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row1Col3Value">
@@ -2495,19 +1960,14 @@
 		<Y>60</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row2Col3Stat">
 	<ScreenID>IDW_Row2Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2520,11 +1980,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row2Col3Value">
@@ -2535,19 +1990,14 @@
 		<Y>76</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row3Col3Stat">
 	<ScreenID>IDW_Row3Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2560,11 +2010,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row3Col3Value">
@@ -2575,19 +2020,14 @@
 		<Y>92</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row4Col3Stat">
 	<ScreenID>IDW_Row4Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2600,11 +2040,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row4Col3Value">
@@ -2615,19 +2050,14 @@
 		<Y>108</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row5Col3Stat">
 	<ScreenID>IDW_Row5Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2640,11 +2070,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row5Col3Value">
@@ -2655,19 +2080,14 @@
 		<Y>124</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row6Col3Stat">
 	<ScreenID>IDW_Row6Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2680,11 +2100,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row6Col3Value">
@@ -2695,19 +2110,14 @@
 		<Y>140</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row7Col3Stat">
 	<ScreenID>IDW_Row7Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2720,11 +2130,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row7Col3Value">
@@ -2735,19 +2140,14 @@
 		<Y>156</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row8Col3Stat">
 	<ScreenID>IDW_Row8Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2760,11 +2160,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row8Col3Value">
@@ -2775,19 +2170,14 @@
 		<Y>172</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row9Col3Stat">
 	<ScreenID>IDW_Row9Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2800,11 +2190,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row9Col3Value">
@@ -2815,19 +2200,14 @@
 		<Y>188</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row10Col3Stat">
 	<ScreenID>IDW_Row10Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2840,11 +2220,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row10Col3Value">
@@ -2855,19 +2230,14 @@
 		<Y>204</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row11Col3Stat">
 	<ScreenID>IDW_Row11Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2880,11 +2250,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row11Col3Value">
@@ -2895,19 +2260,14 @@
 		<Y>220</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row12Col3Stat">
 	<ScreenID>IDW_Row12Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2920,11 +2280,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row12Col3Value">
@@ -2935,19 +2290,14 @@
 		<Y>236</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row13Col3Stat">
 	<ScreenID>IDW_Row13Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -2960,11 +2310,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row13Col3Value">
@@ -2975,19 +2320,14 @@
 		<Y>252</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row14Col3Stat">
 	<ScreenID>IDW_Row14Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -3000,11 +2340,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row14Col3Value">
@@ -3015,19 +2350,14 @@
 		<Y>268</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row15Col3Stat">
 	<ScreenID>IDW_Row15Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -3040,11 +2370,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row15Col3Value">
@@ -3055,19 +2380,14 @@
 		<Y>284</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Row16Col3Stat">
 	<ScreenID>IDW_Row16Col3Stat</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -3080,11 +2400,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row16Col3Value">
@@ -3095,15 +2410,10 @@
 		<Y>300</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3119,11 +2429,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row17Col3Value">
@@ -3134,15 +2439,10 @@
 		<Y>316</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3158,11 +2458,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row18Col3Value">
@@ -3173,15 +2468,10 @@
 		<Y>332</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3197,11 +2487,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row19Col3Value">
@@ -3212,15 +2497,10 @@
 		<Y>348</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3236,11 +2516,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row20Col3Value">
@@ -3251,15 +2526,10 @@
 		<Y>364</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3275,11 +2545,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row21Col3Value">
@@ -3290,15 +2555,10 @@
 		<Y>380</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3314,11 +2574,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row22Col3Value">
@@ -3329,15 +2584,10 @@
 		<Y>396</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3353,11 +2603,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row23Col3Value">
@@ -3368,15 +2613,10 @@
 		<Y>412</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3392,11 +2632,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row24Col3Value">
@@ -3407,15 +2642,10 @@
 		<Y>428</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3431,11 +2661,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row25Col3Value">
@@ -3446,15 +2671,10 @@
 		<Y>444</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
@@ -3470,11 +2690,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Row26Col3Value">
@@ -3485,19 +2700,14 @@
 		<Y>460</Y>
 	</Location>
 	<Size>
-		<CX>100</CX>
+		<CX>110</CX>
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
 	<AlignRight>true</AlignRight>
   </Label>
-  
+
   <Label item = "IDW_Heroic1">
 	<ScreenID>IDW_Heroic1</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -3510,11 +2720,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic2">
@@ -3529,11 +2734,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic3">
@@ -3548,11 +2748,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic4">
@@ -3567,11 +2762,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic5">
@@ -3586,11 +2776,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic6">
@@ -3605,11 +2790,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic7">
@@ -3624,14 +2804,9 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
-  
+
   <Label item = "IDW_Heroic8">
 	<ScreenID>IDW_Heroic8</ScreenID>
 	<RelativePosition>true</RelativePosition>
@@ -3644,11 +2819,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic9">
@@ -3663,11 +2833,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic10">
@@ -3682,11 +2847,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic11">
@@ -3701,11 +2861,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic12">
@@ -3720,11 +2875,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
   <Label item = "IDW_Heroic13">
@@ -3739,11 +2889,6 @@
 		<CY>20</CY>
 	</Size>
 	<Text></Text>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<NoWrap>true</NoWrap>
   </Label>
 
@@ -3784,8 +2929,8 @@
 			<B>129</B>
 		</TextColor>
 		<BackgroundTextureTint>
-			<R>23</R>
-			<G>108</G>
+			<R>0</R>
+			<G>255</G>
 			<B>0</B>
 		</BackgroundTextureTint>
 		<Template>BDT_Normal</Template>
@@ -3795,11 +2940,11 @@
     <DrawTemplate>WDT_Inner</DrawTemplate>
 	<Location>
 		<X>58</X>
-		<Y>12</Y>
+		<Y>4</Y>
 	</Location>
 	<Size>
 		<CX>700</CX>
-		<CY>20</CY>
+		<CY>40</CY>
 	</Size>
 	<Style_Border>false</Style_Border>
 	<Style_Transparent>true</Style_Transparent>
@@ -3826,7 +2971,7 @@
 	<Pieces>IDW_Appearance_Socket_Buy_Button</Pieces>
 	<Pieces>IDW_Appearance_Socket_Description</Pieces>
   </Screen>
-  
+
   <Button item="IDW_Socket_Slot_1_Item">
 	<ScreenID>IDW_Socket_Slot_1_Item</ScreenID>
 	<Location>
@@ -3837,14 +2982,14 @@
 		<CX>20</CX>
 		<CY>20</CY>
 	</Size>
-	<Template>BDT_DragItem</Template>
+	<Template>BDT_SquareItem</Template>
 	<DecalOffset>
 		<X>0</X>
 		<Y>0</Y>
 	</DecalOffset>
 	<DecalSize>
-		<CX>20</CX>
-		<CY>20</CY>
+		<CX>19</CX>
+		<CY>19</CY>
 	</DecalSize>
   </Button>
   <STMLbox item="IDW_Socket_Slot_1_Description">
@@ -3892,7 +3037,7 @@
 		<CX>20</CX>
 		<CY>20</CY>
 	</Size>
-	<Template>BDT_DragItem</Template>
+	<Template>BDT_SquareItem</Template>
 	<DecalOffset>
 		<X>0</X>
 		<Y>0</Y>
@@ -3947,7 +3092,7 @@
 		<CX>20</CX>
 		<CY>20</CY>
 	</Size>
-	<Template>BDT_DragItem</Template>
+	<Template>BDT_SquareItem</Template>
 	<DecalOffset>
 		<X>0</X>
 		<Y>0</Y>
@@ -4002,7 +3147,7 @@
 		<CX>20</CX>
 		<CY>20</CY>
 	</Size>
-	<Template>BDT_DragItem</Template>
+	<Template>BDT_SquareItem</Template>
 	<DecalOffset>
 		<X>0</X>
 		<Y>0</Y>
@@ -4057,7 +3202,7 @@
 		<CX>20</CX>
 		<CY>20</CY>
 	</Size>
-	<Template>BDT_DragItem</Template>
+	<Template>BDT_SquareItem</Template>
 	<DecalOffset>
 		<X>0</X>
 		<Y>0</Y>
@@ -4112,7 +3257,7 @@
 		<CX>20</CX>
 		<CY>20</CY>
 	</Size>
-	<Template>BDT_DragItem</Template>
+	<Template>BDT_SquareItem</Template>
 	<DecalOffset>
 		<X>0</X>
 		<Y>0</Y>
@@ -4157,7 +3302,7 @@
 	<Pieces>IDW_Socket_Slot_6_Item</Pieces>
 	<Pieces>IDW_Socket_Slot_6_Description</Pieces>
   </Screen>
-  
+
   <STMLbox item="IDW_ItemDescription">
     <ScreenID>ItemDescription</ScreenID>
     <DrawTemplate>WDT_Inner</DrawTemplate>
@@ -4243,22 +3388,12 @@
 	<RightAnchorToRight>true</RightAnchorToRight>
 	<Text></Text>
 	<Font>1</Font>
-	<TextColor>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
-	</TextColor>
 	<AlignRight>true</AlignRight>
 	<NoWrap>true</NoWrap>
   </Label>
   <Page item="IDW_ItemDescriptionTab">
     <ScreenID>ItemDescriptionTab</ScreenID>
     <TabText>Description</TabText>
-    <TabTextColor>
-      <R>255</R>
-      <G>255</G>
-      <B>255</B>
-    </TabTextColor>
     <TabTextActiveColor>
       <R>255</R>
       <G>255</G>
@@ -4271,14 +3406,15 @@
     <Pieces>Screen:IDW_Appearance_Socket_Screen</Pieces>
     <Pieces>Screen:IDW_Socket_Slot_1_Screen</Pieces>
     <Pieces>Screen:IDW_Socket_Slot_2_Screen</Pieces>
-    <Pieces>Screen:IDW_Socket_Slot_3_Screen</Pieces>   
+    <Pieces>Screen:IDW_Socket_Slot_3_Screen</Pieces>
     <Pieces>Screen:IDW_Socket_Slot_4_Screen</Pieces>
     <Pieces>Screen:IDW_Socket_Slot_5_Screen</Pieces>
     <Pieces>Screen:IDW_Socket_Slot_6_Screen</Pieces>
 	<Pieces>IDW_CollectedLabel</Pieces>
 	<Pieces>IDW_ScribedLabel</Pieces>
     <Pieces>IDW_ModButton</Pieces>
-	<Pieces>IDW_FuseButton</Pieces>
+    <Pieces>IDW_FuseButton</Pieces>
+	<Pieces>IDW_PrintRealEstateItems</Pieces>
 	<Pieces>IDW_ItemInfo1</Pieces>
 	<Pieces>IDW_ItemInfo2</Pieces>
 	<Pieces>IDW_ItemInfo3</Pieces>
@@ -4293,9 +3429,12 @@
 	<Pieces>IDW_ItemInfo12</Pieces>
 	<Pieces>IDW_ItemInfo13</Pieces>
     <Pieces>IDW_ModButtonLabel</Pieces>
-	<Pieces>IDW_FuseButtonLabel</Pieces>
+    <Pieces>IDW_ItemCompareList</Pieces>
+    <Pieces>IDW_FuseButtonLabel</Pieces>
     <Pieces>IDW_ConvertButton</Pieces>
     <Pieces>IDW_ConvertButtonLabel</Pieces>
+    <Pieces>IDW_RewardButton</Pieces>
+    <Pieces>IDW_RewardButtonLabel</Pieces>
     <Pieces>IDW_Row1Col1Stat</Pieces>
     <Pieces>IDW_Row2Col1Stat</Pieces>
     <Pieces>IDW_Row3Col1Stat</Pieces>
@@ -4322,8 +3461,8 @@
     <Pieces>IDW_Row24Col1Stat</Pieces>
     <Pieces>IDW_Row25Col1Stat</Pieces>
     <Pieces>IDW_Row26Col1Stat</Pieces>
-    
-    
+
+
     <Pieces>IDW_Row1Col1Value</Pieces>
     <Pieces>IDW_Row2Col1Value</Pieces>
     <Pieces>IDW_Row3Col1Value</Pieces>
@@ -4350,7 +3489,7 @@
     <Pieces>IDW_Row24Col1Value</Pieces>
     <Pieces>IDW_Row25Col1Value</Pieces>
     <Pieces>IDW_Row26Col1Value</Pieces>
-    
+
     <Pieces>IDW_Row1Col2Stat</Pieces>
     <Pieces>IDW_Row2Col2Stat</Pieces>
     <Pieces>IDW_Row3Col2Stat</Pieces>
@@ -4377,8 +3516,8 @@
     <Pieces>IDW_Row24Col2Stat</Pieces>
     <Pieces>IDW_Row25Col2Stat</Pieces>
     <Pieces>IDW_Row26Col2Stat</Pieces>
-    
-    
+
+
     <Pieces>IDW_Row1Col2Value</Pieces>
     <Pieces>IDW_Row2Col2Value</Pieces>
     <Pieces>IDW_Row3Col2Value</Pieces>
@@ -4405,7 +3544,7 @@
     <Pieces>IDW_Row24Col2Value</Pieces>
     <Pieces>IDW_Row25Col2Value</Pieces>
     <Pieces>IDW_Row26Col2Value</Pieces>
-    
+
     <Pieces>IDW_Row1Col3Stat</Pieces>
     <Pieces>IDW_Row2Col3Stat</Pieces>
     <Pieces>IDW_Row3Col3Stat</Pieces>
@@ -4432,7 +3571,7 @@
     <Pieces>IDW_Row24Col3Stat</Pieces>
     <Pieces>IDW_Row25Col3Stat</Pieces>
     <Pieces>IDW_Row26Col3Stat</Pieces>
-    
+
     <Pieces>IDW_Row1Col3Value</Pieces>
     <Pieces>IDW_Row2Col3Value</Pieces>
     <Pieces>IDW_Row3Col3Value</Pieces>
@@ -4459,9 +3598,9 @@
     <Pieces>IDW_Row24Col3Value</Pieces>
     <Pieces>IDW_Row25Col3Value</Pieces>
     <Pieces>IDW_Row26Col3Value</Pieces>
-    
-    
-    
+
+
+
     <Pieces>IDW_Heroic1</Pieces>
     <Pieces>IDW_Heroic2</Pieces>
     <Pieces>IDW_Heroic3</Pieces>
@@ -4475,7 +3614,7 @@
     <Pieces>IDW_Heroic11</Pieces>
     <Pieces>IDW_Heroic12</Pieces>
     <Pieces>IDW_Heroic13</Pieces>
-    
+
     <Location>
       <X>0</X>
       <Y>22</Y>
@@ -4488,11 +3627,6 @@
   <Page item="IDW_ItemLoreTab">
     <ScreenID>ItemLoreTab</ScreenID>
     <TabText>Lore</TabText>
-    <TabTextColor>
-      <R>255</R>
-      <G>255</G>
-      <B>255</B>
-    </TabTextColor>
     <TabTextActiveColor>
       <R>255</R>
       <G>255</G>
@@ -4523,9 +3657,9 @@
     <Pages>IDW_ItemDescriptionTab</Pages>
     <Pages>IDW_ItemLoreTab</Pages>
     <LeftAnchorOffset>2</LeftAnchorOffset>
-    <RightAnchorOffset>-2</RightAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <TopAnchorOffset>2</TopAnchorOffset>
-    <BottomAnchorOffset>-9</BottomAnchorOffset>
+    <BottomAnchorOffset>1</BottomAnchorOffset>
   </TabBox>
   <Screen item="ItemDisplayWindow">
     <!--<ScreenID/>-->
@@ -4543,7 +3677,7 @@
     <Style_HScroll>false</Style_HScroll>
     <Style_Transparent>false</Style_Transparent>
     <TooltipReference>This is an Item Display window</TooltipReference>
-    <DrawTemplate>WDT_Filigree</DrawTemplate>
+    <DrawTemplate>WDT_Rounded</DrawTemplate>
     <Style_Titlebar>true</Style_Titlebar>
     <Style_Closebox>true</Style_Closebox>
     <Style_Minimizebox>true</Style_Minimizebox>

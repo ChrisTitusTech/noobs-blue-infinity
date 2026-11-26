@@ -1141,353 +1141,9 @@
 			<Duration>1000</Duration>
 		</Frames>
 	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvEar">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>90</X>
-				<Y>0</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvNeck">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>122</X>
-				<Y>0</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvHead">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>154</X>
-				<Y>0</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvFace">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>186</X>
-				<Y>0</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvChest">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>218</X>
-				<Y>0</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvBack">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>90</X>
-				<Y>32</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvArms">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>122</X>
-				<Y>32</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvShoulders">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>154</X>
-				<Y>32</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvWrist">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>186</X>
-				<Y>32</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvWaist">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>218</X>
-				<Y>32</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvHands">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>90</X>
-				<Y>64</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvRing">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>122</X>
-				<Y>64</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvLegs">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>154</X>
-				<Y>64</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvFeet">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>186</X>
-				<Y>64</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvPrimary">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>218</X>
-				<Y>64</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvSecondary">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>218</X>
-				<Y>96</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvRange">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>186</X>
-				<Y>96</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvAmmo">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>122</X>
-				<Y>96</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_MiniInvNormal">
-		<Frames>
-			<Texture>mini_inv.tga</Texture>
-			<Location>
-				<X>154</X>
-				<Y>96</Y>
-			</Location>
-			<Size>
-				<CX>32</CX>
-				<CY>32</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	 <Ui2DAnimation item="A_MiniInvPower">
-    <Frames>
-      <Texture>mini_ps.tga</Texture>
-      <Location>
-        <X>0</X>
-        <Y>0</Y>
-      </Location>
-      <Size>
-        <CX>32</CX>
-        <CY>32</CY>
-      </Size>
-      <Hotspot>
-        <X>0</X>
-        <Y>0</Y>
-      </Hotspot>
-    </Frames>
-  </Ui2DAnimation>
 	<!--Inventory slots here-->
-	<!--Inventory slots here-->
-	<!--Inventory slots here-->
-	<!--Inventory slots here-->
-	<!--Inventory slots here-->
-	<InvSlot item="Newslot1">
-		<ScreenID>NewSlot1</ScreenID>
+	<InvSlot item="Clickslot_1_1">
+		<ScreenID>Clickslot_1_1</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>0</X>
@@ -1497,116 +1153,14 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>23</EQType>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 23</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Newslot2">
-		<ScreenID>Newslot2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>40</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>24</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Newslot3">
-		<ScreenID>Newslot3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>80</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>25</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Newslot4">
-		<ScreenID>Newslot4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>120</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>26</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Newslot5">
-		<ScreenID>Newslot5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>160</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>27</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Newslot6">
-		<ScreenID>Newslot6</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>200</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvPrimary</Background>
-		<EQType>13</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Newslot7">
-		<ScreenID>Newslot7</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>240</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvRange</Background>
-		<EQType>11</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Newslot8">
-		<ScreenID>Newslot8</ScreenID>
+	<InvSlot item="Clickslot_1_2">
+		<ScreenID>Clickslot_1_2</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1616,14 +1170,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>28</EQType>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 24</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Newslot9">
-		<ScreenID>Newslot9</ScreenID>
+	<InvSlot item="Clickslot_1_3">
+		<ScreenID>Clickslot_1_3</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>40</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 25</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_1_4">
+		<ScreenID>Clickslot_1_4</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1633,14 +1204,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>29</EQType>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 26</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Newslot10">
-		<ScreenID>Newslot10</ScreenID>
+	<InvSlot item="Clickslot_1_5">
+		<ScreenID>Clickslot_1_5</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>80</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 27</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_1_6">
+		<ScreenID>Clickslot_1_6</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1650,14 +1238,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>30</EQType>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 28</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Newslot11">
-		<ScreenID>Newslot11</ScreenID>
+	<InvSlot item="Clickslot_1_7">
+		<ScreenID>Clickslot_1_7</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>120</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 29</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_1_8">
+		<ScreenID>Clickslot_1_8</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1667,14 +1272,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>31</EQType>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 30</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Newslot12">
-		<ScreenID>Newslot12</ScreenID>
+	<InvSlot item="Clickslot_1_9">
+		<ScreenID>Clickslot_1_9</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>160</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 31</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_1_10">
+		<ScreenID>Clickslot_1_10</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1684,14 +1306,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvNormal</Background>
-		<EQType>32</EQType>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 32</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Newslot13">
-		<ScreenID>Newslot13</ScreenID>
+	<InvSlot item="Clickslot_1_11">
+		<ScreenID>Clickslot_1_11</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>200</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 33</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>wwwwwwwwwwwww
+	<InvSlot item="Clickslot_1_12">
+		<ScreenID>Clickslot_1_12</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1701,25 +1340,8 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvSecondary</Background>
-		<EQType>14</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Newslot14">
-		<ScreenID>Newslot14</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>40</X>
-			<Y>240</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvAmmo</Background>
-		<EQType>22</EQType>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Equip 34</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
@@ -1744,20 +1366,18 @@
 			<G>200</G>
 			<B>0</B>
 		</TabTextActiveColor>
-		<Pieces>Newslot1</Pieces>
-		<Pieces>Newslot2</Pieces>
-		<Pieces>Newslot3</Pieces>
-		<Pieces>Newslot4</Pieces>
-		<Pieces>Newslot5</Pieces>
-		<Pieces>Newslot6</Pieces>
-<!--		<Pieces>Newslot7</Pieces>-->
-		<Pieces>Newslot8</Pieces>
-		<Pieces>Newslot9</Pieces>
-		<Pieces>Newslot10</Pieces>
-		<Pieces>Newslot11</Pieces>
-		<Pieces>Newslot12</Pieces>
-		<Pieces>Newslot13</Pieces>
-<!--		<Pieces>Newslot14</Pieces>-->
+		<Pieces>Clickslot_1_1</Pieces>
+		<Pieces>Clickslot_1_2</Pieces>
+		<Pieces>Clickslot_1_3</Pieces>
+		<Pieces>Clickslot_1_4</Pieces>
+		<Pieces>Clickslot_1_5</Pieces>
+		<Pieces>Clickslot_1_6</Pieces>
+		<Pieces>Clickslot_1_7</Pieces>
+		<Pieces>Clickslot_1_8</Pieces>
+		<Pieces>Clickslot_1_9</Pieces>
+		<Pieces>Clickslot_1_10</Pieces>
+		<Pieces>Clickslot_1_11</Pieces>
+		<Pieces>Clickslot_1_12</Pieces>
 		<Size>
 			<CX>80</CX>
 			<CY>200</CY>
@@ -1767,8 +1387,8 @@
 			<Y>22</Y>
 		</Location>
 	</Page>
-	<InvSlot item="Clickslot_1">
-		<ScreenID>CS_1</ScreenID>
+	<InvSlot item="Clickslot_2_1">
+		<ScreenID>CS_2_1</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>0</X>
@@ -1778,116 +1398,14 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvEar</Background>
-		<EQType>1</EQType>
+		<Background>A_InvPrimary</Background>
+		<EQType>inventory/Equip 13</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Clickslot_2">
-		<ScreenID>CS_2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>40</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvNeck</Background>
-		<EQType>5</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Clickslot_3">
-		<ScreenID>CS_3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>80</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvBack</Background>
-		<EQType>8</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Clickslot_4">
-		<ScreenID>CS_4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>120</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvRing</Background>
-		<EQType>15</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Clickslot_5">
-		<ScreenID>CS_5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>160</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvChest</Background>
-		<EQType>17</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Clickslot_6">
-		<ScreenID>CS_6</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>200</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvRange</Background>
-		<EQType>11</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Clickslot_7">
-		<ScreenID>CS_7</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>240</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvLegs</Background>
-		<EQType>18</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Clickslot_8">
-		<ScreenID>CS_8</ScreenID>
+	<InvSlot item="Clickslot_2_2">
+		<ScreenID>CS_2_2</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1897,14 +1415,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvFace</Background>
-		<EQType>3</EQType>
+		<Background>A_InvSecondary</Background>
+		<EQType>inventory/Equip 14</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Clickslot_9">
-		<ScreenID>CS_9</ScreenID>
+	<InvSlot item="Clickslot_2_3">
+		<ScreenID>CS_2_3</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>40</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvRange</Background>
+		<EQType>inventory/Equip 11</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_2_4">
+		<ScreenID>CS_2_4</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1914,14 +1449,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvShoulders</Background>
-		<EQType>6</EQType>
+		<Background>A_InvAmmo</Background>
+		<EQType>inventory/Equip 22</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Clickslot_10">
-		<ScreenID>CS_10</ScreenID>
+	<InvSlot item="Clickslot_2_5">
+		<ScreenID>CS_2_5</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>80</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvChest</Background>
+		<EQType>inventory/Equip 17</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_2_6">
+		<ScreenID>CS_2_6</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1931,14 +1483,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvWaist</Background>
-		<EQType>20</EQType>
+		<Background>A_InvLegs</Background>
+		<EQType>inventory/Equip 18</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Clickslot_11">
-		<ScreenID>CS_11</ScreenID>
+	<InvSlot item="Clickslot_2_7">
+		<ScreenID>CS_2_7</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>120</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvArms</Background>
+		<EQType>inventory/Equip 7</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_2_8">
+		<ScreenID>CS_2_8</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1948,14 +1517,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvRing</Background>
-		<EQType>16</EQType>
+		<Background>A_InvHands</Background>
+		<EQType>inventory/Equip 12</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Clickslot_12">
-		<ScreenID>CS_12</ScreenID>
+	<InvSlot item="Clickslot_2_9">
+		<ScreenID>CS_2_9</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>160</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvHead</Background>
+		<EQType>inventory/Equip 2</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_2_10">
+		<ScreenID>CS_2_10</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1965,14 +1551,31 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvPower</Background>
-		<EQType>21</EQType>
+		<Background>A_InvFeet</Background>
+		<EQType>inventory/Equip 19</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
-	<InvSlot item="Clickslot_13">
-		<ScreenID>CS_13</ScreenID>
+	<InvSlot item="Clickslot_2_11">
+		<ScreenID>CS_2_11</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>200</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvWrist</Background>
+		<EQType>inventory/Equip 9</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_2_12">
+		<ScreenID>CS_2_12</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>40</X>
@@ -1982,31 +1585,14 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_MiniInvAmmo</Background>
-		<EQType>22</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-	</InvSlot>
-	<InvSlot item="Clickslot_14">
-		<ScreenID>CS_14</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>40</X>
-			<Y>240</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<Background>A_MiniInvFeet</Background>
-		<EQType>19</EQType>
+		<Background>A_InvWrist</Background>
+		<EQType>inventory/Equip 10</EQType>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
 	<Page item="HBW_Page_2">
-		<ScreenID>HBW_Page_1</ScreenID>
+		<ScreenID>HBW_Page_2</ScreenID>
 		<!--<Font>3</Font>-->
 		<RelativePosition>true</RelativePosition>
 		<Style_VScroll>false</Style_VScroll>
@@ -2025,20 +1611,263 @@
 			<G>200</G>
 			<B>0</B>
 		</TabTextActiveColor>
-		<Pieces>Clickslot_1</Pieces>
-		<Pieces>Clickslot_2</Pieces>
-		<Pieces>Clickslot_3</Pieces>
-		<Pieces>Clickslot_4</Pieces>
-		<Pieces>Clickslot_5</Pieces>
-		<Pieces>Clickslot_6</Pieces>
-<!--		<Pieces>Clickslot_7</Pieces>-->
-		<Pieces>Clickslot_8</Pieces>
-		<Pieces>Clickslot_9</Pieces>
-		<Pieces>Clickslot_10</Pieces>
-		<Pieces>Clickslot_11</Pieces>
-		<Pieces>Clickslot_12</Pieces>
-		<Pieces>Clickslot_13</Pieces>
-<!--		<Pieces>Clickslot_14</Pieces>-->
+		<Pieces>Clickslot_2_1</Pieces>
+		<Pieces>Clickslot_2_2</Pieces>
+		<Pieces>Clickslot_2_3</Pieces>
+		<Pieces>Clickslot_2_4</Pieces>
+		<Pieces>Clickslot_2_5</Pieces>
+		<Pieces>Clickslot_2_6</Pieces>
+		<Pieces>Clickslot_2_7</Pieces>
+		<Pieces>Clickslot_2_8</Pieces>
+		<Pieces>Clickslot_2_9</Pieces>
+		<Pieces>Clickslot_2_10</Pieces>
+		<Pieces>Clickslot_2_11</Pieces>
+		<Pieces>Clickslot_2_12</Pieces>
+		<Size>
+			<CX>80</CX>
+			<CY>200</CY>
+		</Size>
+		<Location>
+			<X>0</X>
+			<Y>22</Y>
+		</Location>
+	</Page>
+	<InvSlot item="Clickslot_3_1">
+		<ScreenID>CS_3_1</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvEar</Background>
+		<EQType>inventory/Equip 1</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_2">
+		<ScreenID>CS_3_2</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>40</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvEar</Background>
+		<EQType>inventory/Equip 4</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_3">
+		<ScreenID>CS_3_3</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>40</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvFace</Background>
+		<EQType>inventory/Equip 3</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_4">
+		<ScreenID>CS_3_4</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>40</X>
+			<Y>40</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvNeck</Background>
+		<EQType>inventory/Equip 5</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_5">
+		<ScreenID>CS_3_5</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>80</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvAboutBody</Background>
+		<EQType>inventory/Equip 8</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_6">
+		<ScreenID>CS_3_6</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>40</X>
+			<Y>80</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvShoulders</Background>
+		<EQType>inventory/Equip 6</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_7">
+		<ScreenID>CS_3_7</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>120</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvRing</Background>
+		<EQType>inventory/Equip 15</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_8">
+		<ScreenID>CS_3_8</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>40</X>
+			<Y>120</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvRing</Background>
+		<EQType>inventory/Equip 16</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_9">
+		<ScreenID>CS_3_9</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>160</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvWaist</Background>
+		<EQType>inventory/Equip 20</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_10">
+		<ScreenID>CS_3_10</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>40</X>
+			<Y>160</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvCharm</Background>
+		<EQType>inventory/Equip 0</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_11">
+		<ScreenID>CS_3_11</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>200</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_InvPowerSource</Background>
+		<EQType>inventory/Equip 21</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<InvSlot item="Clickslot_3_12">
+		<ScreenID>CS_3_12</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>40</X>
+			<Y>200</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<Background>A_RecessedBox</Background>
+		<EQType>inventory/Krono</EQType>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+	</InvSlot>
+	<Page item="HBW_Page_3">
+		<ScreenID>HBW_Page_3</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>fasle</Style_Transparent>
+		<Style_Border>false</Style_Border>
+		<DrawTemplate>WDT_Custom</DrawTemplate>
+		<TabText>3</TabText>
+		<TabTextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TabTextColor>
+		<TabTextActiveColor>
+			<R>0</R>
+			<G>200</G>
+			<B>0</B>
+		</TabTextActiveColor>
+		<Pieces>Clickslot_3_1</Pieces>
+		<Pieces>Clickslot_3_2</Pieces>
+		<Pieces>Clickslot_3_3</Pieces>
+		<Pieces>Clickslot_3_4</Pieces>
+		<Pieces>Clickslot_3_5</Pieces>
+		<Pieces>Clickslot_3_6</Pieces>
+		<Pieces>Clickslot_3_7</Pieces>
+		<Pieces>Clickslot_3_8</Pieces>
+		<Pieces>Clickslot_3_9</Pieces>
+		<Pieces>Clickslot_3_10</Pieces>
+		<Pieces>Clickslot_3_11</Pieces>
+		<Pieces>Clickslot_3_12</Pieces>
 		<Size>
 			<CX>80</CX>
 			<CY>200</CY>
@@ -2059,13 +1888,14 @@
 			<Y>-3</Y>
 		</Location>
 		<Size>
-			<CX>86</CX>
-			<CY>275</CY>
+			<CX>88</CX>
+			<CY>268</CY>
 		</Size>
 		<TabBorderTemplate>FT_DefTabBorder</TabBorderTemplate>
 		<PageBorderTemplate>FT_DefPageBorder</PageBorderTemplate>
 		<Pages>HBW_Page_1</Pages>
 		<Pages>HBW_Page_2</Pages>
+		<Pages>HBW_Page_3</Pages>
 	</TabBox>
 	<!--Inventory slots here-->
 	<!--Inventory slots here-->
@@ -2079,7 +1909,7 @@
 			<Y>5</Y>
 		</Location>
 		<Size>
-			<CX>44</CX>
+			<CX>40</CX>
 			<CY>32</CY>
 		</Size>
 		<Font>1</Font>
@@ -2094,7 +1924,7 @@
 			<Highlight>A_SpellGemHighlight</Highlight>
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>4</SpellIconOffsetX>
-		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconOffsetY>4</SpellIconOffsetY>
 	</SpellGem>
 	<InvSlot item="HB_InvSlot">
 		<ScreenID>HB_InvSlot</ScreenID>
@@ -3158,7 +2988,7 @@
 			<Y>230</Y>
 		</Location>
 		<Size>
-			<CX>185</CX>
+			<CX>187</CX>
 			<CY>275</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
@@ -3187,7 +3017,7 @@
 		<Pieces>HotButton:HB1_Button11</Pieces>
 		<Pieces>HotButton:HB1_Button12</Pieces>
 		<Pieces>Inv_Subwindows</Pieces>
-		
+
 	</Screen>
 	<Screen item="HotButtonWnd2">
 		<ScreenID/>

@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-	<Button item="ContainerCombine_Icon">
-		<ScreenID>ContainerCombine_Icon</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>5</X>
-			<Y>5</Y>
-		</Location>
-		<Size>
-			<CX>40</CX>
-			<CY>40</CY>
-		</Size>
-		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Template>BDT_DragItem</Template>
-		<DecalOffset>
-			<X>0</X>
-			<Y>0</Y>
-		</DecalOffset>
-		<DecalSize>
-			<CX>40</CX>
-			<CY>40</CY>
-		</DecalSize>
-	</Button>
 	<InvSlot item="Container_Slot">
 		<ScreenID>Container_Slot</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -34,7 +8,7 @@
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_RecessedBox</Background>
+		<Background>A_SquareBtnPressed</Background>
 		<EQType>-1</EQType>
 	</InvSlot>
 	<TileLayoutBox item="ContainerStandard_Items">
@@ -44,8 +18,8 @@
 		<AutoStretchHorizontal>true</AutoStretchHorizontal>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Transparent>true</Style_Transparent>
-		<Spacing>2</Spacing>
-		<SecondarySpacing>2</SecondarySpacing>
+		<Spacing>0</Spacing>
+		<SecondarySpacing>0</SecondarySpacing>
 		<HorizontalFirst>true</HorizontalFirst>
 		<AnchorToTop>true</AnchorToTop>
 		<AnchorToLeft>true</AnchorToLeft>
@@ -59,8 +33,8 @@
 		<AutoStretchHorizontal>true</AutoStretchHorizontal>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Transparent>true</Style_Transparent>
-		<Spacing>2</Spacing>
-		<SecondarySpacing>2</SecondarySpacing>
+		<Spacing>0</Spacing>
+		<SecondarySpacing>0</SecondarySpacing>
 		<HorizontalFirst>true</HorizontalFirst>
 		<AnchorToTop>true</AnchorToTop>
 		<AnchorToLeft>true</AnchorToLeft>
@@ -75,8 +49,8 @@
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Style_Transparent>true</Style_Transparent>
-		<Spacing>2</Spacing>
-		<SecondarySpacing>2</SecondarySpacing>
+		<Spacing>0</Spacing>
+		<SecondarySpacing>0</SecondarySpacing>
 		<HorizontalFirst>true</HorizontalFirst>
 		<AnchorToTop>true</AnchorToTop>
 		<AnchorToLeft>true</AnchorToLeft>
@@ -85,65 +59,75 @@
 	</TileLayoutBox>
 	<Button item="Container_Combine">
 		<ScreenID>Container_Combine</ScreenID>
+		<Font>1</Font>
 		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>55</X>
-			<Y>10</Y>
-		</Location>
 		<Size>
-			<CX>60</CX>
-			<CY>20</CY>
+			<CX>80</CX>
+			<CY>25</CY>
 		</Size>
 		<Text>Combine</Text>
 		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Template>BDT_SmallNormal</Template>
-		<UseInLayoutVertical>false</UseInLayoutVertical>
+      		<R>200</R>
+		    <G>200</G>
+		    <B>200</B>
+	    </TextColor>
+    	<ButtonDrawTemplate>
+	    	<Normal>A_BtnNormal</Normal>
+    		<Pressed>A_BtnPressed</Pressed>
+    		<Flyby>A_BtnFlyby</Flyby>
+    		<Disabled>A_BtnDisabled</Disabled>
+     		<PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+    	</ButtonDrawTemplate>
 	</Button>
 	<Button item="StandardDoneButton">
 		<ScreenID>StandardDoneButton</ScreenID>
+		<Font>1</Font>
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>50</CX>
-			<CY>24</CY>
+			<CX>80</CX>
+			<CY>25</CY>
 		</Size>
 		<Text>Done</Text>
 		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Template>BDT_Normal</Template>
+      		<R>200</R>
+		    <G>200</G>
+		    <B>200</B>
+	    </TextColor>
+    	<ButtonDrawTemplate>
+	    	<Normal>A_BtnNormal</Normal>
+    		<Pressed>A_BtnPressed</Pressed>
+    		<Flyby>A_BtnFlyby</Flyby>
+    		<Disabled>A_BtnDisabled</Disabled>
+     		<PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+    	</ButtonDrawTemplate>
 	</Button>
 	<Button item="CombineDoneButton">
 		<ScreenID>CombineDoneButton</ScreenID>
+		<Font>1</Font>
 		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>115</X>
-			<Y>10</Y>
-		</Location>
 		<Size>
-			<CX>60</CX>
-			<CY>20</CY>
+			<CX>80</CX>
+			<CY>25</CY>
 		</Size>
-		<UseInLayoutVertical>false</UseInLayoutVertical>
-		<Style_Transparent>false</Style_Transparent>
 		<Text>Done</Text>
 		<TextColor>
-			<R>255</R>
-			<G>255</G>
-			<B>255</B>
-		</TextColor>
-		<Template>BDT_Normal</Template>
+      		<R>200</R>
+		    <G>200</G>
+		    <B>200</B>
+	    </TextColor>
+    	<ButtonDrawTemplate>
+	    	<Normal>A_BtnNormal</Normal>
+    		<Pressed>A_BtnPressed</Pressed>
+    		<Flyby>A_BtnFlyby</Flyby>
+    		<Disabled>A_BtnDisabled</Disabled>
+     		<PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+    	</ButtonDrawTemplate>
 	</Button>
 	<STMLbox item="Container_StandardSize">
 		<ScreenID>StandardSize</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>115</CX>
+			<CX>84</CX>
 			<CY>240</CY>
 		</Size>
 		<UseInLayoutVertical>false</UseInLayoutVertical>
@@ -155,8 +139,8 @@
 		<ScreenID>CombineSize</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>230</CX>
-			<CY>170</CY>
+			<CX>84</CX>
+			<CY>240</CY>
 		</Size>
 		<UseInLayoutVertical>false</UseInLayoutVertical>
 		<UseInLayoutHorizontal>false</UseInLayoutHorizontal>
@@ -175,7 +159,7 @@
 			<Y>100</Y>
 		</Location>
 		<Size>
-			<CX>115</CX>
+			<CX>84</CX>
 			<CY>240</CY>
 		</Size>
 		<Text>Container</Text>
@@ -183,13 +167,13 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>Container</TooltipReference>
-		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<DrawTemplate>WDT_New</DrawTemplate>
 		<Style_Titlebar>true</Style_Titlebar>
 		<Style_Closebox>true</Style_Closebox>
-		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
 		<Style_Border>true</Style_Border>
 		<Style_Sizable>true</Style_Sizable>
-		<Pieces>ContainerCombine_Icon</Pieces>
+		<!--<Pieces>ContainerCombine_Icon</Pieces>-->
 		<Pieces>Container_Slot</Pieces>
 		<Pieces>TileLayoutBox:ContainerStandard_Items</Pieces>
 		<Pieces>TileLayoutBox:ContainerStandardWithDone_Items</Pieces>

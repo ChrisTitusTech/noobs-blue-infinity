@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-	
+
 	<!-- Upper Available Funds -->
 	<Label item="MKPW_AvailableFundsUpper_Label">
 		<ScreenID>MKPW_AvailableFundsUpper_Label</ScreenID>
@@ -49,7 +49,7 @@
 			<CY>35</CY>
 		</DecalSize>
 	</Button>
-	
+
 	<Button item="MKPW_CancelBtn">
 		<ScreenID>MKPW_CancelBtn</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -294,7 +294,7 @@
 		<Pieces>MKPW_ItemCost_Icon</Pieces>
 		<Pieces>MKPW_ItemCost_CreditCardMoneyTypeLabel</Pieces>
 	</Screen>
-	
+
 	<!-- Categories View -->
 	<Editbox item="MKPW_FindEditBox">
 		<ScreenID>MKPW_FindEditBox</ScreenID>
@@ -342,7 +342,7 @@
 			<Heading>Categories:</Heading>
 		</Columns>
 	</TreeView>
-	
+
 	<!-- Item Browser -->
 	<Label item="MKPW_Sort_Label">
 		<ScreenID>MKPW_Sort_Label</ScreenID>
@@ -440,7 +440,7 @@
 		<Pieces>MKPW_ListBtn</Pieces>
 		<Pieces>MKPW_ListBtn_Label</Pieces>
 	</Screen>
-	
+
 	<TileLayoutBox item="MKPW_Thumbnails">
 		<ScreenID>MKPW_Thumbnails</ScreenID>
 		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
@@ -463,7 +463,7 @@
 		<FirstPieceTemplate>false</FirstPieceTemplate>
 		<Pieces>Screen:MKPW_Item_Screen</Pieces>
 	</TileLayoutBox>
-	
+
 	<Listbox item="MKPW_ItemList">
 		<ScreenID>MKPW_ItemList</ScreenID>
 		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
@@ -515,7 +515,7 @@
 			<Heading>Price</Heading>
 		</Columns>
 	</Listbox>
-	
+
 	<StaticAnimation item="MKPW_Claim_Anim">
 		<ScreenID>MKPW_Claim_Anim</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -627,7 +627,7 @@
 		<ScreenID>MKPW_ItemOfWeek_Anim</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>240</CX>
+			<CX>380</CX>
 			<CY>160</CY>
 		</Size>
 		<Animation>A_IoWBanner</Animation>
@@ -761,7 +761,7 @@
 	<Screen item="MKPW_ItemOfWeek">
 		<ScreenID>MKPW_ItemOfWeek</ScreenID>
 		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
-		<RelativePosition>true</RelativePosition>
+		<!--<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>645</X>
 			<Y>0</Y>
@@ -771,7 +771,15 @@
 			<CY>160</CY>
 		</Size>
 		<Style_Border>false</Style_Border>
-		<Style_Transparent>true</Style_Transparent>
+		<Style_Transparent>true</Style_Transparent>-->
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>10</TopAnchorOffset>
+		<BottomAnchorOffset>435</BottomAnchorOffset>
+		<LeftAnchorOffset>645</LeftAnchorOffset>
+		<RightAnchorOffset>10</RightAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Transparent>false</Style_Transparent>
 		<Pieces>MKPW_ItemOfWeek_Anim</Pieces>
 		<Pieces>MKPW_ItemOfWeekName</Pieces>
 		<Pieces>MKPW_ItemOfWeekIcon</Pieces>
@@ -856,7 +864,7 @@
 		<Pieces>MKPW_FeaturedItems_Label</Pieces>
 		<Pieces>MKPW_FeaturedItems</Pieces>
 	</Screen>
-	
+
 	<!-- Item Details -->
 	<Label item="MKPW_DetailsName">
 		<ScreenID>MKPW_DetailsName</ScreenID>
@@ -1750,7 +1758,7 @@
 		<Text>Complete Purchase</Text>
 		<Template>BDT_Normal</Template>
 	</Button>
-	
+
 	<!-- Credit Card Purchase Selection Page -->
 	<Label item="MKPW_CreditCardPurchaseSelection_Label">
 		<ScreenID>MKPW_CreditCardPurchaseSelection_Label</ScreenID>
@@ -1869,7 +1877,7 @@
 	</Combobox>
 	<Button item="MKPW_CreditCardPurchaseSelectionSelectBtn">
 		<ScreenID>MKPW_CreditCardPurchaseSelectionSelectBtn</ScreenID>
-		<RelativePosition>true</RelativePosition>	
+		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>45</TopAnchorOffset>
 		<BottomAnchorOffset>25</BottomAnchorOffset>
@@ -1887,7 +1895,7 @@
 		<TopAnchorOffset>60</TopAnchorOffset>
 		<BottomAnchorOffset>0</BottomAnchorOffset>
 		<LeftAnchorOffset>10</LeftAnchorOffset>
-		<RightAnchorOffset>120</RightAnchorOffset>	
+		<RightAnchorOffset>120</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<ButtonDrawTemplate>
@@ -1898,7 +1906,7 @@
 			<CY>60</CY>
 		</DecalSize>
 	</Button>
-	
+
 		<!-- Credit Card Purchase Page -->
 	<Label item="MKPW_CreditCardPurchase">
 		<ScreenID>MKPW_CreditCardPurchase</ScreenID>
@@ -2289,7 +2297,7 @@
 		<Text>Complete Purchase</Text>
 		<Template>BDT_Normal</Template>
 	</Button>
-	
+
 	<!-- Fund Confirm Page -->
 	<Label item="MKPW_FundConfirmStationCash">
 		<ScreenID>MKPW_FundConfirmStationCash</ScreenID>
@@ -2602,7 +2610,7 @@
 		<Style_Border>false</Style_Border>
 		<Pieces>MKPW_FundConfirm_ParentalLabel</Pieces>
 		<Pieces>MKPW_FundConfirm_ParentalPasswordEditBox</Pieces>
-	</Screen>	
+	</Screen>
 	<STMLbox item="MKPW_FundConfirm_LegalText">
 		<ScreenID>MKPW_FundConfirm_LegalText</ScreenID>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
@@ -2687,7 +2695,7 @@
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Label>
-	
+
 	<!-- Payment Source Page -->
 	<Label item="MKPW_PaymentSourceInstructionLabel">
 		<ScreenID>MKPW_PaymentSourceInstructionLabel</ScreenID>
@@ -2718,7 +2726,7 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<Text>Add Credit Card</Text>
 		<Template>BDT_Normal</Template>
-	</Button>	
+	</Button>
 	<Button item="MKPW_CreditCardOnFileButton">
 		<ScreenID>MKPW_CreditCardOnFileButton</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -2733,7 +2741,7 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<Text>Use Credit Card On File</Text>
 		<Template>BDT_Normal</Template>
-	</Button>		
+	</Button>
 	<Button item="MKPW_OtherPaymentSourceButton">
 		<ScreenID>MKPW_OtherPaymentSourceButton</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -2763,10 +2771,10 @@
 		<Style_Checkbox>false</Style_Checkbox>
 		<Text>Redeem Daybreak Cash Card</Text>
 		<Template>BDT_Normal</Template>
-	</Button>		
+	</Button>
 		<Button item="MKPW_SCCardConfirmBtn">
 		<ScreenID>MKPW_SCCardConfirmBtn</ScreenID>
-		<RelativePosition>true</RelativePosition>	
+		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>45</TopAnchorOffset>
 		<BottomAnchorOffset>25</BottomAnchorOffset>
@@ -2806,7 +2814,7 @@
 		<Style_Transparent>true</Style_Transparent>
 		<Style_Border>true</Style_Border>
 	</Editbox>
-	
+
 	<!-- Amount Button Template -->
 	<Label item="MKPW_AmountSelectionInstructionLabel">
 		<ScreenID>MKPW_AmountSelectionInstructionLabel</ScreenID>
@@ -2859,7 +2867,7 @@
 	</Combobox>
 	<Button item="MKPW_AmountSelectConfirmBtn">
 		<ScreenID>MKPW_AmountSelectConfirmBtn</ScreenID>
-		<RelativePosition>true</RelativePosition>	
+		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>45</TopAnchorOffset>
 		<BottomAnchorOffset>25</BottomAnchorOffset>
@@ -2956,7 +2964,7 @@
 		<TopAnchorOffset>60</TopAnchorOffset>
 		<BottomAnchorOffset>0</BottomAnchorOffset>
 		<LeftAnchorOffset>10</LeftAnchorOffset>
-		<RightAnchorOffset>120</RightAnchorOffset>	
+		<RightAnchorOffset>120</RightAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<ButtonDrawTemplate>
@@ -2967,11 +2975,11 @@
 			<CY>60</CY>
 		</DecalSize>
 	</Button>
-	
+
 	<!-- SC universal card confirmation page -->
 	<Button item="MKPW_SCChoiceConfirmBtn">
 		<ScreenID>MKPW_SCChoiceConfirmBtn</ScreenID>
-		<RelativePosition>true</RelativePosition>	
+		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>45</TopAnchorOffset>
 		<BottomAnchorOffset>25</BottomAnchorOffset>
@@ -2984,7 +2992,7 @@
 	</Button>
 		<Button item="MKPW_SCChoiceCancelBtn">
 		<ScreenID>MKPW_SCChoiceCancelBtn</ScreenID>
-		<RelativePosition>true</RelativePosition>	
+		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>05</BottomAnchorOffset>
@@ -3054,8 +3062,8 @@
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Pieces>MKPW_TaxInfoInstructionLabel</Pieces>
 		<Pieces>MKPW_TaxInfoZipCodeLabel</Pieces>
-		<Pieces>MKPW_TaxInfoZipCodeEdit</Pieces>				
-		<Pieces>MKPW_TaxInfoNextButton</Pieces>		
+		<Pieces>MKPW_TaxInfoZipCodeEdit</Pieces>
+		<Pieces>MKPW_TaxInfoNextButton</Pieces>
 	</Page>
 	<Page item="MKPW_PaymentSourcePage">
 		<ScreenID>MKPW_PaymentSourcePage</ScreenID>
@@ -3067,7 +3075,7 @@
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Pieces>MKPW_PaymentSourceInstructionLabel</Pieces>
-		<Pieces>MKPW_AddCreditCardButton</Pieces>		
+		<Pieces>MKPW_AddCreditCardButton</Pieces>
 		<Pieces>MKPW_CreditCardOnFileButton</Pieces>
 		<Pieces>MKPW_OtherPaymentSourceButton</Pieces>
 		<Pieces>MKPW_SCCardButton</Pieces>
@@ -3181,9 +3189,9 @@
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<Pieces>MKPW_FundConfirmStationCash</Pieces>
-		<Pieces>MKPW_FundConfirmStationCashPromo</Pieces>		
+		<Pieces>MKPW_FundConfirmStationCashPromo</Pieces>
 		<Pieces>MKPW_FundConfirm_SC_Icon</Pieces>
-		<Pieces>MKPW_FundConfirm_SC_Promo_Icon</Pieces>		
+		<Pieces>MKPW_FundConfirm_SC_Promo_Icon</Pieces>
 		<Pieces>MKPW_FundConfirmStationCashPromoLabel</Pieces>
 		<Pieces>MKPW_FundConfirmPrice</Pieces>
 		<Pieces>MKPW_FundConfirmTaxLabel</Pieces>
@@ -3252,8 +3260,8 @@
 		<PageBorderTemplate>FT_BlankPageBorder</PageBorderTemplate>
 		<ShowTabs>false</ShowTabs>
 		<Pages>MKPW_MainPage</Pages>
-		<Pages>MKPW_TaxInfoPage</Pages>		
-		<Pages>MKPW_PaymentSourcePage</Pages>				
+		<Pages>MKPW_TaxInfoPage</Pages>
+		<Pages>MKPW_PaymentSourcePage</Pages>
 		<Pages>MKPW_AmtSelectionPage</Pages>
 		<Pages>MKPW_ConfirmPage</Pages>
 		<Pages>MKPW_CreditCardPurchaseSelectionPage</Pages>
@@ -3634,7 +3642,7 @@
 		<MinHSize>890</MinHSize>
 		<MinVSize>610</MinVSize>
 		<Text>Marketplace</Text>
-		<DrawTemplate>WDT_Marketplace</DrawTemplate>
+		<DrawTemplate>WDT_Def</DrawTemplate>
 		<Style_Titlebar>true</Style_Titlebar>
 		<Style_Closebox>true</Style_Closebox>
 		<Style_Minimizebox>true</Style_Minimizebox>

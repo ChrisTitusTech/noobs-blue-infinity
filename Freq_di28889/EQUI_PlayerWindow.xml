@@ -349,8 +349,8 @@
 				<Y>0</Y>
 			</Location>
 			<Size>
-				<CX>182</CX>
-				<CY>178</CY>
+				<CX>114</CX>
+				<CY>32</CY>
 			</Size>
 		</Frames>
 	</Ui2DAnimation>
@@ -493,25 +493,6 @@
 		<ButtonDrawTemplate>
 			<Normal>A_ParcelsIcon</Normal>
 		</ButtonDrawTemplate>
-	</Button>   
-	<Button item="PW_VoiceVolume">
-		<ScreenID>PW_VoiceVolume</ScreenID>
-		<!--<EQType>openwnd VAB_VoiceVolumeWindow</EQType>-->
-		<EQType>voicechat/SpeakingIndicator</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>168</X>
-			<Y>15</Y>
-		</Location>
-		<Size>
-			<CX>21</CX>
-			<CY>21</CY>
-		</Size>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<Normal>A_CheckBoxNormal</Normal>
-		</ButtonDrawTemplate>
 	</Button>
 <!--Mail / Parcel Icons End-->
 <!-- Begin Gauge Labels -->
@@ -635,7 +616,7 @@
 			<CY>7</CY>
 		</Size>
 		<Animation>MPLabel</Animation>
-	</StaticAnimation>  
+	</StaticAnimation>
 	<!-- Just the "P" -->
 	<StaticAnimation item="MP2_Label">
 		<RelativePosition>true</RelativePosition>
@@ -1162,7 +1143,7 @@
 			<Lines>A_GaugeLines</Lines>
 			<LinesFill>A_GaugeLinesFill</LinesFill>
 		</GaugeDrawTemplate>
-	</Gauge>  
+	</Gauge>
 
 	<Gauge item="PW_Merc_AA_XP_Gauge">
 		<ScreenID>MercAAXPGauge</ScreenID>
@@ -1283,8 +1264,8 @@
 		</GaugeDrawTemplate>
 	</Gauge>
 <!-- End Gauges -->
- 
-<!-- Begin Gauge Percentage Labels -->	 
+
+<!-- Begin Gauge Percentage Labels -->
 	<Label item="PW_HPLabel">
 		<ScreenID>HPLabel</ScreenID>
 		<Font>1</Font>
@@ -1295,7 +1276,7 @@
 			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>22</CX>
+			<CX>24</CX>
 			<CY>14</CY>
 		</Size>
 		<TextColor>
@@ -1312,7 +1293,7 @@
 		<ScreenID>HPPerLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>208</X>
+			<X>210</X>
 			<Y>49</Y>
 		</Location>
 		<Size>
@@ -1340,7 +1321,7 @@
 			<Y>59</Y>
 		</Location>
 		<Size>
-			<CX>22</CX>
+			<CX>24</CX>
 			<CY>14</CY>
 		</Size>
 		<TextColor>
@@ -1359,7 +1340,7 @@
 		<ScreenID>ManPercLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>208</X>
+			<X>210</X>
 			<Y>59</Y>
 		</Location>
 		<Size>
@@ -1375,7 +1356,7 @@
 		<NoWrap>true</NoWrap>
 		<AlignRight>False</AlignRight>
 		<Font>1</Font>
-	</Label>	
+	</Label>
 
 	<Label item="PW_EXPLabel">
 		<Font>1</Font>
@@ -1383,14 +1364,14 @@
 		<EQType>26</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>185</X>
+			<X>183</X>
 			<Y>69</Y>
 		</Location>
 		<Size>
-			<CX>22</CX>
+			<CX>28</CX>
 			<CY>14</CY>
 		</Size>
-		<Text>100</Text>
+		<Text>55.555</Text>
 		<TextColor>
 			<R>255</R>
 			<G>255</G>
@@ -1406,7 +1387,7 @@
 		<ScreenID>EXPPerLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>208</X>
+			<X>212</X>
 			<Y>69</Y>
 		</Location>
 		<Size>
@@ -1431,11 +1412,11 @@
 		<EQType>27</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>185</X>
+			<X>183</X>
 			<Y>82</Y>
 		</Location>
 		<Size>
-			<CX>22</CX>
+			<CX>28</CX>
 			<CY>14</CY>
 		</Size>
 		<Text>100</Text>
@@ -1454,7 +1435,7 @@
 		<ScreenID>AAXPPerLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>208</X>
+			<X>212</X>
 			<Y>82</Y>
 		</Location>
 		<Size>
@@ -1472,18 +1453,18 @@
 		<AlignRight>false</AlignRight>
 		<Font>1</Font>
 	</Label>
-	 
+
 	<Label item="PW_MercAALabel">
 		<ScreenID>MercAALabel</ScreenID>
 		<Font>1</Font>
 		<EQType>335</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>185</X>
+			<X>183</X>
 			<Y>95</Y>
 		</Location>
 		<Size>
-			<CX>22</CX>
+			<CX>28</CX>
 			<CY>14</CY>
 		</Size>
 		<TextColor>
@@ -1502,7 +1483,7 @@
 		<ScreenID>MercAAPercLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>208</X>
+			<X>212</X>
 			<Y>95</Y>
 			</Location>
 		<Size>
@@ -1530,7 +1511,7 @@
 			<Y>105</Y>
 		</Location>
 		<Size>
-			<CX>22</CX>
+			<CX>24</CX>
 			<CY>14</CY>
 		</Size>
 		<TextColor>
@@ -1540,8 +1521,8 @@
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
 		<Text>100</Text>
 	</Label>
 
@@ -1549,7 +1530,7 @@
 		<ScreenID>FatiguePercLabel</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>208</X>
+			<X>210</X>
 			<Y>105</Y>
 		</Location>
 		<Size>
@@ -1694,7 +1675,7 @@
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<TopAnchorOffset>100</TopAnchorOffset>
-	</Button> 
+	</Button>
 <!--Group Roles End-->
 <!--Stats Section Begin-->
 	<Label item="PW_ACLabel">
@@ -2554,7 +2535,7 @@
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
 	</Label>
-	
+
 	<Label item="PW_Poison">
 		<ScreenID>PoisonLabel</ScreenID>
 		<Font>1</Font>
@@ -2876,7 +2857,7 @@
 		<ScreenID />
 		<Font>2</Font>
 		<Location>
-			<X>9</X>
+			<X>4</X>
 			<Y>225</Y>
 		</Location>
 		<Size>
@@ -2897,11 +2878,11 @@
 		<ScreenID />
 		<Font>2</Font>
 		<Location>
-			<X>42</X>
+			<X>37</X>
 			<Y>225</Y>
 		</Location>
 		<Size>
-		<CX>40</CX>
+		<CX>45</CX>
 		<CY>16</CY>
 		</Size>
 		<EQType>117</EQType>
@@ -2917,12 +2898,47 @@
 	</Label>
 <!--Personal Tribute End-->
 <!--Regen Begin-->
+	<Label item="PW_LuckLabel">
+		<RelativePosition>true</RelativePosition>
+		<Font>1</Font>
+		<Location>
+			<X>85</X>
+			<Y>185</Y>
+		</Location>
+		<Size>
+			<CX>110</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>LK:</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<TooltipReference>Has a chance to improve the effects of Heroic Mods, skill successes, and critical potency</TooltipReference>
+	</Label>
+	<Label item="PW_CurrentLuck">
+		<EQType>416</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Font>1</Font>
+		<Location>
+			<X>105</X>
+			<Y>185</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>0</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<AlignLeft>true</AlignLeft>
+	</Label>
 	<Label item="PW_CombatEndRegenLabel">
 		<Font>1</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>85</X>
-			<Y>195</Y>
+			<Y>205</Y>
 		</Location>
 		<Size>
 			<CX>60</CX>
@@ -2945,7 +2961,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>105</X>
-			<Y>195</Y>
+			<Y>205</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
@@ -2967,7 +2983,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>85</X>
-			<Y>205</Y>
+			<Y>215</Y>
 		</Location>
 		<Size>
 			<CX>60</CX>
@@ -2990,7 +3006,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>105</X>
-			<Y>205</Y>
+			<Y>215</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
@@ -3012,7 +3028,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>85</X>
-			<Y>215</Y>
+			<Y>225</Y>
 		</Location>
 		<Size>
 			<CX>70</CX>
@@ -3035,7 +3051,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>105</X>
-			<Y>215</Y>
+			<Y>225</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
@@ -3052,7 +3068,7 @@
 		<AlignRight>false</AlignRight>
 		<AlignLeft>true</AlignLeft>
     </Label>
-    
+
 <!--Regen End-->
 <!--Guild Tribute Begin-->
 	<Label item="PW_GTribTimeLabel">
@@ -3239,7 +3255,7 @@
 		<ScreenID />
 		<Font>2</Font>
 		<Location>
-			<X>154</X>
+			<X>149</X>
 			<Y>225</Y>
 		</Location>
 		<Size>
@@ -3260,11 +3276,11 @@
 		<ScreenID />
 		<Font>2</Font>
 		<Location>
-			<X>188</X>
+			<X>183</X>
 			<Y>225</Y>
 		</Location>
 		<Size>
-			<CX>45</CX>
+			<CX>55</CX>
 			<CY>16</CY>
 		</Size>
 		<EQType>122</EQType>
@@ -3279,7 +3295,7 @@
 		<Text>2000000</Text>
 	</Label>
 <!--Guild Tribute End-->
-  
+
 	<Screen item="PlayerWindow">
 		<RelativePosition>false</RelativePosition>
 		<Location>
@@ -3295,7 +3311,7 @@
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>The Breath Meter</TooltipReference>
-		<DrawTemplate>WDT_Custom</DrawTemplate>
+		<DrawTemplate>WDT_CustomB</DrawTemplate>
 		<Style_Titlebar>false</Style_Titlebar>
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
@@ -3324,7 +3340,6 @@
 		<Pieces>PW_NewMailIcon</Pieces>
 		<Pieces>PW_ParcelsOverLimitIcon</Pieces>
 		<Pieces>PW_ParcelsIcon</Pieces>
-		<Pieces>PW_VoiceVolume</Pieces>
 	<!--Gauges Begin-->
 		<!--Raw Numbers for Gauges-->
 		<Pieces>PW_HPNumber</Pieces>
@@ -3344,7 +3359,7 @@
 		<Pieces>AP_Label</Pieces>
 		<Pieces>MXP_Label</Pieces>
 		<Pieces>MXP2_Label</Pieces>
-		<Pieces>EP_Label</Pieces>    
+		<Pieces>EP_Label</Pieces>
 		<Pieces>EP2_Label</Pieces>
 		<Pieces>P_Label</Pieces>
 		<!-- Gauges -->
@@ -3358,7 +3373,7 @@
 		<Pieces>PW_End_Gauge</Pieces>
 		<Pieces>Pet_HP_Gauge</Pieces>
 		<!-- Gauge Percentage Labels -->
-		<Pieces>PW_HPLabel</Pieces>	
+		<Pieces>PW_HPLabel</Pieces>
 		<Pieces>PW_HPPercLabel</Pieces>
 		<Pieces>PW_ManaLabel</Pieces>
 		<Pieces>PW_ManaPercLabel</Pieces>
@@ -3421,12 +3436,14 @@
 		<Pieces>PW_HastePercent</Pieces>
 		<Pieces>PW_Poison</Pieces>
 		<Pieces>PW_PoisonNumber</Pieces>
-		<Pieces>PW_Disease</Pieces>    
+		<Pieces>PW_Disease</Pieces>
 		<Pieces>PW_DiseaseNumber</Pieces>
 		<Pieces>PW_Corruption</Pieces>
 		<Pieces>PW_CorruptionNumber</Pieces>
     <!--Stats Section End-->
 	<!--Regen Begin-->
+		<Pieces>PW_LuckLabel</Pieces>
+		<Pieces>PW_CurrentLuck</Pieces>
 		<Pieces>PW_CombatEndRegenLabel</Pieces>
 		<Pieces>PW_CurrentCombatEndRegen</Pieces>
 		<Pieces>PW_CombatHPRegenLabel</Pieces>
