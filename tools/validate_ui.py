@@ -10,7 +10,7 @@ def read(path):
     return ET.parse(path).getroot()
 
 
-def validate(skin, default):
+def validate(skin, default, macroquest=False):
     includes = [e.text.strip() for e in read(default / "EQUI.xml").iter("Include")]
     # SIDL defines the element types and reference-valued fields.
     schema = read(default / "SIDL.xml")
@@ -39,6 +39,32 @@ def validate(skin, default):
                         int(element.findtext("Size/CX", "0")),
                         int(element.findtext("Size/CY", "0")),
                     )
+
+    if macroquest:
+        # Plugin templates are looked up by item name at runtime, not by
+        # ScreenID or an XML Pieces reference. Check those external consumers.
+        required = {
+            "Player_ManaLabel": "Label",
+            "Player_FatigueLabel": "Label",
+            "IDW_ModButton": "Button",
+            "IDW_ModButtonLabel": "Label",
+            "ADLW_CheckBoxTemplate": "Button",
+            "GW_InviteButton": "Button",
+            "HB_Button1": "HotButton",
+            "HB_Button2": "HotButton",
+            "HB_Button3": "HotButton",
+        }
+        for item, kind in required.items():
+            if not any(tag == kind for _, tag in definitions.get(item, [])):
+                errors.add(f"MacroQuest: missing {kind} template {item}")
+        group = roots.get("EQUI_GroupWindow.xml")
+        if group is not None:
+            gauges = {g.get("item") for g in group.findall("Gauge")
+                      if g.findtext("ScreenID") == "Gauge1"}
+            window = group.find("./Screen[@item='GroupWindow']")
+            if window is None or not gauges.intersection(
+                    p.text.split(":")[-1] for p in window.findall("Pieces") if p.text):
+                errors.add("MacroQuest: GroupWindow missing Gauge1 control")
 
     # Some item names are valid in separate types or files; only validate
     # references by name here, and use explicit type prefixes when supplied.
@@ -88,9 +114,11 @@ def main():
     parser.add_argument("default", type=Path, help="Live client uifiles/default directory")
     parser.add_argument("--skin", type=Path,
                         default=Path(__file__).resolve().parents[1] / "Freq_di28889")
+    parser.add_argument("--macroquest", action="store_true",
+                        help="Also check external MacroQuest plugin templates")
     args = parser.parse_args()
     baseline, _ = validate(args.default, args.default)
-    errors, count = validate(args.skin, args.default)
+    errors, count = validate(args.skin, args.default, macroquest=args.macroquest)
     introduced = errors - baseline
     for error in sorted(errors & baseline):
         print(f"Also present in stock UI: {error}")

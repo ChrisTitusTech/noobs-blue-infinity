@@ -1311,7 +1311,7 @@
 		<Font>1</Font>
 	</Label>
 
-	<Label item="PW_ManaLabel">
+	<Label item="Player_ManaLabel">
 		<ScreenID>ManaLabel</ScreenID>
 		<Font>1</Font>
 		<EQType>20</EQType>
@@ -1501,7 +1501,7 @@
 		<Font>1</Font>
 	</Label>
 
-	<Label item="PW_EnduranceLabel">
+	<Label item="Player_FatigueLabel">
 		<ScreenID>FatigueLabel</ScreenID>
 		<Font>1</Font>
 		<EQType>21</EQType>
@@ -3375,7 +3375,7 @@
 		<!-- Gauge Percentage Labels -->
 		<Pieces>PW_HPLabel</Pieces>
 		<Pieces>PW_HPPercLabel</Pieces>
-		<Pieces>PW_ManaLabel</Pieces>
+		<Pieces>Player_ManaLabel</Pieces>
 		<Pieces>PW_ManaPercLabel</Pieces>
 		<Pieces>PW_EXPLabel</Pieces>
 		<Pieces>PW_EXPPercLabel</Pieces>
@@ -3383,7 +3383,7 @@
 		<Pieces>PW_AAXPPercLabel</Pieces>
 		<Pieces>PW_MercAALabel</Pieces>
 		<Pieces>PW_MercAAPercLabel</Pieces>
-		<Pieces>PW_EnduranceLabel</Pieces>
+		<Pieces>Player_FatigueLabel</Pieces>
 		<Pieces>PW_EndurancePercLabel</Pieces>
 		<Pieces>PW_PetLabel</Pieces>
 		<Pieces>PW_PetPercLabel</Pieces>

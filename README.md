@@ -35,6 +35,8 @@ overrides; the modern client supplies these windows instead.
   frame rectangles.
 - Retained the Noobs extended target layout (including all 23 target slots),
   player-panel styling, original spell icons, and other unmodified assets.
+- Restored the standard mana and fatigue label template names used by
+  MQ2XTarInfo, MQ2TargetInfo, and MQ2GroupInfo without changing their layout.
 
 ## Validation
 
@@ -43,6 +45,7 @@ stock UI directory:
 
 ```sh
 python3 tools/validate_ui.py "/path/to/EverQuest/uifiles/default"
+python3 tools/validate_ui.py "/path/to/EverQuest/uifiles/default" --macroquest
 ```
 
 The validator reads the stock UI's composite include list and resolves each
@@ -50,6 +53,8 @@ file from the custom skin or the stock fallback. It checks XML parsing,
 references, texture availability, and animation frame bounds. It compares
 results with the stock UI to distinguish existing stock discrepancies from
 new skin issues.
+The optional MacroQuest check covers the external control templates used by
+the target, extended target, group, and item display plugins.
 
 The November 12, 2026 client installed locally was used for static validation:
 34 active overrides, no additional issues relative to the stock UI. This does
