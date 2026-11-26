@@ -1,5 +1,8 @@
 # Noobs Blue Infinity - Live compatibility update
 
+<img width="2550" height="1394" alt="noob-ui" src="https://github.com/user-attachments/assets/a31171fe-fe20-46f2-a698-2f9f8b42cc47" />
+
+
 This repository contains the original Noobs Blue Infinity skin (May 2020)
 and its compatibility update for the November 2026 EverQuest Live client.
 
