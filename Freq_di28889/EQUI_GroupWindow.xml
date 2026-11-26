@@ -293,7 +293,7 @@
 		<AutoStretch>true</AutoStretch>
 		<AlignLeft>true</AlignLeft>
 		<TopAnchorOffset>60</TopAnchorOffset>
-		<BottomAnchorOffset>82</BottomAnchorOffset>
+		<BottomAnchorOffset>74</BottomAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Label>
 	<Label item="GW_AggroPctPlayer3">
@@ -311,7 +311,7 @@
 		<AutoStretch>true</AutoStretch>
 		<AlignLeft>true</AlignLeft>
 		<TopAnchorOffset>101</TopAnchorOffset>
-		<BottomAnchorOffset>131</BottomAnchorOffset>
+		<BottomAnchorOffset>115</BottomAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Label>
 	<Label item="GW_AggroPctPlayer4">
@@ -329,7 +329,7 @@
 		<AutoStretch>true</AutoStretch>
 		<AlignLeft>true</AlignLeft>
 		<TopAnchorOffset>142</TopAnchorOffset>
-		<BottomAnchorOffset>180</BottomAnchorOffset>
+		<BottomAnchorOffset>156</BottomAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Label>
 	<Label item="GW_AggroPctPlayer5">
@@ -347,7 +347,7 @@
 		<AutoStretch>true</AutoStretch>
 		<AlignLeft>true</AlignLeft>
 		<TopAnchorOffset>183</TopAnchorOffset>
-		<BottomAnchorOffset>229</BottomAnchorOffset>
+		<BottomAnchorOffset>197</BottomAnchorOffset>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 	</Label>
 	<Label item="GW_AggroPctPlayer0">
@@ -2226,7 +2226,7 @@
 		</Location>
 		<Size>
 			<CX>182</CX>
-			<CY>281</CY>
+			<CY>310</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
@@ -2237,7 +2237,9 @@
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
 		<Style_Border>true</Style_Border>
-		<Style_Sizable>false</Style_Sizable>
+		<Style_Sizable>true</Style_Sizable>
+		<MinHSize>182</MinHSize>
+		<MinVSize>310</MinVSize>
 <!--Group Buttons Begin-->
 		<Pieces>GW_InviteButton</Pieces>
 		<Pieces>GW_DisbandButton</Pieces>
@@ -2251,7 +2253,6 @@
 		<Pieces>GW_AggroPctPlayer3</Pieces>
 		<Pieces>GW_AggroPctPlayer4</Pieces>
 		<Pieces>GW_AggroPctPlayer5</Pieces>
-		<Pieces>GW_AggroPctPlayer0</Pieces>
 <!--Aggro Meter End-->
 <!--Shortcut Labels Begin-->
 		<Pieces>G2_Label</Pieces>
@@ -2259,7 +2260,6 @@
 		<Pieces>G4_Label</Pieces>
 		<Pieces>G5_Label</Pieces>
 		<Pieces>G6_Label</Pieces>
-		<Pieces>GW_Name0</Pieces>
 <!--Shortcut Labels End-->
 <!--Gauges Begin-->
 		<Pieces>GW_Gauge1</Pieces>
@@ -2267,25 +2267,21 @@
 		<Pieces>GW_Gauge3</Pieces>
 		<Pieces>GW_Gauge4</Pieces>
 		<Pieces>GW_Gauge5</Pieces>
-		<Pieces>GW_Gauge0</Pieces>
 		<Pieces>GW_ManaGauge1</Pieces>
 		<Pieces>GW_ManaGauge2</Pieces>
 		<Pieces>GW_ManaGauge3</Pieces>
 		<Pieces>GW_ManaGauge4</Pieces>
 		<Pieces>GW_ManaGauge5</Pieces>
-		<Pieces>GW_ManaGauge0</Pieces>
 		<Pieces>GW_STAGauge1</Pieces>
 		<Pieces>GW_STAGauge2</Pieces>
 		<Pieces>GW_STAGauge3</Pieces>
 		<Pieces>GW_STAGauge4</Pieces>
 		<Pieces>GW_STAGauge5</Pieces>
-		<Pieces>GW_STAGauge0</Pieces>
 		<Pieces>GW_PetGauge1</Pieces>
 		<Pieces>GW_PetGauge2</Pieces>
 		<Pieces>GW_PetGauge3</Pieces>
 		<Pieces>GW_PetGauge4</Pieces>
 		<Pieces>GW_PetGauge5</Pieces>
-		<Pieces>GW_PetGauge0</Pieces>
 <!--Gauges End-->
 <!--HP Labels Begin-->
 		<Pieces>GW_HPLabel1</Pieces>
@@ -2308,10 +2304,6 @@
 		<Pieces>GW_HPPercLabel5</Pieces>
 		<Pieces>PW_PetHPLabel5</Pieces>
 		<Pieces>PW_PetHPPercLabel5</Pieces>
-		<Pieces>GW_HPLabel0</Pieces>
-		<Pieces>GW_HPPercLabel0</Pieces>
-		<Pieces>PW_PetHPLabel0</Pieces>
-		<Pieces>PW_PetHPPercLabel0</Pieces>
 <!--HP Labels End-->
 <!--Group Roles Begin-->
 		<Pieces>GW_GroupRoleTank1</Pieces>
@@ -2334,10 +2326,6 @@
 		<Pieces>GW_GroupRoleAssist5</Pieces>
 		<Pieces>GW_GroupRolePuller5</Pieces>
 		<Pieces>GW_GroupRoleMarkNPC5</Pieces>
-		<Pieces>GW_GroupRoleTank0</Pieces>
-		<Pieces>GW_GroupRoleAssist0</Pieces>
-		<Pieces>GW_GroupRolePuller0</Pieces>
-		<Pieces>GW_GroupRoleMarkNPC0</Pieces>
 <!--Group Roles End-->
 	</Screen>
 </XML>

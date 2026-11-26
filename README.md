@@ -37,6 +37,18 @@ overrides; the modern client supplies these windows instead.
   player-panel styling, original spell icons, and other unmodified assets.
 - Restored the standard mana and fatigue label template names used by
   MQ2XTarInfo, MQ2TargetInfo, and MQ2GroupInfo without changing their layout.
+- Removed the duplicate self row from the group window and reserved space
+  for the six MQ2GroupInfo controls. Separated target-of-target, target
+  metadata, aggro, and buffs into distinct rows.
+
+## MacroQuest layout settings
+
+Merge the `[UI_Freq_di28889]` sections in
+`macroquest/MQ2TargetInfo.ini` and `macroquest/MQ2GroupInfo.ini` into the
+corresponding MacroQuest configuration files, replacing only that skin's
+section. These settings position the plugin-created controls to match the
+skin's XML layout. Reload the skin with `/loadskin Freq_di28889 1` to keep
+the existing window positions.
 
 ## Validation
 
