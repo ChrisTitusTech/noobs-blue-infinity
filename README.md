@@ -1,38 +1,27 @@
 # Noobs Blue Infinity
 
-A blue, compact custom UI for EverQuest, updated for the November 2026 Live client.
+A compact blue UI for EverQuest Live (November 2026).
 
 <img width="2550" height="1394" alt="noob-ui" src="https://github.com/user-attachments/assets/a31171fe-fe20-46f2-a698-2f9f8b42cc47" />
 
-## Installation
+## Install
 
-1. Click **Code > Download ZIP** on GitHub and extract the ZIP file.
-2. Copy the entire `Freq_di28889` folder into your EverQuest `uifiles` folder.
-   Leave the existing `default` folder intact.
-3. In game, type:
+1. Click **Code > Download ZIP** and extract it.
+2. Copy `Freq_di28889` into EverQuest's `uifiles` folder. Keep the `default` folder.
+3. In game, run `/loadskin Freq_di28889`.
+
+## Automatic layout (MacroQuest)
+
+1. Copy [noobs_layout.lua](macroquest/lua/noobs_layout.lua) into MacroQuest's `lua` folder.
+2. Apply the [plugin layout settings](docs/technical.md#macroquest-layout-settings) if you use MQ2TargetInfo or MQ2GroupInfo.
+3. In game, run:
 
    ```
-   /loadskin Freq_di28889
+   /lua run noobs_layout
    ```
 
-   Or select `Freq_di28889` in the Load UI Skin dialog.
+Automatically detects 1440p, 1080p, or 720p and adjusts for your class.
 
-## Optional: MacroQuest
+To restore the default UI, run `/loadskin default`.
 
-If you use MacroQuest, follow the [plugin layout setup](docs/technical.md#macroquest-layout-settings)
-to make the target and group windows display correctly.
-
-Use the [layout script](docs/layout.md) to arrange the windows automatically at
-1440p, 1080p, or 720p.
-
-## Troubleshooting
-
-If the UI does not load correctly, return to the default skin with
-`/loadskin default`. Check `UIErrors.txt` in your EverQuest folder for details.
-
-## Documentation
-
-See the [technical documentation](docs/technical.md) for compatibility changes,
-legacy files, and testing.
-
-**Note:** Full in-game testing is still pending.
+[Layout guide](docs/layout.md) | [Technical documentation](docs/technical.md)
