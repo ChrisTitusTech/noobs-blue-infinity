@@ -22,6 +22,9 @@ A blue, compact custom UI for EverQuest, updated for the November 2026 Live clie
 If you use MacroQuest, follow the [plugin layout setup](docs/technical.md#macroquest-layout-settings)
 to make the target and group windows display correctly.
 
+Use the [layout script](docs/layout.md) to arrange the windows automatically at
+1440p, 1080p, or 720p.
+
 ## Troubleshooting
 
 If the UI does not load correctly, return to the default skin with
