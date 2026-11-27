@@ -1,4 +1,4 @@
--- Restore the Noobs Blue Infinity melee layout.
+-- Restore the Noobs Blue Infinity class-aware layout.
 -- /lua run noobs_layout [auto|1440p|1080p|720p] [preview]
 local mq = require('mq')
 local imgui = require('ImGui')
@@ -24,6 +24,19 @@ if (mq.TLO.EverQuest.CurrentUI() or ''):lower() ~= 'freq_di28889' then
     log('Load the skin first: /loadskin Freq_di28889')
     return
 end
+
+-- Pure casters need the spellbar but not the discipline window. Hybrids
+-- (including bards) use both, while non-casters use the discipline window.
+local canCast = mq.TLO.Me.Class.CanCast()
+local pureCaster = mq.TLO.Me.Class.PureCaster()
+if canCast == nil or pureCaster == nil then
+    log('Could not determine the current character class.')
+    return
+end
+
+local hidden = {'TargetOfTargetWindow', 'ActionsWindow', 'SelectorWindow', 'CompassWindow'}
+if pureCaster then hidden[#hidden + 1] = 'CombatAbilityWnd' end
+if not canCast then hidden[#hidden + 1] = 'CastSpellWnd' end
 
 -- Use the actual drawable client size, including windowed-mode differences.
 local display = imgui.GetIO().DisplaySize
@@ -150,9 +163,15 @@ local function buildLayout(w, h, profile)
         add(bar.name, 0, barY, bar.w, bar.h)
         barY = barY + bar.h
     end
-    add('ExtendedTargetWnd', 0, xtarTop, 119, 300)
-    add('ActionsWindow', 0, xtarTop - 189, 124, 187)
-    add('CombatAbilityWnd', 121, dockTop - 142, 174, 140)
+    -- Match Tums: the spell bar is docked above the leftmost hotbars,
+    -- with extended targets immediately to its right.
+    add('ExtendedTargetWnd', canCast and 155 or 0, xtarTop, 119, 300)
+    if canCast then
+        add('CastSpellWnd', 0, dockTop - 474, 153, 472)
+    end
+    if not pureCaster then
+        add('CombatAbilityWnd', canCast and 276 or 121, dockTop - 142, 174, 140)
+    end
 
     local buffWidth = compact and 186 or 192
     local shortWidth = compact and 182 or 186
@@ -169,8 +188,15 @@ local function buildLayout(w, h, profile)
         add('HotButtonWnd', mainX, h - 275, 187, 275)
         add('GroupWindow', groupX, h - 282, 182, 282)
         add('TargetWindow', mainX + 28, h - 435, 254, 149)
-        add('PlayerWindow', 298, math.min(h - 527, dockTop - 252), 250, 250)
-        add('EQMainWnd', 249, dockTop - 192, 44, 44)
+        local hybrid = canCast and not pureCaster
+        local playerY = math.min(h - 527, dockTop - (hybrid and 394 or 252))
+        add('PlayerWindow', 298, playerY, 250, 250)
+        if canCast then
+            -- Keep the EQ button clear of the spellbar and hybrid disciplines.
+            add('EQMainWnd', hybrid and 452 or 276, dockTop - 46, 44, 44)
+        else
+            add('EQMainWnd', 249, dockTop - 192, 44, 44)
+        end
         local chatX = groupX + 184
         local chatY = math.max(484, h - 198)
         add('ChatContainerWindow', chatX, chatY, w - chatX - 2, h - chatY)
@@ -255,7 +281,25 @@ for _, r in ipairs(windows) do
         end
     end
 end
+local hiddenCount = 0
+for _, name in ipairs(hidden) do
+    if mode == 'preview' then
+        log('Hide: ' .. name)
+    else
+        local wnd = mq.TLO.Window(name)
+        if wnd.Open() then
+            wnd.DoClose()
+            mq.delay(50)
+        end
+        if wnd.Open() then
+            log('Client refused to hide: ' .. name)
+            issues = issues + 1
+        else
+            hiddenCount = hiddenCount + 1
+        end
+    end
+end
 if mode ~= 'preview' then
-    log(string.format('Applied %d/%d windows; %d need checking. Your hotbank contents and chat tabs were not changed.',
-        applied, #windows, issues))
+    log(string.format('Applied %d/%d windows; %d/%d hidden; %d need checking. Hotbuttons and chat tabs unchanged.',
+        applied, #windows, hiddenCount, #hidden, issues))
 end
