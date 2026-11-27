@@ -38,19 +38,95 @@ if preset == 'auto' then
     end
 end
 
--- EQ can retain the existing size of a dynamic hotbar even when Move()
--- supplies new dimensions. Measure before planning rather than assuming
--- every character already uses the monk's one-row configuration.
+-- The dynamic hotbar parent ignores programmatic size changes. Resize its
+-- native tile layout instead; this lets EQ snap all twelve buttons to one row.
 local bars = {}
+local function spinnerVisible(wnd)
+    local horizontal = wnd.Child('HB_HorizontalBarPageButtons').Open()
+    local vertical = wnd.Child('HB_VerticalBarPageButtons').Open()
+    if horizontal == nil or vertical == nil then return nil end
+    return horizontal or vertical
+end
+
+local function singleRow(wnd)
+    local previousX, firstY
+    for i = 1, 12 do
+        local button = wnd.Child('HB_Button' .. i)
+        local x, y = button.X(), button.Y()
+        if x == nil or y == nil or not button.Open()
+            or (previousX and (x <= previousX or y ~= firstY)) then
+            return false
+        end
+        previousX, firstY = x, y
+    end
+    return true
+end
+
 for i = 2, 4 do
     local name = 'HotButtonWnd' .. i
     local wnd = mq.TLO.Window(name)
-    local ww, hh = wnd.Width(), wnd.Height()
-    bars[#bars + 1] = {
-        name = name,
-        w = ww and ww > 0 and ww or 522,
-        h = hh and hh > 0 and hh or 60,
-    }
+    if wnd.Open() == nil then
+        log('Required hotbar unavailable: ' .. name)
+        return
+    end
+    local button = wnd.Child('HB_Button1')
+    local bw, bh = button.Width(), button.Height()
+    if not bw or bw <= 0 or not bh or bh <= 0
+        or wnd.Child('HB_HotButtonLayout').Open() == nil or spinnerVisible(wnd) == nil then
+        log('Required hotbar controls unavailable: ' .. name)
+        return
+    end
+    -- The grid needs room for 12 buttons and their 1-pixel spacing. EQ
+    -- adds its own border and snaps the parent to the actual resulting size.
+    local gridWidth = 12 * bw + 20
+    bars[#bars + 1] = {name = name, gridWidth = gridWidth, gridHeight = bh,
+        w = gridWidth + 16, h = bh + 16}
+end
+
+local function configureBar(bar)
+    local wnd = mq.TLO.Window(bar.name)
+    if not wnd.Open() then
+        wnd.DoOpen()
+        mq.delay(150)
+    end
+    if spinnerVisible(wnd) then
+        -- Select only the verified native hotbar menu item. /notify handles
+        -- exact text matches correctly on clients where Menu.Select does not.
+        if (mq.TLO.Menu.NumVisibleMenus() or 0) ~= 0 then
+            log('Close the open context menu before running the layout.')
+            return false
+        end
+        wnd.RightMouseUp()
+        mq.delay(200)
+        local found = false
+        if mq.TLO.Menu.NumVisibleMenus() == 1 then
+            for i = 0, (mq.TLO.Menu.NumItems() or 0) - 1 do
+                if mq.TLO.Menu.Items(i)() == 'Show Spinner' then found = true; break end
+            end
+        end
+        if not found then
+            log('Show Spinner menu item unavailable: ' .. bar.name)
+            return false
+        end
+        mq.cmd('/notify "Show Spinner" menuselect')
+        mq.delay(250)
+    end
+    if spinnerVisible(wnd) ~= false then
+        log('Could not hide spinner: ' .. bar.name)
+        return false
+    end
+    wnd.Child('HB_HotButtonLayout').Move(string.format('4,4,%d,%d', bar.gridWidth, bar.gridHeight))
+    mq.delay(250)
+    if not singleRow(wnd) or spinnerVisible(wnd) ~= false then
+        log('Client did not create a spinner-free single row: ' .. bar.name)
+        return false
+    end
+    bar.w, bar.h = wnd.Width(), wnd.Height()
+    if not bar.w or bar.w <= 0 or not bar.h or bar.h <= 0 then
+        log('Invalid hotbar dimensions: ' .. bar.name)
+        return false
+    end
+    return true
 end
 
 -- Fixed-size XML controls retain their native pixel dimensions.
@@ -75,13 +151,7 @@ local function buildLayout(w, h, profile)
         barY = barY + bar.h
     end
     add('ExtendedTargetWnd', 0, xtarTop, 119, 300)
-    if xtarTop >= 189 then
-        add('ActionsWindow', 0, xtarTop - 189, 124, 187)
-    else
-        -- Taller two-row hotbars may leave no room to stack the actions
-        -- panel above extended targets at 720p.
-        add('ActionsWindow', 121, 0, 124, 187)
-    end
+    add('ActionsWindow', 0, xtarTop - 189, 124, 187)
     add('CombatAbilityWnd', 121, dockTop - 142, 174, 140)
 
     local buffWidth = compact and 186 or 192
@@ -122,28 +192,42 @@ local function buildLayout(w, h, profile)
     return windows
 end
 
-local windows = buildLayout(width, height, preset)
--- Validate the complete geometry before adjusting any game windows.
-for i, a in ipairs(windows) do
-    if a.x < 0 or a.y < 0 or a.w <= 0 or a.h <= 0 or a.x + a.w > width or a.y + a.h > height
-        or (a.name == 'ChatContainerWindow' and (a.w < 300 or a.h < 150)) then
-        log(string.format('%s does not fit %dx%d (%s). Choose a smaller preset or enlarge the client.',
-            a.name, width, height, preset))
-        return
-    end
-    for j = 1, i - 1 do
-        local b = windows[j]
-        if a.x < b.x + b.w and a.x + a.w > b.x and a.y < b.y + b.h and a.y + a.h > b.y then
-            log(string.format('%s and %s overlap at %dx%d (%s). Choose a smaller preset or enlarge the client.',
-                a.name, b.name, width, height, preset))
-            return
+-- Validate predicted geometry before changing settings, and the actual
+-- snapped geometry again before moving the rest of the windows.
+local function validLayout(windows)
+    for i, a in ipairs(windows) do
+        if a.x < 0 or a.y < 0 or a.w <= 0 or a.h <= 0 or a.x + a.w > width or a.y + a.h > height
+            or (a.name == 'ChatContainerWindow' and (a.w < 300 or a.h < 150)) then
+            log(string.format('%s does not fit %dx%d (%s). Choose a smaller preset or enlarge the client.',
+                a.name, width, height, preset))
+            return false
+        end
+        for j = 1, i - 1 do
+            local b = windows[j]
+            if a.x < b.x + b.w and a.x + a.w > b.x and a.y < b.y + b.h and a.y + a.h > b.y then
+                log(string.format('%s and %s overlap at %dx%d (%s). Choose a smaller preset or enlarge the client.',
+                    a.name, b.name, width, height, preset))
+                return false
+            end
         end
     end
+    return true
+end
+
+local windows = buildLayout(width, height, preset)
+if not validLayout(windows) then return end
+if mode ~= 'preview' then
+    for _, bar in ipairs(bars) do
+        if not configureBar(bar) then return end
+    end
+    windows = buildLayout(width, height, preset)
+    if not validLayout(windows) then return end
 end
 
 log(string.format('%s layout for %dx%d%s', preset, width, height, mode == 'preview' and ' (preview)' or ''))
 
 local applied, issues = 0, 0
+local normalizedBars = {HotButtonWnd2 = true, HotButtonWnd3 = true, HotButtonWnd4 = true}
 for _, r in ipairs(windows) do
     local rect = string.format('%d,%d,%d,%d', r.x, r.y, r.w, r.h)
     if mode == 'preview' then
@@ -160,7 +244,8 @@ for _, r in ipairs(windows) do
             end
             wnd.Move(rect)
             mq.delay(50)
-            if not wnd.Open() or wnd.X() ~= r.x or wnd.Y() ~= r.y or wnd.Width() ~= r.w or wnd.Height() ~= r.h then
+            if not wnd.Open() or wnd.X() ~= r.x or wnd.Y() ~= r.y or wnd.Width() ~= r.w or wnd.Height() ~= r.h
+                or (normalizedBars[r.name] and (spinnerVisible(wnd) ~= false or not singleRow(wnd))) then
                 log(string.format('Client adjusted %s: requested %s; actual %s,%s,%s,%s',
                     r.name, rect, tostring(wnd.X()), tostring(wnd.Y()), tostring(wnd.Width()), tostring(wnd.Height())))
                 issues = issues + 1

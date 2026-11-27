@@ -3,7 +3,8 @@ local script = 'macroquest/lua/noobs_layout.lua'
 
 local function run(width, height, preset, mode, options)
     options = options or {}
-    local state, messages = {}, {}
+    local state, messages, windows = {}, {}, {}
+    local menuBar = nil
     local originalPrint = print
     print = function(message) messages[#messages + 1] = message end
     package.loaded.mq = {
@@ -12,12 +13,25 @@ local function run(width, height, preset, mode, options)
                 GameState = function() return options.gameState or 'INGAME' end,
                 CurrentUI = function() return options.skin or 'Freq_di28889' end,
             },
+            Menu = {
+                NumVisibleMenus = function() return menuBar and 1 or 0 end,
+                NumItems = function() return menuBar and 2 or 0 end,
+                Items = function(i)
+                    return function() return i == 1 and not options.noMenuItem and 'Show Spinner' or 'Window' end
+                end,
+            },
             Window = function(name)
                 if name == options.missing then
                     return {Open = function() return nil end, Width = function() return nil end, Height = function() return nil end}
                 end
                 local initial = options.initial and options.initial[name] or {}
-                local r = state[name] or {open = false, w = initial.w, h = initial.h}
+                local isBar = name:match('^HotButtonWnd[234]$') ~= nil
+                local r = windows[name] or {
+                    open = false, w = initial.w, h = initial.h,
+                    spinner = isBar and not initial.noSpinner,
+                    singleRow = isBar and initial.singleRow or false,
+                }
+                windows[name] = r
 
                 return {
                     Open = function() return r.open end,
@@ -32,9 +46,51 @@ local function run(width, height, preset, mode, options)
                     Y = function() return r.y end,
                     Width = function() return r.w end,
                     Height = function() return r.h end,
+                    RightMouseUp = function()
+                        assert(isBar)
+                        menuBar = name
+                    end,
+                    Child = function(child)
+                        assert(isBar)
+                        if child == 'HB_HorizontalBarPageButtons' then
+                            return {Open = function() return r.spinner end}
+                        elseif child == 'HB_VerticalBarPageButtons' then
+                            return {Open = function() return false end}
+                        elseif child == 'HB_HotButtonLayout' then
+                            return {
+                                Open = function() return true end,
+                                Move = function(rect)
+                                    state[name] = r
+                                    local w, h = rect:match('^4,4,(%d+),(%d+)$')
+                                    assert(w and h)
+                                    if name ~= options.refuseGrid then
+                                        r.w, r.h = tonumber(w) + 16, tonumber(h) + 16
+                                        r.singleRow = true
+                                    end
+                                end,
+                            }
+                        end
+                        local i = tonumber(child:match('^HB_Button(%d+)$'))
+                        assert(i and i <= 12, child)
+                        return {
+                            Open = function() return true end,
+                            Width = function() return 40 end,
+                            Height = function() return 40 end,
+                            X = function() return r.singleRow and (i - 1) * 41 or ((i - 1) % 11) * 41 end,
+                            Y = function() return r.singleRow and 0 or math.floor((i - 1) / 11) * 41 end,
+                        }
+                    end,
                 }
             end,
         },
+        cmd = function(command)
+            assert(command == '/notify "Show Spinner" menuselect')
+            assert(menuBar)
+            local r = windows[menuBar]
+            r.spinner = not r.spinner
+            state[menuBar] = r
+            menuBar = nil
+        end,
         delay = function() end,
     }
     package.loaded.ImGui = {
@@ -58,6 +114,10 @@ for _, p in ipairs(profiles) do
     for _, preset in ipairs({p[3], 'auto'}) do
         local windows, output = run(p[1], p[2], preset)
         assert(output:find('Applied 14/14 windows', 1, true), output)
+        for i = 2, 4 do
+            local bar = windows['HotButtonWnd' .. i]
+            assert(bar.singleRow and not bar.spinner and bar.h == 56 and bar.w == 516)
+        end
         assert(windows.HotButtonWnd4.y + windows.HotButtonWnd4.h == p[2])
         assert(windows.BuffWindow.x + windows.BuffWindow.w == p[1] - 2)
         assert(windows.PlayerWindow.w == 250 and windows.PlayerWindow.h == 250)
@@ -83,10 +143,25 @@ for i = 2, 4 do twoRow['HotButtonWnd' .. i] = {w = 481, h = 101} end
 for _, p in ipairs(profiles) do
     local windows, output = run(p[1], p[2], p[3], nil, {initial = twoRow})
     assert(output:find('Applied 14/14 windows', 1, true), output)
-    assert(windows.HotButtonWnd2.h == 101 and windows.HotButtonWnd3.y == windows.HotButtonWnd2.y + 101)
+    for i = 2, 4 do
+        local bar = windows['HotButtonWnd' .. i]
+        assert(bar.h == 56 and bar.w == 516 and bar.singleRow and not bar.spinner)
+    end
+    assert(windows.HotButtonWnd3.y == windows.HotButtonWnd2.y + 56)
     assert(windows.HotButtonWnd4.y + windows.HotButtonWnd4.h == p[2])
 end
-print('Existing two-row hotbars fit all three presets and windowed sizes.')
+print('Existing two-row hotbars become spinner-free single rows at all resolutions.')
+
+local already = {}
+for i = 2, 4 do already['HotButtonWnd' .. i] = {w = 516, h = 56, noSpinner = true, singleRow = true} end
+local ready, result = run(1920, 1080, 'auto', nil, {initial = already, noMenuItem = true})
+assert(result:find('Applied 14/14 windows', 1, true), result)
+for i = 2, 4 do assert(not ready['HotButtonWnd' .. i].spinner) end
+local failed, failure = run(1920, 1080, 'auto', nil, {refuseGrid = 'HotButtonWnd2'})
+assert(failure:find('did not create a spinner-free single row', 1, true) and not failed.PlayerWindow)
+failed, failure = run(1920, 1080, 'auto', nil, {noMenuItem = true})
+assert(failure:find('Show Spinner menu item unavailable', 1, true) and not failed.PlayerWindow)
+print('Already-normalized bars remain spinner-free; unavailable controls stop placement.')
 
 local state, output = run(1280, 720, '720p', 'preview')
 assert(next(state) == nil and output:find('preview', 1, true) and output:find('ChatContainerWindow:', 1, true))
@@ -94,6 +169,8 @@ state, output = run(1280, 720, '1440p')
 assert(next(state) == nil and output:find('Choose a smaller preset or enlarge the client', 1, true))
 state, output = run(1280, 720, '720p', nil, {skin = 'Default'})
 assert(next(state) == nil and output:find('Load the skin first', 1, true))
+state, output = run(1280, 720, '720p', nil, {missing = 'HotButtonWnd2'})
+assert(next(state) == nil and output:find('Required hotbar unavailable', 1, true))
 state, output = run(1280, 720, '720p', nil, {missing = 'ChatContainerWindow'})
 assert(output:find('Applied 13/14 windows', 1, true))
 state, output = run(1280, 720, '720p', nil, {adjusted = 'PlayerWindow'})

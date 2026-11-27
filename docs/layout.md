@@ -20,7 +20,9 @@ plugin and the Noobs Blue Infinity skin.
 
 The first command selects the preset from the current client width. The script
 does not change your resolution. It positions and shows the fourteen main
-windows, without changing hotbutton assignments, chat tabs, or other settings.
+windows, and makes hotbars 2, 3, and 4 single horizontal rows of 12 buttons
+with the page spinners disabled. Hotbutton assignments and chat tabs are
+unchanged.
 Use the same command again after changing resolutions. Apply the
 [MacroQuest plugin layout settings](technical.md#macroquest-layout-settings)
 for the target and group windows separately.
@@ -41,12 +43,13 @@ To check the planned positions without moving any windows:
 
 The script uses the actual drawable client dimensions instead of assuming
 fullscreen, so typical window borders and title bars are accommodated. It
-preserves native XML control sizes rather than shrinking text. Dynamic
-hotbars retain their existing size and row count: if the client keeps a
-two-row hotbar, the script stacks the bars using their measured heights
-instead of overlapping them. It is intended
+preserves native XML control sizes rather than shrinking text. The script
+resizes the hotbar button grids directly, reads their actual snapped sizes,
+and verifies every button is in the same row before stacking the bars.
+It retains the user's button scale and leaves hotbar 1 unchanged. It is intended
 for the monk/melee layout at normal UI scale, not a caster spell-bar layout.
-If the geometry does not fit, it reports the conflict before moving anything.
+If the predicted geometry does not fit, it reports the conflict before
+moving windows. Preview reports the predicted sizes without changing settings.
 The primary visible chat container is arranged; extra separate chat windows
 are left alone, as are independent MacroQuest plugin overlays.
 
@@ -61,10 +64,12 @@ luajit tools/tests/test_noobs_layout.lua
 
 The tests simulate the MacroQuest window API, check fullscreen and windowed
 dimensions for all three resolutions, detect overlapping or off-screen
-rectangles, and verify preview and error handling, including existing
-two-row hotbars.
+rectangles, and verify preview and error handling, including converting existing
+two-row hotbars and preserving already-hidden spinners.
 
 A live test at 1920 x 1050 confirmed that the skin loaded and the automatic
 preset correctly positioned all 14 managed windows without overlap or
-off-screen geometry, including three 481 x 101 hotbars. The 1440p and
-720p presets have passed offline tests but still need in-game verification.
+off-screen geometry. Three originally two-row hotbars were converted to
+516 x 56 single rows with all 12 buttons visible and both spinner controls
+hidden. A repeat run preserved those settings. The 1440p and 720p presets
+have passed offline tests but still need in-game verification.
