@@ -14,14 +14,16 @@ local function run(width, height, preset, mode, options)
             },
             Window = function(name)
                 if name == options.missing then
-                    return {Open = function() return nil end}
+                    return {Open = function() return nil end, Width = function() return nil end, Height = function() return nil end}
                 end
-                local r = state[name] or {open = false}
-                state[name] = r
+                local initial = options.initial and options.initial[name] or {}
+                local r = state[name] or {open = false, w = initial.w, h = initial.h}
+
                 return {
                     Open = function() return r.open end,
-                    DoOpen = function() r.open = true end,
+                    DoOpen = function() r.open = true; state[name] = r end,
                     Move = function(rect)
+                        state[name] = r
                         local x, y, w, h = rect:match('^(%d+),(%d+),(%d+),(%d+)$')
                         r.x, r.y, r.w, r.h = tonumber(x), tonumber(y), tonumber(w), tonumber(h)
                         if name == options.adjusted then r.x = r.x + 1 end
@@ -73,6 +75,18 @@ for _, p in ipairs(profiles) do
     end
     print(string.format('%dx%d: %s layout fits', p[1], p[2], p[3]))
 end
+
+
+-- Tums's live client refused to resize these bars from 481x101.
+local twoRow = {}
+for i = 2, 4 do twoRow['HotButtonWnd' .. i] = {w = 481, h = 101} end
+for _, p in ipairs(profiles) do
+    local windows, output = run(p[1], p[2], p[3], nil, {initial = twoRow})
+    assert(output:find('Applied 14/14 windows', 1, true), output)
+    assert(windows.HotButtonWnd2.h == 101 and windows.HotButtonWnd3.y == windows.HotButtonWnd2.y + 101)
+    assert(windows.HotButtonWnd4.y + windows.HotButtonWnd4.h == p[2])
+end
+print('Existing two-row hotbars fit all three presets and windowed sizes.')
 
 local state, output = run(1280, 720, '720p', 'preview')
 assert(next(state) == nil and output:find('preview', 1, true) and output:find('ChatContainerWindow:', 1, true))

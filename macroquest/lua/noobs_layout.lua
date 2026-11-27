@@ -38,6 +38,21 @@ if preset == 'auto' then
     end
 end
 
+-- EQ can retain the existing size of a dynamic hotbar even when Move()
+-- supplies new dimensions. Measure before planning rather than assuming
+-- every character already uses the monk's one-row configuration.
+local bars = {}
+for i = 2, 4 do
+    local name = 'HotButtonWnd' .. i
+    local wnd = mq.TLO.Window(name)
+    local ww, hh = wnd.Width(), wnd.Height()
+    bars[#bars + 1] = {
+        name = name,
+        w = ww and ww > 0 and ww or 522,
+        h = hh and hh > 0 and hh or 60,
+    }
+end
+
 -- Fixed-size XML controls retain their native pixel dimensions.
 -- Rectangles are {x, y, width, height}, not EQ's encoded INI positions.
 local function buildLayout(w, h, profile)
@@ -47,15 +62,26 @@ local function buildLayout(w, h, profile)
     end
 
     local compact = profile == '720p'
-    local barWidth, barHeight = 522, 60
-    local dockTop = h - 3 * barHeight
+    local barWidth, dockTop = 522, h
+    for _, bar in ipairs(bars) do
+        barWidth = math.max(barWidth, bar.w)
+        dockTop = dockTop - bar.h
+    end
     local xtarTop = dockTop - 302
 
-    add('HotButtonWnd2', 0, dockTop, barWidth, barHeight)
-    add('HotButtonWnd3', 0, dockTop + barHeight, barWidth, barHeight)
-    add('HotButtonWnd4', 0, dockTop + 2 * barHeight, barWidth, barHeight)
+    local barY = dockTop
+    for _, bar in ipairs(bars) do
+        add(bar.name, 0, barY, bar.w, bar.h)
+        barY = barY + bar.h
+    end
     add('ExtendedTargetWnd', 0, xtarTop, 119, 300)
-    add('ActionsWindow', 0, xtarTop - 189, 124, 187)
+    if xtarTop >= 189 then
+        add('ActionsWindow', 0, xtarTop - 189, 124, 187)
+    else
+        -- Taller two-row hotbars may leave no room to stack the actions
+        -- panel above extended targets at 720p.
+        add('ActionsWindow', 121, 0, 124, 187)
+    end
     add('CombatAbilityWnd', 121, dockTop - 142, 174, 140)
 
     local buffWidth = compact and 186 or 192
@@ -73,7 +99,7 @@ local function buildLayout(w, h, profile)
         add('HotButtonWnd', mainX, h - 275, 187, 275)
         add('GroupWindow', groupX, h - 282, 182, 282)
         add('TargetWindow', mainX + 28, h - 435, 254, 149)
-        add('PlayerWindow', 298, h - 527, 250, 250)
+        add('PlayerWindow', 298, math.min(h - 527, dockTop - 252), 250, 250)
         add('EQMainWnd', 249, dockTop - 192, 44, 44)
         local chatX = groupX + 184
         local chatY = math.max(484, h - 198)
@@ -135,7 +161,8 @@ for _, r in ipairs(windows) do
             wnd.Move(rect)
             mq.delay(50)
             if not wnd.Open() or wnd.X() ~= r.x or wnd.Y() ~= r.y or wnd.Width() ~= r.w or wnd.Height() ~= r.h then
-                log('Client adjusted or refused the requested geometry: ' .. r.name)
+                log(string.format('Client adjusted %s: requested %s; actual %s,%s,%s,%s',
+                    r.name, rect, tostring(wnd.X()), tostring(wnd.Y()), tostring(wnd.Width()), tostring(wnd.Height())))
                 issues = issues + 1
             else
                 applied = applied + 1

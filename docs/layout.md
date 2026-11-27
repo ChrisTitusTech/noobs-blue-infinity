@@ -41,11 +41,14 @@ To check the planned positions without moving any windows:
 
 The script uses the actual drawable client dimensions instead of assuming
 fullscreen, so typical window borders and title bars are accommodated. It
-preserves native XML control sizes rather than shrinking text. It is intended
+preserves native XML control sizes rather than shrinking text. Dynamic
+hotbars retain their existing size and row count: if the client keeps a
+two-row hotbar, the script stacks the bars using their measured heights
+instead of overlapping them. It is intended
 for the monk/melee layout at normal UI scale, not a caster spell-bar layout.
 If the geometry does not fit, it reports the conflict before moving anything.
 The primary visible chat container is arranged; extra separate chat windows
-are left alone.
+are left alone, as are independent MacroQuest plugin overlays.
 
 ## Validation
 
@@ -58,6 +61,10 @@ luajit tools/tests/test_noobs_layout.lua
 
 The tests simulate the MacroQuest window API, check fullscreen and windowed
 dimensions for all three resolutions, detect overlapping or off-screen
-rectangles, and verify preview and error handling. These are offline checks.
-In-game verification is still needed to confirm the client accepts the
-requested geometry and the skin renders its controls correctly.
+rectangles, and verify preview and error handling, including existing
+two-row hotbars.
+
+A live test at 1920 x 1050 confirmed that the skin loaded and the automatic
+preset correctly positioned all 14 managed windows without overlap or
+off-screen geometry, including three 481 x 101 hotbars. The 1440p and
+720p presets have passed offline tests but still need in-game verification.
